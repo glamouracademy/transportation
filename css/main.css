@@ -10,10 +10,15 @@
 
 body {
 	font-family: 'FontAwesome', sans-serif;
+	line-height: 1.4em;
 }
 
 .white {
 	color: #fff;
+}
+
+p {
+	color: #AAA;
 }
 
 /* -- general -- */
@@ -29,6 +34,23 @@ body {
 	text-align: center;
 }
 
+button {
+	text-transform: uppercase;
+	color: white;
+	padding: 1em 1.5em;
+}
+
+.transparent {
+	background: rgba(0,0,0,0);
+	border: 2px solid #A8A8A8;
+	border-radius: 5%;
+}
+
+ul {
+	list-style: none;
+}
+
+
 /* -- nav -- */
 
 .logo {
@@ -42,12 +64,23 @@ body {
 
 .banner {
 	background: url('../img/highway.jpg') no-repeat center;
-	padding: 3.2em 0;
+	width: 100%;
+	padding: 8em 0;
 	position: relative;
-	-webkit-clip-path: polygon(100% 0, 100% 65%, 50% 100%, 0 65%, 0 0);
-	clip-path: polygon(100% 0, 100% 65%, 54% 100%, 0 100%, 0 0);
+	-webkit-clip-path: polygon(100% 0, 100% 90%, 50% 100%, 0 90%, 0 0);
 }
 
+.banner-content {
+	width: 80%;
+	margin: 0 auto;
+}
+
+
+.clearfix::after {
+	content:" ";
+	display: block;
+	clear: both;
+}
 
 
 
@@ -62,5 +95,8 @@ body {
 
 /* desktop */
 @media (min-width: 1025px) {
+	.banner {
+		-webkit-clip-path: polygon(100% 0, 100% 65%, 50% 100%, 0 65%, 0 0);
+	}
 
 }
