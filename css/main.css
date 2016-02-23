@@ -53,14 +53,6 @@ ul {
 
 /* -- nav -- */
 
-.logo {
-	background: url('http://placekitten.com/200/300');
-	height: 75px;
-	width: 100px;
-	border: 1px solid blue;
-	display: inline-block;
-}
-
 .main-nav {
 	background: #fff;
 }
@@ -91,8 +83,28 @@ ul {
 
 /* -- containers -- */
 
-.landing-container {
+header {
 	width: 100%;
+}
+
+/* -- logo -- */
+
+.logo {
+	display: inline-block;
+	height: auto;
+	width: 15em;
+	padding-top: .6em;
+	}
+
+
+.logoT {
+	border: 3.5px solid #fff;
+	padding: .125em .35em;
+	display: inline;
+}
+
+.logoText {
+	display: inline;
 }
 
 
@@ -106,10 +118,13 @@ ul {
 
 /* desktop */
 @media (min-width: 1025px) {
+	
 	header {
 		display: inline;
-		margin: .125em 2em;
-		border: 1px solid green;
+		padding: .5em 10em;
+		z-index: 1000;
+		position: fixed;
+		margin: 2.5em 2.5em 5em 2.5em;
 	}
 
 	h1 {
@@ -117,16 +132,13 @@ ul {
 	}
 
 	.banner {
-		-webkit-clip-path: polygon(100% 0, 100% 65%, 50% 100%, 0 65%, 0 0);
+		-webkit-clip-path: polygon(100% 0, 100% 70%, 50% 100%, 0 70%, 0 0);
+		padding: 10em 0;
 	}
 
 	.main-nav {
-		padding-top: .5em;
-		padding-bottom: .5em;
-		border: 1px solid red;
 		float: right;
 		background: rgba(0,0,0,0);
-
 	}
 
 	.main-nav li {
