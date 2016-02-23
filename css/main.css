@@ -59,6 +59,7 @@ ul {
 
 .main-nav li:hover {
 	color: tomato;
+	border-bottom: 3px solid tomato;
 }
 
 
