@@ -11,3 +11,51 @@
 body {
 	font-family: 'FontAwesome', sans-serif;
 }
+
+.white {
+	color: #fff;
+}
+
+/* -- general -- */
+* {
+	box-sizing: border-box;
+}
+
+.upcase {
+	text-transform: uppercase;
+}
+
+.center {
+	text-align: center;
+}
+
+/* -- nav -- */
+
+.logo {
+	height: 75px;
+	width: 100px;
+	border: 1px solid blue;
+}
+
+
+/* -- banner -- */
+
+.banner {
+	background: url('../img/highway.jpg') no-repeat center;
+	padding: 3.2em 0;
+}
+
+
+
+
+/* -- media queries -- */
+
+/* tablet portrait */
+@media (min-width: 769px) {
+
+}
+
+/* desktop */
+@media (min-width: 1025px) {
+
+}
