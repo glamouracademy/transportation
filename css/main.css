@@ -21,6 +21,12 @@ h4 {
 	font-weight: 400;
 }
 
+button {
+	font-size: smaller;
+	font-weight: 500;
+	letter-spacing: 1.5px;
+}
+
 p {
 	color: #bfbfbf;
 	font-size: smaller;
@@ -46,7 +52,8 @@ p {
 button {
 	text-transform: uppercase;
 	color: white;
-	padding: 1em 1.5em;
+	padding: 1em 4em;
+	margin: .125em .8em;
 }
 
 .transparent {
@@ -167,7 +174,7 @@ ul {
 	}
 
 	.banner {
-		-webkit-clip-path: polygon(100% 0, 100% 70%, 50% 100%, 0 70%, 0 0);
+		-webkit-clip-path: polygon(100% 0, 100% 80%, 50% 100%, 0 80%, 0 0);
 		padding: 10em 0;
 	}
 
