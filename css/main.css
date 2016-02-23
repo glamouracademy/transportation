@@ -1,0 +1,13 @@
+/* -- fonts -- */
+
+@font-face {
+	font-family: 'FontAwesome';
+	src: 	url('fonts/fontawesome-webfont.eot'); /* IE9 Compat Modes */
+	src: 	url('fonts/fontawesome-webfont.woff2'), /* Super Modern Browsers */
+				url('font/fontawesome-webfont.woff'), /* Pretty Modern Browsers */
+				url('font/fontawesome-webfont.svg'); /* Legacy iOS */
+}
+
+body {
+	font-family: 'FontAwesome', sans-serif;
+}
