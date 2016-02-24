@@ -35,7 +35,7 @@ li {
 
 p {
 	color: #bfbfbf;
-	font-size: smaller;
+	
 }
 
 .title {
@@ -194,6 +194,10 @@ ul {
 
 	h1 {
 		letter-spacing: 10px;
+	}
+
+	p {
+		font-size: smaller;
 	}
 
 	.banner {
