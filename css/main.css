@@ -42,6 +42,16 @@ p {
 	font-size: 300%;
 }
 
+/* -- colors -- */
+
+.red {
+	color: #b73636;
+}
+
+.gray {
+	color: #bfbfbf;
+}
+
 /* -- general -- */
 * {
 	box-sizing: border-box;
@@ -60,6 +70,10 @@ button {
 	color: white;
 	padding: 1em 4em;
 	margin: .125em .8em;
+}
+
+button:hover {
+	background-color: #b73636;
 }
 
 .transparent {
@@ -90,8 +104,8 @@ ul {
 }
 
 .main-nav li:hover {
-	color: tomato;
-	border-bottom: 3px solid tomato;
+	color: #b73636;
+	border-bottom: 3px solid #b73636;
 }
 
 
@@ -180,10 +194,8 @@ ul {
 	}
 
 	.banner {
-		/*-webkit-clip-path: polygon(100% 0, 100% 80%, 50% 100%, 0 80%, 0 0);*/
-
 		 -webkit-clip-path: polygon(100% 70%, 51% 100%, 49% 100%, 0% 70%, 0% 0%, 100% 0%);
-		padding: 10em 0;
+			padding: 10em 0;
 	}
 
 	.small-container {
