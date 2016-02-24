@@ -123,7 +123,7 @@ header {
 .banner {
 	background: url('../img/highway.jpg') no-repeat center;
 	width: 100%;
-	padding: 8em 0 5em;
+	padding: 2em 0 5em;
 	
 	position: relative;
 	-webkit-clip-path: polygon(100% 0, 100% 93%, 50% 100%, 0 93%, 0 0);
@@ -154,29 +154,38 @@ header {
 	padding: 2em 0 2em;
 }
 
-/* -- logo -- */
+/* -- m-logo -- */
 
-/*.logo {
-	display: absolute;
-	z-index: 1000;
-	top: 5em;
-	height: auto;
-	width: 15em;
-	padding-top: .6em;
+.m-logo {
+	visibility: visible;
+	padding-bottom: 3.75em;
 	}
 
-
-.logoT {
-	border: 3.5px solid tomato;
-	padding: .125em .125em .125em .45em;
+.m-logoT {
+	border: 3.5px solid #fff;
+	padding: .125em .45em;
 	display: inline;
 }
 
-.logoText {
-
+.m-logoText {
 	display: inline;
 	letter-spacing: 2px;
-}*/
+}
+
+.logo {
+		display: none;
+		visibility: hidden;
+	}
+
+.logoT {
+	display: none;
+	visibility: hidden;
+}
+
+.logoText {
+	display: none;
+	visibility: hidden;
+}
 
 
 
@@ -197,25 +206,6 @@ header {
 		position: fixed;
 	}
 
-	.logo {
-	display: inline-block;
-	height: auto;
-	width: 15em;
-	font-size: smaller;
-	padding-top: .8em;
-	}
-
-
-.logoT {
-	border: 3.5px solid #fff;
-	padding: .125em .125em .125em .45em;
-	display: inline;
-}
-
-.logoText {
-	display: inline;
-	letter-spacing: 2px;
-}
 
 	.main-nav {
 		float: right;
@@ -258,7 +248,7 @@ header {
 
 	.banner {
 		 -webkit-clip-path: polygon(100% 85%, 51% 100%, 49% 100%, 0% 85%, 0% 0%, 100% 0%);
-			padding: 12em 0;
+		padding: 12em 0;
 	}
 
 	.small-container {
@@ -268,6 +258,44 @@ header {
 
 	.line {
 		width: 12%;
+	}
+
+	/* logos */
+	.logo {
+		visibility: visible;
+		display: inline-block;
+		height: auto;
+		width: 15em;
+		font-size: smaller;
+		padding-top: .8em;
+	}
+
+	.logoT {
+		visibility: visible;
+		border: 3.5px solid #fff;
+		padding: .125em .125em .125em .45em;
+		display: inline;
+	}
+
+	.logoText {
+		visibility: visible;
+		display: inline;
+		letter-spacing: 2px;
+	}
+	
+	.m-logo {
+		display: none;
+		visibility: hidden;
+	}
+
+	.m-logoT {
+		display: none;
+		visibility: hidden;
+	}
+
+	.m-logoText {
+		display: none;
+		visibility: hidden;
 	}
 	
 
