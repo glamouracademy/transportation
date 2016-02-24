@@ -116,7 +116,6 @@ ul {
 	width: 100%;
 	padding: 8em 0;
 	position: relative;
-
 	-webkit-clip-path: polygon(100% 0, 100% 90%, 50% 100%, 0 90%, 0 0);
 }
 
@@ -194,7 +193,7 @@ ul {
 	}
 
 	.banner {
-		 -webkit-clip-path: polygon(100% 70%, 51% 100%, 49% 100%, 0% 70%, 0% 0%, 100% 0%);
+		 -webkit-clip-path: polygon(100% 75%, 51% 100%, 49% 100%, 0% 75%, 0% 0%, 100% 0%);
 			padding: 10em 0;
 	}
 
