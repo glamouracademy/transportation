@@ -39,7 +39,7 @@ p {
 }
 
 .title {
-	font-size: 300%;
+	font-size: 200%;
 }
 
 /* -- colors -- */
@@ -186,6 +186,10 @@ ul {
 	.main-nav li {
 		display: inline-block;
 		margin-left: 15px;
+	}
+
+	.title {
+	font-size: 300%;
 	}
 
 	h1 {
