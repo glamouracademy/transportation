@@ -97,14 +97,25 @@ ul {
 
 /* -- nav -- */
 
+header {
+	padding-top: .6em;
+}
+
 .main-nav {
 	background: #fff;
+}
+
+.main-nav li {
+	display: none;
+	visibility: hidden;
 }
 
 .main-nav li:hover {
 	color: #b73636;
 	border-bottom: 3px solid #b73636;
 }
+
+
 
 
 /* -- banner -- */
@@ -145,30 +156,31 @@ ul {
 
 /* -- logo -- */
 
-.logo {
-	display: inline-block;
+/*.logo {
+	display: absolute;
+	z-index: 1000;
+	top: 5em;
 	height: auto;
 	width: 15em;
 	padding-top: .6em;
-	font-size: smaller;
 	}
 
 
 .logoT {
-	border: 3.5px solid #fff;
+	border: 3.5px solid tomato;
 	padding: .125em .125em .125em .45em;
 	display: inline;
-
 }
 
 .logoText {
+
 	display: inline;
 	letter-spacing: 2px;
-}
+}*/
 
 
 
-/* -- media queries -- */
+/* -- MEDIA QUERIES -- */
 
 /* tablet portrait */
 @media (min-width: 769px) {
@@ -185,6 +197,26 @@ ul {
 		position: fixed;
 	}
 
+	.logo {
+	display: inline-block;
+	height: auto;
+	width: 15em;
+	font-size: smaller;
+	padding-top: .8em;
+	}
+
+
+.logoT {
+	border: 3.5px solid #fff;
+	padding: .125em .125em .125em .45em;
+	display: inline;
+}
+
+.logoText {
+	display: inline;
+	letter-spacing: 2px;
+}
+
 	.main-nav {
 		float: right;
 		background: rgba(0,0,0,0);
@@ -193,6 +225,7 @@ ul {
 
 	.main-nav li {
 		display: inline-block;
+		visibility: visible;
 		margin-left: 15px;
 	}
 
