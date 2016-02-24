@@ -124,9 +124,10 @@ ul {
 }
 
 .line {
-	width: 12%;
+	width: 40%;
 	border-bottom: 1px solid #fff;
 	margin: 0 auto;
+	padding-top: .75em;
 }
 
 
@@ -232,6 +233,9 @@ ul {
 		padding: 2em 0 4em;
 	}
 
+	.line {
+		width: 12%;
+	}
 	
 
 }
