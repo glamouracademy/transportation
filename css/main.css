@@ -22,8 +22,7 @@ h4 {
 }
 
 button {
-	font-size: smaller;
-	font-weight: 500;
+	font-weight: 600;
 	letter-spacing: 1.5px;
 }
 
@@ -68,8 +67,7 @@ p {
 button {
 	text-transform: uppercase;
 	color: white;
-	padding: 1em 4em;
-	margin: .125em .8em;
+	padding: 1em 1.6em;
 }
 
 button:hover {
@@ -114,13 +112,14 @@ ul {
 .banner {
 	background: url('../img/highway.jpg') no-repeat center;
 	width: 100%;
-	padding: 8em 0;
+	padding: 8em 0 5em;
+	
 	position: relative;
-	-webkit-clip-path: polygon(100% 0, 100% 90%, 50% 100%, 0 90%, 0 0);
+	-webkit-clip-path: polygon(100% 0, 100% 93%, 50% 100%, 0 93%, 0 0);
 }
 
 .banner-content {
-	width: 80%;
+	width: 90%;
 	margin: 0 auto;
 }
 
@@ -138,6 +137,11 @@ ul {
 	margin: 0 auto;
 }
 
+.small-container {
+	margin: 0 auto;
+	padding: 2em 0 2em;
+}
+
 /* -- logo -- */
 
 .logo {
@@ -145,17 +149,20 @@ ul {
 	height: auto;
 	width: 15em;
 	padding-top: .6em;
+	font-size: smaller;
 	}
 
 
 .logoT {
 	border: 3.5px solid #fff;
-	padding: .125em .35em;
+	padding: .125em .125em .125em .45em;
 	display: inline;
+
 }
 
 .logoText {
 	display: inline;
+	letter-spacing: 2px;
 }
 
 
@@ -172,7 +179,7 @@ ul {
 	
 	header {
 		display: inline;
-		padding: 2em 0 10em 5em;
+		padding: 2.5em 0 10em 5em;
 		z-index: 1000;
 		position: fixed;
 	}
@@ -200,14 +207,28 @@ ul {
 		font-size: smaller;
 	}
 
+	button {
+		padding: 1em 4em;
+		margin: .125em .8em;
+	}
+	
+	button {
+		font-size: smaller;
+		font-weight: 500;
+		
+	}
+
+	.banner-content {
+		width: 80%;
+	}
+
 	.banner {
-		 -webkit-clip-path: polygon(100% 75%, 51% 100%, 49% 100%, 0% 75%, 0% 0%, 100% 0%);
-			padding: 10em 0;
+		 -webkit-clip-path: polygon(100% 85%, 51% 100%, 49% 100%, 0% 85%, 0% 0%, 100% 0%);
+			padding: 12em 0;
 	}
 
 	.small-container {
 		max-width: 60%;
-		margin: 0 auto;
 		padding: 2em 0 4em;
 	}
 
