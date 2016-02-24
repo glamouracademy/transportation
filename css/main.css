@@ -124,7 +124,6 @@ header {
 	background: url('../img/highway.jpg') no-repeat center;
 	width: 100%;
 	padding: 2em 0 5em;
-	
 	position: relative;
 	-webkit-clip-path: polygon(100% 0, 100% 93%, 50% 100%, 0 93%, 0 0);
 }
@@ -189,28 +188,27 @@ header {
 
 
 
-/* -- MEDIA QUERIES -- */
+/* ------------ 
+  MEDIA QUERIES 
+------------ */
 
 /* tablet portrait */
 @media (min-width: 769px) {
-
-}
-
-/* desktop */
-@media (min-width: 1025px) {
-	
 	header {
 		display: inline;
-		padding: 2.5em 0 10em 5em;
+		padding: 1.5em 0;
 		z-index: 1000;
 		position: fixed;
 	}
 
+	.med-container {
+		width: 95%;
+	}
 
 	.main-nav {
 		float: right;
 		background: rgba(0,0,0,0);
-		margin-left: 12em;
+		margin-left: 7.5em;
 	}
 
 	.main-nav li {
@@ -219,12 +217,17 @@ header {
 		margin-left: 15px;
 	}
 
+	.banner {
+		-webkit-clip-path: polygon(100% 80%, 51% 100%, 49% 100%, 0% 80%, 0% 0%, 100% 0%);
+		padding: 5em 0;
+	}
+
 	.title {
 	font-size: 300%;
 	}
 
 	h1 {
-		letter-spacing: 10px;
+		letter-spacing: 12px;
 	}
 
 	p {
@@ -232,32 +235,17 @@ header {
 	}
 
 	button {
-		padding: 1em 4em;
-		margin: .125em .8em;
-	}
-	
-	button {
 		font-size: smaller;
-		font-weight: 500;
-		
+		font-weight: 500;	
 	}
 
-	.banner-content {
-		width: 80%;
-	}
-
-	.banner {
-		 -webkit-clip-path: polygon(100% 85%, 51% 100%, 49% 100%, 0% 85%, 0% 0%, 100% 0%);
-		padding: 12em 0;
-	}
-
-	.small-container {
-		max-width: 60%;
-		padding: 2em 0 4em;
+	button {
+		margin: .125em .8em;
 	}
 
 	.line {
-		width: 12%;
+			width: 20%;
+			color: #bfbfbf;
 	}
 
 	/* logos */
@@ -297,6 +285,50 @@ header {
 		display: none;
 		visibility: hidden;
 	}
-	
 
+	.small-container {
+		max-width: 78%;
+	}
+	
+}
+
+
+
+/* desktop */
+@media (min-width: 1025px) {
+
+	.med-container {
+		width: 70%;
+	}
+
+	.main-nav {
+		margin-left: 13.5em;
+	}
+
+	h1 {
+		letter-spacing: 10px;
+	}
+
+	button {
+		padding: 1em 4em;
+	}
+
+	.banner-content {
+		width: 80%;
+	}
+
+	.banner {
+		 -webkit-clip-path: polygon(100% 85%, 51% 100%, 49% 100%, 0% 85%, 0% 0%, 100% 0%);
+		padding: 12em 0;
+	}
+
+	.small-container {
+		max-width: 60%;
+		padding: 2em 0 4em;
+	}
+
+	.line {
+		width: 12%;
+	}
+	
 }
