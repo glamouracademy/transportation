@@ -37,36 +37,25 @@ p {
 	font-size: 200%;
 }
 
+
 /* -- colors -- */
 
-.white {
-	color: #fff;
-}
+.red { color: #b73636; }
 
-.red {
-	color: #b73636;
-}
+.gray { color: #bfbfbf; /*rgb(191,191,191)*/ }
 
-.gray {
-	color: #bfbfbf; /*rgb(191,191,191)*/
-}
 
 /* -- general -- */
-* {
-	box-sizing: border-box;
-}
 
-.upcase {
-	text-transform: uppercase;
-}
+* { box-sizing: border-box; }
 
-.center {
-	text-align: center;
-}
+.upcase { text-transform: uppercase; }
+
+.center { text-align: center; }
 
 button {
 	text-transform: uppercase;
-	color: white;
+	color: #fff;
 	padding: 1em 1.6em;
 }
 
@@ -80,9 +69,7 @@ button:hover {
 	border-radius: 5%;
 }
 
-ul {
-	list-style: none;
-}
+ul { list-style: none; }
 
 .clearfix::after {
 	content:" ";
@@ -94,11 +81,8 @@ ul {
 	line-height: 25%;
 }
 
-/* -- nav -- */
 
-header {
-	/*margin-top: .6em;*/
-}
+/* -- nav -- */
 
 nav {
 	background: #fff;
@@ -118,11 +102,9 @@ nav {
 }
 
 .mobile-menu {
-	color: black;
+	color: #000;
 	display: inline;
-	visibility: visible;
 	margin-left: 1em;
-	
 }
 
 .mobile-menu-text {
@@ -130,7 +112,6 @@ nav {
 	display: inline-block;
 	letter-spacing: 2px;
 	margin-left: 3%;
-	visibility: visible;
 }
 
 
@@ -138,10 +119,10 @@ nav {
 
 .banner {
 	background: url('../img/highway.jpg') no-repeat center center fixed;
+	background-size: cover;
 	padding-top: 61px;
 	height: 70vh;
-	-webkit-clip-path: polygon(100% 0, 100% 93%, 50% 100%, 0 93%, 0 0);
-  background-size: cover;
+	-webkit-clip-path: polygon(100% 0, 100% 93%, 50% 100%, 0 93%, 0 0); 
 }
 
 .banner-content {
@@ -175,7 +156,7 @@ nav {
 .logo {
 	position: absolute;
 	margin: auto;
-	top: 94px; left: 35%; right: 0;
+	top: 94px; left: 35%;
 	z-index: 1000;
 	}
 
@@ -206,7 +187,6 @@ nav {
 		position: absolute;
 	}
 
-
 	.med-container {
 		width: 95%;
 	}
@@ -234,7 +214,6 @@ nav {
 		display: inline;
 	}
 
-
 	.main-nav li {
 		display: inline-block;
 		visibility: visible;
@@ -247,7 +226,12 @@ nav {
 	}
 
 	.title {
-	font-size: 300%;
+		font-size: 300%;
+	}
+
+	.line {
+			width: 20%;
+			color: #bfbfbf;
 	}
 
 	h1 {
@@ -267,12 +251,6 @@ nav {
 		margin: .125em .8em;
 	}
 
-	.line {
-			width: 20%;
-			color: #bfbfbf;
-	}
-
-
 	/* logos */
 	.logo {
 		position: static;
@@ -281,7 +259,6 @@ nav {
 		width: 15em;
 		font-size: smaller;
 		margin-left: 3em;
-		
 	}
 
 	.logoT {
@@ -291,9 +268,7 @@ nav {
 	.small-container {
 		max-width: 78%;
 	}
-	
 }
-
 
 
 /* desktop */
