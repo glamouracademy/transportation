@@ -2,10 +2,10 @@
 
 @font-face {
 	font-family: 'FontAwesome';
-	src: 	url('fonts/fontawesome-webfont.eot'); /* IE9 Compat Modes */
-	src: 	url('fonts/fontawesome-webfont.woff2'), /* Super Modern Browsers */
-				url('font/fontawesome-webfont.woff'), /* Pretty Modern Browsers */
-				url('font/fontawesome-webfont.svg'); /* Legacy iOS */
+	src: 	url('../fonts/fontawesome-webfont.eot'); /* IE9 Compat Modes */
+	src: 	url('../fonts/fontawesome-webfont.woff2'), /* Super Modern Browsers */
+				url('../fonts/fontawesome-webfont.woff'), /* Pretty Modern Browsers */
+				url('../fonts/fontawesome-webfont.svg'); /* Legacy iOS */
 }
 
 body {
@@ -141,9 +141,6 @@ nav {
 	padding-top: 61px;
 	height: 70vh;
 	-webkit-clip-path: polygon(100% 0, 100% 93%, 50% 100%, 0 93%, 0 0);
-	-webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
   background-size: cover;
 }
 
@@ -222,7 +219,7 @@ nav {
 
 	.mobile-menu {
 		display: none;
-		visibility: none;
+		visibility: hidden;
 	}
 
 	.mobile-menu-text {
