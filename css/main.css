@@ -40,6 +40,8 @@ p {
 
 /* -- colors -- */
 
+.white { color: #fff; }
+
 .red { color: #b73636; }
 
 .gray { color: #bfbfbf; /*rgb(191,191,191)*/ }
@@ -181,6 +183,7 @@ nav {
 @media (min-width: 769px) {
 	
 	header {
+		width: 100%;
 		display: inline;
 		padding: 1.5em 0;
 		z-index: 1000;
@@ -210,7 +213,7 @@ nav {
 	.main-nav {
 		float: right;
 		background: rgba(0,0,0,0);
-		margin-left: 12em;
+		margin-right: 2%;
 		display: inline;
 	}
 
@@ -258,7 +261,7 @@ nav {
 		height: auto;
 		width: 15em;
 		font-size: smaller;
-		margin-left: 3em;
+		margin-left: 4em;
 	}
 
 	.logoT {
@@ -277,11 +280,6 @@ nav {
 
 	.med-container {
 		width: 70%;
-	}
-
-/*need a different solution*/
-	.main-nav {
-		margin-left: 20em;
 	}
 
 	h1 {
@@ -310,16 +308,5 @@ nav {
 
 	.line {
 		width: 12%;
-	}
-	
-}
-
-/* large screen */
-
-@media (min-width: 1250px) {
-
-/*need a different solution*/
-	.main-nav {
-		margin-left: 40em;
-	} 
+	}	
 }
