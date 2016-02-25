@@ -101,7 +101,7 @@ header {
 	padding-top: .6em;
 }
 
-.main-nav {
+nav {
 	background: #fff;
 }
 
@@ -113,6 +113,7 @@ header {
 .main-nav li:hover {
 	color: #b73636;
 	border-bottom: 3px solid #b73636;
+
 }
 
 
@@ -192,21 +193,30 @@ header {
 
 /* tablet portrait */
 @media (min-width: 769px) {
+	
 	header {
 		display: inline;
 		padding: 1.5em 0;
 		z-index: 1000;
-		position: fixed;
+		position: absolute;
 	}
+
 
 	.med-container {
 		width: 95%;
+	}
+
+	nav {
+		display: inline;
+		background: none;
 	}
 
 	.main-nav {
 		float: right;
 		background: rgba(0,0,0,0);
 		margin-left: 7.5em;
+		display: inline;
+
 	}
 
 	.main-nav li {
@@ -249,7 +259,7 @@ header {
 	/* logos */
 	.logo {
 		visibility: visible;
-		display: inline-block;
+		display: inline;
 		height: auto;
 		width: 15em;
 		font-size: smaller;
@@ -300,7 +310,7 @@ header {
 	}
 
 	.main-nav {
-		margin-left: 13.5em;
+		margin-left: 10em;
 	}
 
 	h1 {
@@ -329,4 +339,13 @@ header {
 		width: 12%;
 	}
 	
+}
+
+/* large screen */
+
+@media (min-width: 1300px) {
+
+	.main-nav {
+		margin-left: 18.5em;
+	} 
 }
