@@ -233,7 +233,7 @@ nav {
 	.main-nav {
 		float: right;
 		background: rgba(0,0,0,0);
-		margin-left: 7.5em;
+		margin-left: 12em;
 		display: inline;
 	}
 
@@ -284,7 +284,7 @@ nav {
 		width: 15em;
 		font-size: smaller;
 		margin-left: 3em;
-		padding-top: .8em;
+		
 	}
 
 	.logoT {
@@ -307,8 +307,9 @@ nav {
 		width: 70%;
 	}
 
+/*need a different solution*/
 	.main-nav {
-		margin-left: 10em;
+		margin-left: 20em;
 	}
 
 	h1 {
@@ -321,10 +322,12 @@ nav {
 
 	.banner-content {
 		width: 80%;
+		padding-top: 0;
 	}
 
 	.banner {
 		 -webkit-clip-path: polygon(100% 85%, 51% 100%, 49% 100%, 0% 85%, 0% 0%, 100% 0%);
+		height: auto;
 		padding: 12em 0;
 	}
 
@@ -341,9 +344,10 @@ nav {
 
 /* large screen */
 
-@media (min-width: 1300px) {
+@media (min-width: 1250px) {
 
+/*need a different solution*/
 	.main-nav {
-		margin-left: 18.5em;
+		margin-left: 40em;
 	} 
 }
