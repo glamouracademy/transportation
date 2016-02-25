@@ -137,11 +137,15 @@ nav {
 /* -- banner -- */
 
 .banner {
-	background: url('../img/highway.jpg') no-repeat center;
+	background: url('../img/highway.jpg') no-repeat center center fixed;
 	width: 100%;
 	padding: 2em 0 5em;
 	/*position: relative;*/
 	-webkit-clip-path: polygon(100% 0, 100% 93%, 50% 100%, 0 93%, 0 0);
+	-webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 .banner-content {
