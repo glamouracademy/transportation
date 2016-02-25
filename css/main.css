@@ -98,14 +98,17 @@ ul {
 /* -- nav -- */
 
 header {
-	padding-top: .6em;
+	/*margin-top: .6em;*/
 }
 
 nav {
 	background: #fff;
+	position: fixed;
+	width: 100%;
+	z-index: 1000;
 }
 
-.main-nav li {
+.main-nav {
 	display: none;
 	visibility: hidden;
 }
@@ -113,7 +116,21 @@ nav {
 .main-nav li:hover {
 	color: #b73636;
 	border-bottom: 3px solid #b73636;
+}
 
+.mobile-menu {
+	color: black;
+	display: inline;
+	visibility: visible;
+	margin-left: 1em;
+	
+}
+
+.mobile-menu-text {
+	color: #000;
+	display: inline-block;
+	letter-spacing: 2px;
+	visibility: visible;
 }
 
 
@@ -123,7 +140,7 @@ nav {
 	background: url('../img/highway.jpg') no-repeat center;
 	width: 100%;
 	padding: 2em 0 5em;
-	position: relative;
+	/*position: relative;*/
 	-webkit-clip-path: polygon(100% 0, 100% 93%, 50% 100%, 0 93%, 0 0);
 }
 
@@ -152,37 +169,23 @@ nav {
 	padding: 2em 0 2em;
 }
 
-/* -- m-logo -- */
+/* -- logo -- */
 
-.m-logo {
-	visibility: visible;
-	padding-bottom: 3.75em;
+.logo {
+	position: absolute;
+	z-index: 1000;
+	top: 15%;
 	}
 
-.m-logoT {
+.logoT {
 	border: 3.5px solid #fff;
 	padding: .125em .45em;
 	display: inline;
 }
 
-.m-logoText {
+.logoText {
 	display: inline;
 	letter-spacing: 2px;
-}
-
-.logo {
-		display: none;
-		visibility: hidden;
-	}
-
-.logoT {
-	display: none;
-	visibility: hidden;
-}
-
-.logoText {
-	display: none;
-	visibility: hidden;
 }
 
 
@@ -208,7 +211,18 @@ nav {
 
 	nav {
 		display: inline;
-		background: none;
+		background: transparent;
+		position: static;
+	}
+
+	.mobile-menu {
+		display: none;
+		visibility: none;
+	}
+
+	.mobile-menu-text {
+		display: none;
+		visibility: hidden;
 	}
 
 	.main-nav {
@@ -216,8 +230,8 @@ nav {
 		background: rgba(0,0,0,0);
 		margin-left: 7.5em;
 		display: inline;
-
 	}
+
 
 	.main-nav li {
 		display: inline-block;
@@ -258,7 +272,6 @@ nav {
 
 	/* logos */
 	.logo {
-		visibility: visible;
 		display: inline;
 		height: auto;
 		width: 15em;
@@ -267,33 +280,9 @@ nav {
 	}
 
 	.logoT {
-		visibility: visible;
-		border: 3.5px solid #fff;
 		padding: .125em .125em .125em .45em;
-		display: inline;
-	}
-
-	.logoText {
-		visibility: visible;
-		display: inline;
-		letter-spacing: 2px;
 	}
 	
-	.m-logo {
-		display: none;
-		visibility: hidden;
-	}
-
-	.m-logoT {
-		display: none;
-		visibility: hidden;
-	}
-
-	.m-logoText {
-		display: none;
-		visibility: hidden;
-	}
-
 	.small-container {
 		max-width: 78%;
 	}
@@ -303,6 +292,7 @@ nav {
 
 
 /* desktop */
+
 @media (min-width: 1025px) {
 
 	.med-container {
