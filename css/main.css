@@ -29,8 +29,7 @@ li {
 }
 
 p {
-	color: #bfbfbf;
-	
+	color: #bfbfbf;	
 }
 
 .title {
@@ -160,20 +159,15 @@ nav {
 	margin: auto;
 	top: 94px; left: 35%;
 	z-index: 1000;
+	letter-spacing: 2px;
 	}
 
-.logoT {
+.logo span {
 	border: 3.5px solid #fff;
 	padding: .125em .45em;
 	display: inline;
+	margin-right: .25em;
 }
-
-.logoText {
-	display: inline;
-	letter-spacing: 2px;
-}
-
-
 
 /* ------------ 
   MEDIA QUERIES 
@@ -260,12 +254,7 @@ nav {
 		display: inline;
 		height: auto;
 		width: 15em;
-		font-size: smaller;
 		margin-left: 4em;
-	}
-
-	.logoT {
-		padding: .125em 0 .125em .4em;
 	}
 	
 	.small-container {
