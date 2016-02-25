@@ -94,7 +94,6 @@ ul {
 	line-height: 25%;
 }
 
-
 /* -- nav -- */
 
 header {
@@ -130,6 +129,7 @@ nav {
 	color: #000;
 	display: inline-block;
 	letter-spacing: 2px;
+	margin-left: 3%;
 	visibility: visible;
 }
 
@@ -138,9 +138,8 @@ nav {
 
 .banner {
 	background: url('../img/highway.jpg') no-repeat center center fixed;
-	width: 100%;
-	padding: 2em 0 5em;
-	/*position: relative;*/
+	padding-top: 61px;
+	height: 70vh;
 	-webkit-clip-path: polygon(100% 0, 100% 93%, 50% 100%, 0 93%, 0 0);
 	-webkit-background-size: cover;
   -moz-background-size: cover;
@@ -151,6 +150,7 @@ nav {
 .banner-content {
 	width: 90%;
 	margin: 0 auto;
+	padding-top: 7em;
 }
 
 .line {
@@ -177,8 +177,9 @@ nav {
 
 .logo {
 	position: absolute;
+	margin: auto;
+	top: 94px; left: 35%; bottom: 0; right: 0;
 	z-index: 1000;
-	top: 15%;
 	}
 
 .logoT {
