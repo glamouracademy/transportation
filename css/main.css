@@ -122,7 +122,7 @@ nav {
 	background: url('../img/highway.jpg') no-repeat center center fixed;
 	background-size: cover;
 	padding-top: 61px;
-	height: 70vh;
+	height: 37em;
 	-webkit-clip-path: polygon(100% 0, 100% 93%, 50% 100%, 0 93%, 0 0); 
 }
 
