@@ -317,7 +317,7 @@ nav {
 @media (min-width: 1025px) {
 
 	.med-container {
-		width: 70%;
+		width: 80%;
 	}
 
 	h1 {
@@ -347,4 +347,8 @@ nav {
 	.line {
 		width: 12%;
 	}	
+
+	.differentiators {
+		flex-direction: row;
+	}
 }
