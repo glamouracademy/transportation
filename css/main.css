@@ -36,9 +36,18 @@ p {
 	font-size: 200%;
 }
 
+/* -- icons -- */
+
 .material-icons {
 	color: #e74e3e;
+	outline: 3px solid rgba(191,191,191,0.2);
+	padding: .35em;
 }
+
+.material-icons.md-18 { font-size: 18px; }
+.material-icons.md-24 { font-size: 24px; }
+.material-icons.md-36 { font-size: 36px; }
+.material-icons.md-48 { font-size: 48px; }
 
 /* -- colors -- */
 
@@ -47,6 +56,10 @@ p {
 .red { color: #e74e3e; }
 
 .gray { color: #bfbfbf; /*rgb(191,191,191)*/ }
+
+.dark-gray { color: #a3a3a3;}
+
+.darker-gray { color: #666;}
 
 
 /* -- general -- */
@@ -126,7 +139,6 @@ nav {
 }
 
 .banner-content {
-	width: 90%;
 	margin: 0 auto;
 	padding-top: 7em;
 }
@@ -138,8 +150,43 @@ nav {
 	padding-top: .75em;
 }
 
+/* -- differentiators -- */
+
+.differentiators {
+	display: flex;
+	flex-direction: column;
+	margin-top: 5em;
+}
+
+.value {
+	flex: 1;
+}
+
+.value-title {
+	font-weight: 600;
+	letter-spacing: 2px;
+	color: #666;
+	text-transform: uppercase;
+}
+
+.value .line {
+	border-top: 1px solid rgba(191,191,191,0.2);
+	width: 82px;
+}
+
+.value p {
+	width: 60%;
+	margin: 1% auto 8%;
+}
+
+
+
 
 /* -- containers -- */
+
+.lg-container {
+	width: 90%;
+}
 
 .med-container {
 	width: 65%;
