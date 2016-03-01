@@ -207,12 +207,12 @@ nav {
 	margin: auto;
 	top: 94px; left: 35%;
 	z-index: 1000;
-	letter-spacing: 2px;
+	letter-spacing: .1em;
 	}
 
 .logo span {
 	border: 3.5px solid #fff;
-	padding: .125em .45em;
+	padding: .125em .35em;
 	display: inline;
 	margin-right: .25em;
 }
