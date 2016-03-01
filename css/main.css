@@ -36,12 +36,15 @@ p {
 	font-size: 200%;
 }
 
+.material-icons {
+	color: #e74e3e;
+}
 
 /* -- colors -- */
 
 .white { color: #fff; }
 
-.red { color: #b73636; }
+.red { color: #e74e3e; }
 
 .gray { color: #bfbfbf; /*rgb(191,191,191)*/ }
 
@@ -61,7 +64,7 @@ button {
 }
 
 button:hover {
-	background-color: #b73636;
+	background-color: #e74e3e;
 }
 
 .transparent {
@@ -214,8 +217,8 @@ nav {
 	}
 
 	.main-nav li:hover {
-	color: #b73636;
-	border-bottom: 3px solid #b73636;
+	color: #e74e3e;
+	border-bottom: 3px solid #e74e3e;
 }
 
 	.banner {
