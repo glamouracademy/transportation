@@ -97,11 +97,6 @@ nav {
 	visibility: hidden;
 }
 
-.main-nav li:hover {
-	color: #b73636;
-	border-bottom: 3px solid #b73636;
-}
-
 .mobile-menu {
 	color: #000;
 	display: inline;
@@ -124,6 +119,7 @@ nav {
 	padding-top: 61px;
 	height: 37em;
 	-webkit-clip-path: polygon(100% 0, 100% 93%, 50% 100%, 0 93%, 0 0); 
+	clip-path: polygon(100% 0, 100% 93%, 50% 100%, 0 93%, 0 0); 
 }
 
 .banner-content {
@@ -217,6 +213,11 @@ nav {
 		margin-left: 15px;
 	}
 
+	.main-nav li:hover {
+	color: #b73636;
+	border-bottom: 3px solid #b73636;
+}
+
 	.banner {
 		-webkit-clip-path: polygon(100% 80%, 51% 100%, 49% 100%, 0% 80%, 0% 0%, 100% 0%);
 		padding: 5em 0;
@@ -228,7 +229,6 @@ nav {
 
 	.line {
 			width: 20%;
-			color: #bfbfbf;
 	}
 
 	h1 {
