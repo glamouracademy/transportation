@@ -268,7 +268,7 @@ nav {
 }
 
 	.banner {
-		-webkit-clip-path: polygon(100% 80%, 51% 100%, 49% 100%, 0% 80%, 0% 0%, 100% 0%);
+		-webkit-clip-path: polygon(100% 90%, 51% 100%, 49% 100%, 0% 90%, 0% 0%, 100% 0%);
 		padding: 5em 0;
 	}
 
