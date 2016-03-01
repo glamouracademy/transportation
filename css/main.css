@@ -19,12 +19,12 @@ h4 {
 
 button {
 	font-weight: 600;
-	letter-spacing: 1.5px;
+	letter-spacing: 0.0825em;
 }
 
 li {
 	font-size: 72%;
-	letter-spacing: 1.5px;
+	letter-spacing: .15em;
 	font-weight: 300;
 }
 
@@ -179,8 +179,6 @@ nav {
 	margin: 1% auto 8%;
 	letter-spacing: 0.0125em;
 }
-
-
 
 
 /* -- containers -- */
