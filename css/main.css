@@ -444,7 +444,7 @@ header nav {
 		letter-spacing: 10px;
 	}
 
-	button {
+	.banner button {
 		padding: 1em 4em;
 	}
 
@@ -501,29 +501,23 @@ header nav {
 	}
 
 	.offerings img {
-		margin: 0 6em 0 0;
+		margin: 0 6em;
 		float: left;
 	}
 
 	.offering-desc {
-		margin-top: 5.7em;
+		margin-top: 2em;
 	}
 
 	.offerings h2 {
 		display: inline;
-		font-size: 2em;
+		font-size: 1.7em;
+		width: 50%;
 	}
 
 	.offerings p {
 		font-size: .7em;
 		line-height: 1.7em;
-		padding: 1.5em 3em;
+		padding: 1.5em 2em;
 	}
-
-	.offerings 
-
-
-
-
-
 }
