@@ -199,7 +199,7 @@ header nav {
 
 .offering-nav {
 	background-color: #000;
-	color: #fff;
+	color: #999;
 	padding: .6em;
 	border-radius: 5px;
 	/*display: flex;
@@ -209,6 +209,7 @@ header nav {
 
 .offering-nav:hover {
 	background-color: #e74e3e;
+	color: #fff;
 }
 
 /*.offerings img, .offerings h2, .offerings h4, .offerings p, .offerings button {
