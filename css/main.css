@@ -444,7 +444,7 @@ header nav {
 		letter-spacing: 10px;
 	}
 
-	button {
+	.banner button {
 		padding: 1em 4em;
 	}
 
@@ -493,34 +493,41 @@ header nav {
 	}
 
 	.offerings nav {
-		padding: 1em;
+		padding: .8em;
 	}
 
 	.offerings .content {
-		margin: 0;
+		width: 80%;
+		display: flex;
+		height: 500px;		
+	}
+
+	.offerings img, .offering-desc {
+		flex: 1;
 	}
 
 	.offerings img {
-		margin: 0 6em 0 0;
-		float: left;
+		margin: 0;
+		width: 100%;
+		height: auto;
+
 	}
 
 	.offering-desc {
-		margin-top: 5.7em;
+		align-self: center;
+		padding: 3em;			
 	}
 
 	.offerings h2 {
-		display: inline;
-		font-size: 2em;
+		font-size: 1.5em;
+		width: 66%;
 	}
 
 	.offerings p {
 		font-size: .7em;
 		line-height: 1.7em;
-		padding: 1.5em 3em;
 	}
 
-	.offerings 
 
 
 
