@@ -190,29 +190,42 @@ nav {
 
 /* -- offerings -- */
 
+.offerings {
+	display: flex;
+	flex-direction: column;
+}
+
 .offering-nav {
 	background-color: #e74e3e;
 	color: #fff;
 	padding: .6em;
 	border-radius: 5px;
+	/*display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;*/
 }
+
+/*.offerings img, .offerings h2, .offerings h4, .offerings p, .offerings button {
+	flex: 1;
+}*/
 
 .offerings img {
 	margin: 1.5em auto;
 	max-width: 100%;
+	overflow: hidden;
 }
 
 .offerings h2 {
 	font-size: 1.58em;
 	line-height: 1.3em;
+	width: 50%;
+	margin: 0 auto;
 }
 
-.offerings h4 {
+.offerings span {
 	font-weight: 600;
 	font-size: 1.1em;
 	color: #666;
-	padding-left: 1em;
-	padding-right: 1em;
 }
 
 .offerings p {
@@ -343,12 +356,12 @@ nav {
 		font-size: smaller;
 	}
 
-	button {
+	.banner button {
 		font-size: smaller;
 		font-weight: 500;	
 	}
 
-	button {
+	.banner button {
 		margin: .125em .8em;
 	}
 
@@ -365,6 +378,24 @@ nav {
 		font-size: .8em;
 		line-height: 1.2em;
 	}
+
+	.offering-desc {
+		text-align: left;
+	}
+
+	.offerings img {
+		max-width: 50%;
+		float: right;
+		margin: 1.5em 1em;
+	}
+
+	.offerings h2 {
+		margin: .5em 0;
+		font-size: 2.2em;
+	}
+
+	
+
 
 	/* logos */
 	.logo {
