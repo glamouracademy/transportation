@@ -101,7 +101,7 @@ ul { list-style: none; }
 
 /* -- nav -- */
 
-nav {
+header nav {
 	background: #fff;
 	position: fixed;
 	width: 100%;
@@ -196,13 +196,17 @@ nav {
 }
 
 .offering-nav {
-	background-color: #e74e3e;
+	background-color: #000;
 	color: #fff;
 	padding: .6em;
 	border-radius: 5px;
 	/*display: flex;
 	flex-direction: column;
 	flex-wrap: wrap;*/
+}
+
+.offering-nav:hover {
+	background-color: #e74e3e;
 }
 
 /*.offerings img, .offerings h2, .offerings h4, .offerings p, .offerings button {
@@ -226,6 +230,7 @@ nav {
 	font-weight: 600;
 	font-size: 1.1em;
 	color: #666;
+	text-transform: uppercase;
 }
 
 .offerings p {
@@ -240,6 +245,10 @@ nav {
 	border-radius: 5px;
 	margin-bottom: 2em;
 	box-shadow: 0 1px 1px #666;
+}
+
+.offerings button:hover {
+	background-color: #e74e3e;
 }
 
 
@@ -296,7 +305,7 @@ nav {
 		width: 95%;
 	}
 
-	nav {
+	header nav {
 		display: inline;
 		background: transparent;
 		position: static;
@@ -390,7 +399,7 @@ nav {
 	}
 
 	.offerings h2 {
-		margin: .5em 0;
+		margin: .65em 0;
 		font-size: 2.2em;
 	}
 
