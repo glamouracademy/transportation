@@ -193,6 +193,8 @@ header nav {
 .offerings {
 	display: flex;
 	flex-direction: column;
+	width: 90%;
+	margin: 0 auto;
 }
 
 .offering-nav {
@@ -388,6 +390,20 @@ header nav {
 		line-height: 1.2em;
 	}
 
+	.offerings {
+		width: 100%;
+	}
+
+	.offerings nav {
+		border-radius: 0;
+		padding: 1.5em;
+	}
+
+	.offerings .content {
+		width: 95%;
+		margin: 0 auto;
+	}
+
 	.offering-desc {
 		text-align: left;
 	}
@@ -395,7 +411,7 @@ header nav {
 	.offerings img {
 		max-width: 50%;
 		float: right;
-		margin: 1.5em 1em;
+		margin: 1.5em 0 1.5em .7em;
 	}
 
 	.offerings h2 {
@@ -404,7 +420,6 @@ header nav {
 	}
 
 	
-
 
 	/* logos */
 	.logo {
@@ -476,5 +491,39 @@ header nav {
 		font-size: .8em;
 		line-height: 1.2em;
 	}
+
+	.offerings nav {
+		padding: 1em;
+	}
+
+	.offerings .content {
+		margin: 0;
+	}
+
+	.offerings img {
+		margin: 0 6em 0 0;
+		float: left;
+	}
+
+	.offering-desc {
+		margin-top: 5.7em;
+	}
+
+	.offerings h2 {
+		display: inline;
+		font-size: 2em;
+	}
+
+	.offerings p {
+		font-size: .7em;
+		line-height: 1.7em;
+		padding: 1.5em 3em;
+	}
+
+	.offerings 
+
+
+
+
 
 }
