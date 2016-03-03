@@ -562,7 +562,7 @@ header nav {
 	.offerings .content {
 		width: 80%;
 		display: flex;
-		height: 500px;		
+		align-items: center;		
 	}
 
 	.offerings img, .offering-desc {
@@ -577,7 +577,7 @@ header nav {
 
 	.offering-desc {
 		align-self: center;
-		padding: 3em;			
+		padding-left: 3em;			
 	}
 
 	.offerings h2 {
