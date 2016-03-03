@@ -256,66 +256,47 @@ header nav {
 
 /* -- stats -- */
 
-
-
 .stats {
   z-index: 100;
   position: absolute;
   text-align: center;
-  left: 32%;
+  left: 30%;
 }
 
 .stats h1 {
 	color: #e74e3e;
+	letter-spacing: .1em;
+	padding-top: .8em;
 }
 
 .stats span {
 	color: #fff;
+	padding-bottom: 1em;
 }
 
 .parallax {
 	outline: 1px solid dodgerblue;
-	perspective: 300px;
-  height: 50vh;
-  overflow-x: hidden;
-  overflow-y: auto;
-  background-color: #000;
+	background-color: #000;
+  height: 60vh;
+  width: 100%;
+  overflow: hidden; 
+  position: relative;
 }
 
-.parallax-group {
+.parallax-img {
 	transition: transform 5s;
-  height: 100vh;
+  height: 60vh;
   transform-style: preserve-3d;
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-}
-
-
-.parallax-img-1 {
+  overflow-y: scroll;
 	background: url("../img/parallax01.jpg") no-repeat center;
 	background-size: cover;
-	/*transform: translateZ(0);*/
 	z-index: 2;
 }
-
-.parallax-img-2 {
-	background: url("../img/parallax02.jpg") no-repeat center;
-	background-size: cover;
-	/*transform: translateZ(0) scale(1);*/
-	z-index: 1;
-}
-
-.parallax-img-3 {
-	background: url("../img/parallax03.jpg") no-repeat center;
-	background-size: cover;
-	z-index: 0;	
-}
-
-
-
 
 /* -- containers -- */
 
@@ -482,6 +463,10 @@ header nav {
 		font-size: 2.2em;
 	}
 
+	.stats {
+		left: 38%;
+	}
+
 	
 
 	/* logos */
@@ -588,5 +573,9 @@ header nav {
 	.offerings p {
 		font-size: .7em;
 		line-height: 1.7em;
+	}
+
+	.stats {
+		left: 40%;
 	}
 }
