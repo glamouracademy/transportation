@@ -254,6 +254,68 @@ header nav {
 	background-color: #e74e3e;
 }
 
+/* -- stats -- */
+
+
+
+.stats {
+  z-index: 100;
+  position: absolute;
+  text-align: center;
+  left: 32%;
+}
+
+.stats h1 {
+	color: #e74e3e;
+}
+
+.stats span {
+	color: #fff;
+}
+
+.parallax {
+	outline: 1px solid dodgerblue;
+	perspective: 300px;
+  height: 50vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+  background-color: #000;
+}
+
+.parallax-group {
+	transition: transform 5s;
+  height: 100vh;
+  transform-style: preserve-3d;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+
+.parallax-img-1 {
+	background: url("../img/parallax01.jpg") no-repeat center;
+	background-size: cover;
+	/*transform: translateZ(0);*/
+	z-index: 2;
+}
+
+.parallax-img-2 {
+	background: url("../img/parallax02.jpg") no-repeat center;
+	background-size: cover;
+	/*transform: translateZ(0) scale(1);*/
+	z-index: 1;
+}
+
+.parallax-img-3 {
+	background: url("../img/parallax03.jpg") no-repeat center;
+	background-size: cover;
+	z-index: 0;	
+}
+
+
+
 
 /* -- containers -- */
 
