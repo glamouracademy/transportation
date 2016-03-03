@@ -464,8 +464,33 @@ header nav {
 	}
 
 	.stats {
-		left: 38%;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		left: 0;
 	}
+
+	.stat {
+		flex: 1;
+		padding: 1em 7em;
+	}
+
+	.stat-1 {
+		flex-grow:2;
+		padding: 1em 5em;
+
+	}
+
+	.stat h1, .stat-1 h1 {
+		font-size: 3em;
+		padding-top: .1em;
+	}
+
+	.parallax {
+		height: 38vh;
+	}
+
+
 
 	
 
