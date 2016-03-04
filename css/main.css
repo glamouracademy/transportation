@@ -603,12 +603,15 @@ header nav {
 
 	.stats {
 		flex-wrap: nowrap;
-		justify-content: space-around;
+		left: 15%;
+		width: 70%;
+		height: 20%;
+		align-items: center;
 	}
 
 	.stat h1, .stat-1 h1 {
 		font-size: 2em;
-		padding-top: .1em;
+		/*padding-top: .1em;*/
 	}
 
 	.stat span, .stat-1 span {
@@ -617,7 +620,7 @@ header nav {
 
 	.stat, .stat-1 {
 		flex: 1;
-		padding: 2.5em 3em;
+		padding: 0;
 	}
 
 	.parallax {
