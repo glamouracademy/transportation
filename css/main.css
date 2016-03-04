@@ -271,7 +271,6 @@ header nav {
 }
 
 .parallax {
-	outline: 1px solid dodgerblue;
 	background-color: #000;
   height: 42vh;
   width: 100%;
@@ -291,6 +290,43 @@ header nav {
 	background: url("../img/parallax01.jpg") no-repeat center;
 	background-size: cover;
 	z-index: 2;
+}
+
+/* -- partners -- */
+
+.partners {
+	margin: 3.5em auto 0;
+}
+
+.partners h1 {
+	color: #666;
+}
+
+.partners p {
+	font-size: .9em;
+	color: #666;
+	font-weight: 400;
+	padding: 1em 2em 0;
+	letter-spacing: .05em;
+	margin: .1em;
+}
+
+.partners .line {
+	border-bottom: 2px solid #d3d3d3;
+	width: 82px;
+}
+
+.partners img {
+	box-shadow: 0 2px 5px #d3d3d3;
+	margin-top: 1.5em;
+}
+
+.partner-logos p {
+	color: #e74e3e;
+	letter-spacing: 4px;
+	width: 100%;
+	border-bottom: 2px solid #d3d3d3;
+	padding-bottom: 4em;
 }
 
 /* -- containers -- */
@@ -606,7 +642,6 @@ header nav {
 
 	.stat h1, .stat-1 h1 {
 		font-size: 2em;
-		/*padding-top: .1em;*/
 	}
 
 	.stat span, .stat-1 span {
