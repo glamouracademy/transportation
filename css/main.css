@@ -135,7 +135,6 @@ header nav {
 	padding-top: 61px;
 	height: 39em;
 	-webkit-clip-path: polygon(100% 0, 100% 93%, 50% 100%, 0 93%, 0 0); 
-	clip-path: polygon(100% 0, 100% 93%, 50% 100%, 0 93%, 0 0); 
 }
 
 .banner-content {
@@ -274,7 +273,7 @@ header nav {
 .parallax {
 	outline: 1px solid dodgerblue;
 	background-color: #000;
-  height: 65vh;
+  height: 54vh;
   width: 100%;
   overflow: hidden; 
   position: relative;
@@ -282,7 +281,7 @@ header nav {
 
 .parallax-img {
 	transition: transform 5s;
-  height: 65vh;
+  height: 54vh;
   transform-style: preserve-3d;
   position: absolute;
   top: 0;
@@ -484,7 +483,7 @@ header nav {
 	}
 
 	.parallax {
-		height: 42vh;
+		height: 35vh;
 	}
 
 
