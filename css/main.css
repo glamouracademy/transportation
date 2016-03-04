@@ -321,12 +321,15 @@ header nav {
 	margin-top: 1.5em;
 }
 
-.partner-logos p {
+.partners h5 {
 	color: #e74e3e;
-	letter-spacing: 4px;
 	width: 100%;
+	font-size: .9em;
+	letter-spacing: .2em;
+	font-weight: 400;
 	border-bottom: 2px solid #d3d3d3;
 	padding-bottom: 4em;
+	text-transform: uppercase;
 }
 
 /* -- containers -- */
@@ -521,6 +524,29 @@ header nav {
 	.parallax {
 		height: 30vh;
 	}
+
+
+	.partners h1, .partners p {
+		width: 88%;
+		margin: .5em auto;
+	}
+
+	.partners h1 {
+		letter-spacing: .01em;
+	}
+
+	.partner-logos {
+		width: 80%;
+		margin: 0 auto;
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: space-between;
+	}
+
+
+
+
 
 
 
