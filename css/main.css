@@ -254,10 +254,10 @@ header nav {
   text-align: center;
   left: 25%;
   width: 50%;
-  line-height: 1.2em;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  margin-top: 8%;
 }
 
 .stats h1 {
@@ -274,7 +274,7 @@ header nav {
 .parallax {
 	outline: 1px solid dodgerblue;
 	background-color: #000;
-  height: 60vh;
+  height: 65vh;
   width: 100%;
   overflow: hidden; 
   position: relative;
@@ -282,7 +282,7 @@ header nav {
 
 .parallax-img {
 	transition: transform 5s;
-  height: 60vh;
+  height: 65vh;
   transform-style: preserve-3d;
   position: absolute;
   top: 0;
@@ -463,6 +463,8 @@ header nav {
 		width: 100%;
 		left: 0;
 		flex-direction: row;
+		margin-top: 0;
+		line-height: 1.2em;
 	}
 
 	.stat {
