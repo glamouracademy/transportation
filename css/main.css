@@ -202,19 +202,12 @@ header nav {
 	color: #999;
 	padding: .6em;
 	border-radius: 5px;
-	/*display: flex;
-	flex-direction: column;
-	flex-wrap: wrap;*/
 }
 
 .offering-nav:hover {
 	background-color: #e74e3e;
 	color: #fff;
 }
-
-/*.offerings img, .offerings h2, .offerings h4, .offerings p, .offerings button {
-	flex: 1;
-}*/
 
 .offerings img {
 	margin: 1.5em auto;
