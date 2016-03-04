@@ -273,7 +273,7 @@ header nav {
 .parallax {
 	outline: 1px solid dodgerblue;
 	background-color: #000;
-  height: 54vh;
+  height: 42vh;
   width: 100%;
   overflow: hidden; 
   position: relative;
@@ -281,7 +281,7 @@ header nav {
 
 .parallax-img {
 	transition: transform 5s;
-  height: 54vh;
+  height: 42vh;
   transform-style: preserve-3d;
   position: absolute;
   top: 0;
@@ -483,7 +483,7 @@ header nav {
 	}
 
 	.parallax {
-		height: 35vh;
+		height: 30vh;
 	}
 
 
@@ -619,6 +619,6 @@ header nav {
 	}
 
 	.parallax {
-		height: 24vh;
+		height: 20vh;
 	}
 }
