@@ -261,6 +261,7 @@ header nav {
   position: absolute;
   text-align: center;
   left: 30%;
+  line-height: 1.2em;
 }
 
 .stats h1 {
@@ -292,7 +293,6 @@ header nav {
   left: 0;
   right: 0;
   bottom: 0;
-  overflow-y: scroll;
 	background: url("../img/parallax01.jpg") no-repeat center;
 	background-size: cover;
 	z-index: 2;
@@ -467,6 +467,7 @@ header nav {
 		display: flex;
 		flex-wrap: wrap;
 		justify-content: center;
+		width: 100%;
 		left: 0;
 	}
 
@@ -487,7 +488,7 @@ header nav {
 	}
 
 	.parallax {
-		height: 38vh;
+		height: 42vh;
 	}
 
 
@@ -601,6 +602,25 @@ header nav {
 	}
 
 	.stats {
-		left: 40%;
+		flex-wrap: nowrap;
+		justify-content: space-around;
+	}
+
+	.stat h1, .stat-1 h1 {
+		font-size: 2em;
+		padding-top: .1em;
+	}
+
+	.stat span, .stat-1 span {
+		font-size: 0.7em;
+	}
+
+	.stat, .stat-1 {
+		flex: 1;
+		padding: 2.5em 3em;
+	}
+
+	.parallax {
+		height: 24vh;
 	}
 }
