@@ -248,31 +248,6 @@ header nav {
 
 /* -- stats -- */
 
-/*.stats {
-		display: flex;
-		flex-wrap: wrap;
-		justify-content: center;
-		width: 100%;
-		left: 0;
-	}
-
-	.stat {
-		flex: 1;
-		padding: 1em 7em;
-	}
-
-	.stat-1 {
-		flex-grow:2;
-		padding: 1em 5em;
-
-	}
-
-	.stat h1, .stat-1 h1 {
-		font-size: 3em;
-		padding-top: .1em;
-	}
-----/*/
-
 .stats {
   z-index: 100;
   position: absolute;
@@ -485,11 +460,9 @@ header nav {
 	}
 
 	.stats {
-		display: flex;
-		flex-wrap: wrap;
-		justify-content: center;
 		width: 100%;
 		left: 0;
+		flex-direction: row;
 	}
 
 	.stat {
