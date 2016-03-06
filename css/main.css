@@ -296,6 +296,7 @@ header nav {
 
 .partners {
 	margin: 3.5em auto 0;
+	border-bottom: 2px solid #d3d3d3;
 }
 
 .partners h1 {
@@ -321,16 +322,16 @@ header nav {
 	margin-top: 1.5em;
 }
 
-.partners h5 {
+.partners p.partners-more {
 	color: #e74e3e;
 	width: 100%;
 	font-size: .9em;
 	letter-spacing: .2em;
 	font-weight: 400;
-	border-bottom: 2px solid #d3d3d3;
 	padding-bottom: 4em;
 	text-transform: uppercase;
 }
+
 
 /* -- containers -- */
 
@@ -544,14 +545,6 @@ header nav {
 		justify-content: space-between;
 	}
 
-
-
-
-
-
-
-	
-
 	/* logos */
 	.logo {
 		position: static;
@@ -682,4 +675,13 @@ header nav {
 	.parallax {
 		height: 20vh;
 	}
+
+	/*.partner-logos {
+		flex-wrap: nowrap;
+	}
+
+	.partner-logos img {
+		margin-left: 1em;
+		margin-right: 1em;
+	}*/
 }
