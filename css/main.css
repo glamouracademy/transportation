@@ -259,9 +259,10 @@ header nav {
   margin-top: 8%;
 }
 
-.stats h1 {
+.stats h2 {
 	color: #e74e3e;
 	letter-spacing: .1em;
+	font-size: 2em;
 	padding-top: .3em;
 }
 
@@ -299,7 +300,7 @@ header nav {
 	border-bottom: 2px solid #d3d3d3;
 }
 
-.partners h1 {
+.partners h2 {
 	color: #666;
 }
 
@@ -517,7 +518,7 @@ header nav {
 
 	}
 
-	.stat h1, .stat-1 h1 {
+	.stat h2, .stat-1 h2 {
 		font-size: 3em;
 		padding-top: .1em;
 	}
@@ -532,7 +533,7 @@ header nav {
 		margin: .5em auto;
 	}
 
-	.partners h1 {
+	.partners h2 {
 		letter-spacing: .01em;
 	}
 
@@ -659,7 +660,7 @@ header nav {
 		align-items: center;
 	}
 
-	.stat h1, .stat-1 h1 {
+	.stat h2, .stat-1 h2 {
 		font-size: 2em;
 	}
 
