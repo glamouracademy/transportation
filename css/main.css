@@ -425,10 +425,53 @@ p.partners-more:hover {
 	text-transform: uppercase;
 }
 
+.contact-us .line {
+	border-bottom: 2px solid #d3d3d3;
+	width: 82px;
+	padding: 0;
+}
+
+.contact-us p {
+	color: #000;
+	font-size: .9em;
+}
+
 .contact-info {
 	width: 85%;
 	margin: 0 auto;
-	background: #fff;
+	background-color: #fff;
+	box-shadow: 0 2px 5px #d3d3d3;
+	padding: .5em;
+	margin-bottom: 2em;
+}
+
+.contact-info h4 {
+	color: #e74e3e;
+	font-weight: 600;
+	font-size: 1.05em;
+	letter-spacing: .05em;
+	text-transform: uppercase;
+}
+
+.contact-info p {
+	color: #aaa;
+	font-size: 1em;
+	padding: 0;
+}
+
+.contact-form {
+	width: 98%;
+	background-color: #fff;
+	box-shadow: 0 2px 5px #d3d3d3;
+	margin: 0 auto;
+	text-align: left;
+	padding: 1em;
+}
+
+.contact-form button {
+	background-color: #e74e3e;
+	border-radius: 5px;
+	border: none;
 	box-shadow: 0 2px 5px #d3d3d3;
 }
 
