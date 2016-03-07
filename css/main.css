@@ -404,6 +404,10 @@ p.partners-more:hover {
 	border:none;
 }
 
+.blog button:hover {
+	color: black;
+}
+
 
 /* -- containers -- */
 
