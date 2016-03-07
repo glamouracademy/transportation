@@ -177,6 +177,10 @@ header nav {
 	text-transform: uppercase;
 }
 
+.value-title:hover {
+	color: #e74e3e;
+}
+
 .value .line {
 	border-top: 1px solid rgba(191,191,191,0.2);
 	width: 82px;
