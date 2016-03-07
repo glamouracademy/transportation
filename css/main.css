@@ -349,7 +349,6 @@ p.partners-more:hover {
 	margin: 2em auto;
 	display: flex;
 	flex-direction: column;
-	align-items: center;
 }
 
 .blogs .line {
@@ -623,7 +622,6 @@ p.partners-more:hover {
 		justify-content: space-between;
 	}
 
-	/* logos */
 	.logo {
 		position: static;
 		display: inline;
@@ -635,10 +633,33 @@ p.partners-more:hover {
 	.small-container {
 		max-width: 78%;
 	}
+
+	.blogs {
+		flex-direction: row;
+		flex-wrap: wrap;
+	}
+
+	.blogs-header {
+		flex-grow: 4;
+	}
+
+	.blog {
+		display: flex;
+		align-items: center;
+	}
+
+	.blog img {
+		width: 50%;
+		padding: 0;
+	}
+
+	.blog-desc {
+		padding: 0 1em;
+	}
 }
 
 
-/* desktop */
+/*-- desktop --*/
 
 @media (min-width: 1025px) {
 
