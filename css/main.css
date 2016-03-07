@@ -273,7 +273,7 @@ header nav {
 
 .parallax {
 	background-color: #000;
-  height: 42vh;
+  height: 34em;
   width: 100%;
   overflow: hidden; 
   position: relative;
@@ -281,14 +281,14 @@ header nav {
 
 .parallax-img {
 	transition: transform 5s;
-  height: 42vh;
+  /*height: 30em;*/
   transform-style: preserve-3d;
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-	background: url("../img/parallax01.jpg") no-repeat center;
+	background: url("../img/parallax01.jpg") no-repeat center center fixed;
 	background-size: cover;
 	z-index: 2;
 }
@@ -513,8 +513,7 @@ header nav {
 	}
 
 	.stat-1 {
-		flex-grow:2;
-		padding: 1em 5em;
+		padding: 1em 4.5em;
 
 	}
 
@@ -524,11 +523,10 @@ header nav {
 	}
 
 	.parallax {
-		height: 30vh;
+		height: 24em;
 	}
 
-
-	.partners h1, .partners p {
+	.partners h2, .partners p {
 		width: 88%;
 		margin: .5em auto;
 	}
@@ -656,7 +654,7 @@ header nav {
 		flex-wrap: nowrap;
 		left: 15%;
 		width: 70%;
-		height: 20%;
+		height: 24%;
 		align-items: center;
 	}
 
@@ -674,7 +672,7 @@ header nav {
 	}
 
 	.parallax {
-		height: 20vh;
+		height: 13em;
 	}
 
 	/*.partner-logos {
