@@ -338,14 +338,16 @@ header nav {
 /*TODO: duplication with partners and offerings*/
 
 .blogs {
-	margin: 3em auto;
+	margin: 2em auto;
 	display: flex;
 	flex-direction: column;
+	align-items: center;
 }
 
 .blogs .line {
 	border-bottom: 2px solid #d3d3d3;
 	width: 82px;
+	padding: 0;
 }
 
 .blogs h2.title{
@@ -354,13 +356,23 @@ header nav {
 	text-transform: uppercase;
 }
 
-.blogs p {
+.blogs p.blog-tag {
 	font-size: .9em;
 	color: #666;
 	font-weight: 400;
-	padding: 1em 2em 0;
+	padding: .75em 0;
 	letter-spacing: .05em;
-	margin: .1em;
+}
+
+.blog-desc {
+	width: 93%;
+	margin: 0 auto;
+}
+
+.blog-desc p {
+	color: rgba(255, 255, 255, 0.7);
+	font-weight: 400;
+	letter-spacing: 0.015em;
 }
 
 .blog-desc h3 {
@@ -374,9 +386,18 @@ header nav {
 	background-color: #e74e3e;
 }
 
+.blog:nth-child(5) {
+	padding-bottom: 2em;
+}
+
 .blog img {
 	width: 70%;
-	margin-top: 3.5em;
+	padding-top: 3em;
+}
+
+.blog button {
+	background-color: #e74e3e;
+	border:none;
 }
 
 
