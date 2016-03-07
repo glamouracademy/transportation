@@ -666,9 +666,6 @@ p.partners-more:hover {
 		-webkit-clip-path: polygon(100% 0%, 0% 0%, 0% 45%, 5% 50%, 0% 55%, 0% 100%, 100% 100%);
 	}
 
-	.blog .blog-container:nth-child(5) {
-		padding-bottom: 0;
-	}
 }
 
 
@@ -767,7 +764,7 @@ p.partners-more:hover {
 		flex-wrap: nowrap;
 		left: 15%;
 		width: 70%;
-		height: 24%;
+		height: 0%;
 		align-items: center;
 	}
 
@@ -831,7 +828,7 @@ p.partners-more:hover {
 	}
 
 	.blog-desc p {
-		font-size: 0.7em;
+		font-size: 0.6em;
 		line-height: 1.2em;
 	}
 
@@ -849,8 +846,8 @@ p.partners-more:hover {
 		-webkit-clip-path: polygon(100% 0%, 0% 0%, 0% 45%, 5% 50%, 0% 55%, 0% 100%, 100% 100%);
 	}
 
-	.blog .blog-container:nth-child(5) {
-		padding-bottom: 0;
+	.blog-container:nth-child(5) {
+		margin-top: -2px;
 	}
 
 }
