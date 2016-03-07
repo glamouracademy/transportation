@@ -656,6 +656,16 @@ p.partners-more:hover {
 	.blog-desc {
 		padding: 0 1em;
 	}
+
+	.blog:nth-child(3) img, .blog:nth-child(5) img  {
+		order: 2;
+	}
+
+	.blogs .blog:nth-child(5) {
+		padding-bottom: 0;
+	}
+
+
 }
 
 
