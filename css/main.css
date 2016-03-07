@@ -411,6 +411,26 @@ p.partners-more:hover {
 	color: black;
 }
 
+/* -- contact us -- */
+
+.contact-us {
+	width:90%;
+	margin: 0 auto;
+}
+
+.contact-us h2{
+	color: #666;
+	font-size: 2em;
+	text-transform: uppercase;
+}
+
+.contact-info {
+	width: 85%;
+	margin: 0 auto;
+	background: #fff;
+	box-shadow: 0 2px 5px #d3d3d3;
+}
+
 
 /* -- containers -- */
 
