@@ -681,12 +681,15 @@ header nav {
 		letter-spacing: .1em;
 	}
 
-	/*.partner-logos {
-		flex-wrap: nowrap;
+	.partners p {
+		font-size: .7em;
+	}
+
+	.partner-logos {
+		align-items: center;
 	}
 
 	.partner-logos img {
-		margin-left: 1em;
-		margin-right: 1em;
-	}*/
+		width: 22%;
+	}
 }
