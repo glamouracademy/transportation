@@ -466,6 +466,7 @@ p.partners-more:hover {
 	margin: 0 auto;
 	text-align: left;
 	padding: 1em;
+	margin-bottom: 2em;
 }
 
 .contact-form button {
@@ -509,6 +510,22 @@ p.partners-more:hover {
 	display: inline;
 	margin-right: .25em;
 }
+
+/* -- footer -- */
+
+footer {
+	background-color: #2D2D2B;
+	text-align: center;
+	padding: 2em;
+}
+
+footer p {
+	color: #999;
+	font-size: .8em;
+	line-height: 1.1em;
+}
+
+
 
 /* ------------ 
   MEDIA QUERIES 
