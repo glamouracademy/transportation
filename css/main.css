@@ -657,8 +657,13 @@ p.partners-more:hover {
 		padding: 0 1em;
 	}
 
+	.blog:nth-child(2) img, .blog:nth-child(4) img {
+		-webkit-clip-path: polygon(100% 0%, 100% 45%, 95% 50%, 100% 55%, 100% 100%, 0% 100%, 0% 0%);
+	}
+
 	.blog:nth-child(3) img, .blog:nth-child(5) img  {
 		order: 2;
+		-webkit-clip-path: polygon(100% 0%, 0% 0%, 0% 45%, 5% 50%, 0% 55%, 0% 100%, 100% 100%);
 	}
 
 	.blogs .blog:nth-child(5) {
