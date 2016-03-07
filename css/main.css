@@ -302,6 +302,7 @@ header nav {
 
 .partners h2 {
 	color: #666;
+	font-size: 2em;
 }
 
 .partners p {
@@ -673,6 +674,11 @@ header nav {
 
 	.parallax {
 		height: 13em;
+	}
+
+	.partners h2 {
+		font-size: 1.5em;
+		letter-spacing: .1em;
 	}
 
 	/*.partner-logos {
