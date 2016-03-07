@@ -334,6 +334,10 @@ header nav {
 	text-transform: uppercase;
 }
 
+p.partners-more:hover {
+	color: black;
+}
+
 /* -- blog -- */
 /*TODO: duplication with partners and offerings*/
 
