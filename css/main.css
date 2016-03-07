@@ -764,7 +764,7 @@ p.partners-more:hover {
 		flex-wrap: nowrap;
 		left: 15%;
 		width: 70%;
-		height: 0%;
+		height: 12em;
 		align-items: center;
 	}
 
