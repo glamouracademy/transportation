@@ -491,7 +491,7 @@ p.partners-more:hover {
 }
 
 .contact-form button:hover {
-	background-color: #eb7164;
+	opacity: .75;
 }
 
 .contact-us textarea, .contact-us input {
