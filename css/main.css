@@ -390,12 +390,12 @@ p.partners-more:hover {
 	line-height: 1.15em;
 }
 
-.blog {
+.blog-container {
 	background-color: #e74e3e;
 }
 
-.blog:nth-child(5) {
-	padding-bottom: 2em;
+.blog-container:nth-last-of-type(1) {
+	padding-bottom: 4em;
 }
 
 .blog img {
@@ -779,6 +779,10 @@ footer p {
 		-webkit-clip-path: polygon(100% 0%, 0% 0%, 0% 45%, 5% 50%, 0% 55%, 0% 100%, 100% 100%);
 	}
 
+	.blog-container:nth-last-of-type(1) {
+	padding-bottom: 0;
+}
+
 	.contact-us {
 		width: 77%;
 	}
@@ -969,10 +973,6 @@ footer p {
 	.blog-container:nth-child(4) img, .blog-container:nth-child(5) img  {
 		order: 2;
 		-webkit-clip-path: polygon(100% 0%, 0% 0%, 0% 45%, 5% 50%, 0% 55%, 0% 100%, 100% 100%);
-	}
-
-	.blog-container:nth-child(5) {
-		margin-top: -2px;
 	}
 
 	.contact-us {
