@@ -233,10 +233,13 @@
 			<p class="contact-details">mail@demolink.org</p>
 		</div>
 		
-		<div class="contact-form">
-			<p>placeholder</p>
-			<button>Send</button>
-		</div>
+		<form class="contact-form" action="index.html" method="post">
+			<input type="text" id="name" name="contact_name" placeholder="Name">
+  		<input type="email" id="email" name="contact_email" placeholder="Email">
+  		<textarea id="message" name="contact_message" placeholder="Message"></textarea>
+ 
+			<button type="submit">Send</button>
+		</form>
 
 	</section>
 
