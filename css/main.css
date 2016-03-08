@@ -766,6 +766,18 @@ footer p {
 		-webkit-clip-path: polygon(100% 0%, 0% 0%, 0% 45%, 5% 50%, 0% 55%, 0% 100%, 100% 100%);
 	}
 
+	.contact-us {
+		width: 77%;
+	}
+
+	.contact-info {
+		width: 60%;
+	}
+
+	.contact-form {
+		width: 80%;
+	}
+
 }
 
 
