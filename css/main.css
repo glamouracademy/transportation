@@ -459,8 +459,16 @@ p.partners-more:hover {
 	padding: 0;
 }
 
-.contact-info p.phone {
+.contact-info a {
 	line-height: .5em;
+	color: #aaa;
+	font-size: 1em;
+	padding: 0;
+	text-decoration: none;
+}
+
+.contact-info a:hover {
+	color: #e74e3e;
 }
 
 .contact-form {
@@ -984,7 +992,7 @@ footer p {
 		margin-bottom: 0;
 	}
 
-	.contact-info p {
+	.contact-info p, .contact-info a {
 		font-size: .8em;
 		width: 55%;
 	}
