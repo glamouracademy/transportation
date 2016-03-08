@@ -770,11 +770,11 @@ footer p {
 		padding: 0 1em;
 	}
 
-	.blog-container:nth-child(2) img, .blog-container:nth-child(4) img {
+	.blog-container:nth-child(even) img {
 		-webkit-clip-path: polygon(100% 0%, 100% 45%, 95% 50%, 100% 55%, 100% 100%, 0% 100%, 0% 0%);
 	}
 
-	.blog-container:nth-child(3) img, .blog-container:nth-child(5) img  {
+	.blog-container:nth-child(odd) img {
 		order: 2;
 		-webkit-clip-path: polygon(100% 0%, 0% 0%, 0% 45%, 5% 50%, 0% 55%, 0% 100%, 100% 100%);
 	}
