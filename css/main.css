@@ -962,5 +962,31 @@ footer p {
 		margin-top: -2px;
 	}
 
->>>>>>> flex_offer
+	.contact-us {
+		width: 60%;
+	}
+
+	.contact-container {
+		display: flex;
+	}
+
+	.contact-info {
+		width: 40%;
+		text-align: left;
+		padding: 1em;
+	}
+
+	.contact-info h4 {
+		font-size: .8em;
+		margin-bottom: 0;
+	}
+
+	.contact-info p {
+		font-size: .8em;
+		width: 55%;
+	}
+
+	.contact-form {
+		width: 55%;
+	}
 }
