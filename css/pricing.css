@@ -22,3 +22,45 @@
 
 /* -- value -- */
 
+.stats {
+	left: 10%;
+	width: 75%;
+}
+
+.stats h2 {
+	color: #fff;
+	letter-spacing: .05em;
+	line-height: 1.25em;
+}
+
+.parallax {
+	height: 25em;
+}
+
+.parallax-img {
+	transition: transform 5s;
+  transform-style: preserve-3d;
+  position: absolute;
+  /*height: 25em;*/
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+	background: url("../img/parallax03.jpg") no-repeat center center fixed;
+	background-size: cover;
+	z-index: 2;
+}
+
+.stats button {
+	background-color: #e74e3e;
+	border: none;
+	border-radius: 5px;
+	box-shadow: 1px 1px 0 #333;
+}
+
+.stats button:hover {
+	opacity: .75;
+}
+
+
+
