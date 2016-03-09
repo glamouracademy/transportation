@@ -531,7 +531,7 @@ p.partners-more:hover {
 .logo {
 	position: absolute;
 	margin: auto;
-	top: 94px; left: 35%;
+	top: 94px; left: 33%;
 	z-index: 1000;
 	letter-spacing: .1em;
 	}
