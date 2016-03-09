@@ -62,5 +62,36 @@
 	opacity: .75;
 }
 
+/* -- price list -- */
+
+.price-list {
+}
+
+.prices {
+	margin: 0 auto;
+	border-collapse: collapse;
+}
+
+table th,
+table td {
+	border: ;
+}
+
+table th,
+table td:not(:first-child) {
+	padding: .5em 1em;
+}
+
+th:first-child, 
+table td[scope="row"] {
+	text-align: left;	
+}
+
+th:first-child,
+td:first-child {
+	padding-left: 3em;
+	padding-right: 4em;
+}
+
 
 
