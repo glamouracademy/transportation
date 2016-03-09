@@ -59,12 +59,19 @@
 }
 
 .stats button:hover {
-	opacity: .75;
+	opacity: .8;
 }
 
 /* -- price list -- */
 
 .price-list {
+	padding: 4em;
+}
+
+.price-list p {
+	padding-top: 1em;
+	padding-bottom: 3em;
+	color: #666;
 }
 
 .prices {
@@ -74,12 +81,12 @@
 
 table th,
 table td {
-	border: ;
+	border: 1px solid #d3d3d3;
 }
 
 table th,
 table td:not(:first-child) {
-	padding: .5em 1em;
+	padding: .8em 2em;
 }
 
 th:first-child, 
@@ -91,6 +98,10 @@ th:first-child,
 td:first-child {
 	padding-left: 3em;
 	padding-right: 4em;
+}
+
+table th {
+	background-color: rgba(231,78,62,0.2);
 }
 
 
