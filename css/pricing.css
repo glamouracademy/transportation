@@ -110,14 +110,13 @@ td:first-child {
 	padding-right: 4em;
 }
 
-td:nth-child(even) {
-	background: #f2f2f2;
-}
+	tr:nth-child(even) {
+		background: #f2f2f2;
+	}
 
-td:nth-child(odd) {
-	background: #fff;
-}
-
+	tr:nth-child(odd) {
+		background: #fff;
+	}
 
 
 
@@ -128,11 +127,9 @@ td:nth-child(odd) {
 /* --- tablet --- */
 
 @media (min-width: 768px) {
-.price-list {
-	padding: 1em;
-	}
-
-
+	.price-list {
+		padding: 1em;
+		}
 
 }
 
@@ -149,7 +146,6 @@ td:nth-child(odd) {
 	margin-left: 5%;
 	margin-right: 5%; 
 }
-
 
 	th:not(:first-child) {
 		visibility: hidden;
@@ -181,7 +177,18 @@ td:nth-child(odd) {
 		content: attr(data-th);
 		flex: 1;
 	}
+	
 
+
+	td:nth-child(even),
+	tr:nth-child(odd) 
+	{
+		background: #f2f2f2;
+	}
+
+	td:nth-child(2n+2) {
+		background: #fff;
+	}
 
 
 }
