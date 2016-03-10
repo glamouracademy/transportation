@@ -141,6 +141,23 @@ td:nth-child(even) {
 /* --- tablet --- */
 
 @media (min-width: 768px) {
+	.banner {
+	height: 0;
+	padding: 4em 0;
+}
+
+header {
+	padding: 4em 0;
+}
+
+.logo {
+	margin-left: 1em;
+}
+
+.main-nav {
+	margin-top: initial;
+}
+
 	.price-list {
 		padding: 3em 1em;
 	}
@@ -211,6 +228,8 @@ td:nth-child(even) {
 /* --- desktop --- */
 
 @media (min-width: 1025px) {
+
+
 
 .prices {
 	width: 80%;
