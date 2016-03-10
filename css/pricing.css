@@ -158,6 +158,11 @@ header {
 	margin-top: initial;
 }
 
+.stats {
+	margin-top: 5em;
+	left: 12%;
+}
+
 	.price-list {
 		padding: 3em 1em;
 	}
