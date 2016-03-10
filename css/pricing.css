@@ -246,6 +246,13 @@ header {
 	width: 63%;
 }
 
+.stats {
+	left: 22%;
+	width: 55%;
+	flex-wrap: wrap;
+	margin-top: 5.5em;
+}
+
 .pricing-content {
 	padding-top: 5em;
 	padding-bottom: 5em;
