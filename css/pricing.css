@@ -141,23 +141,21 @@ td:nth-child(even) {
 
 @media (min-width: 768px) {
 	.price-list {
-		padding: 1em;
+		padding: 3em 1em;
 	}
 
 	.prices {
 		width: 100%;
+		table-layout: fixed;
+	}
+
+	.price-list p {
+	padding-top: 1em;
+	padding-bottom: 3em;
 	}
 
 	th {
 		font-weight: initial;
-	}
-
-	th:first-child {
-		text-transform: uppercase;
-		font-weight: 600;
-		font-size: 1.1em;
-		letter-spacing: .125em;
-		padding: .8em 2.5em;
 	}
 
 	th:not(:first-child) {
@@ -165,9 +163,25 @@ td:nth-child(even) {
 		display: table-cell;
 	}
 
+	th:first-child {
+		text-transform: uppercase;
+		font-weight: 600;
+		font-size: 1.1em;
+		letter-spacing: .125em;
+		padding: .8em 2em;
+		text-align: left;
+		width: 20%;
+	}
+
+	td {
+		text-align: center;
+		padding: 0.8em 2em;
+	}
+
 	td[data-th="country"] {
 		background-color: initial;
 		font-weight: initial;
+		text-align: left;
 	}
 
 	tbody td[data-th$="kg"] {
@@ -191,9 +205,6 @@ td:nth-child(even) {
 		background: transparent;
 	}
 
-	.prices-container {
-
-	}
 
 
 /*
@@ -201,10 +212,7 @@ td:nth-child(even) {
 
 
 
-.price-list p {
-	padding-top: 1em;
-	padding-bottom: 3em;
-}
+
 
 table th,
 table td:not(:first-child) {
@@ -216,14 +224,6 @@ td:first-child {
 	padding-left: 3em;
 	padding-right: 4em;
 }
-
-	tr:nth-child(even) {
-		background: #f2f2f2;
-	}
-
-	tr:nth-child(odd) {
-		background: #fff;
-	}
 
 */
 }
