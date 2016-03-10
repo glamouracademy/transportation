@@ -103,6 +103,7 @@ th:not(:first-child) {
 
 th:first-child {
 	padding: .8em 3em;
+	text-transform: uppercase;
 }
 
 td {
@@ -205,42 +206,15 @@ td:nth-child(even) {
 		background: transparent;
 	}
 
-
-
-/*
-		
-
-
-
-
-
-table th,
-table td:not(:first-child) {
-	padding: .8em 2em;
-}
-
-th:first-child,
-td:first-child {
-	padding-left: 3em;
-	padding-right: 4em;
-}
-
-*/
 }
 
 /* --- desktop --- */
 
 @media (min-width: 1025px) {
 
-
-	
-	
-	/*table td:not(:first-child) {
-		padding: .8em 3
-	}*/
-
-	
-
+.prices {
+	width: 80%;
+}
 
 }
 
