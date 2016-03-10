@@ -1,0 +1,8 @@
+.banner {
+	height: 39em;
+	-webkit-clip-path: none;
+}
+
+.banner h1 {
+	color: #e74e3e;
+}
