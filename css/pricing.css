@@ -242,6 +242,9 @@ header {
 	margin-right: 10%;
 }
 
+.lg-container {
+	width: 63%;
+}
 
 .prices {
 	width: 80%;
