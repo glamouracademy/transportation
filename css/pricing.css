@@ -23,7 +23,7 @@
 /* -- value -- */
 
 .stats {
-	left: 10%;
+	left: 15%;
 	width: 75%;
 }
 
@@ -131,6 +131,7 @@ td:first-child {
 		padding: 1em;
 		}
 
+	
 }
 
 /* --- mobile --- */
@@ -139,6 +140,10 @@ td:first-child {
 
 .price-list {
 	padding: 2em 0;
+}
+
+.price-list p {
+	padding-bottom: 0;
 }
 
 .prices {
@@ -178,7 +183,9 @@ td:first-child {
 		flex: 1;
 	}
 	
-
+	table td:not(:first-child) {
+		padding: .8em 3
+	}
 
 	td:nth-child(even),
 	tr:nth-child(odd) 
