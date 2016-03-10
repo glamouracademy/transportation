@@ -234,6 +234,13 @@ header {
 
 @media (min-width: 1025px) {
 
+.logo {
+	margin-left: 3em;
+}
+
+.main-nav {
+	margin-right: 10%;
+}
 
 
 .prices {
