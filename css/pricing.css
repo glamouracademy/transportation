@@ -127,22 +127,33 @@ td:nth-child(odd) {
 
 /* --- tablet --- */
 
-@media (max-width: 769px) {
+@media (min-width: 768px) {
+.price-list {
+	padding: 1em;
+	}
+
 
 
 }
 
 /* --- mobile --- */
 
-@media (max-width: 667px) {
+@media (max-width: 736px) {
 
-	.price-list {
-		padding: .5em;
-	}
+.price-list {
+	padding: 2em 0;
+}
+
+.prices {
+	width: 90%;
+	margin-left: 5%;
+	margin-right: 5%; 
+}
 
 
 	th:not(:first-child) {
 		visibility: hidden;
+		display: none;
 	}
 
 	th:first-child {
@@ -151,7 +162,7 @@ td:nth-child(odd) {
 
 	td {
 		display: block;
-		width: 28em;
+		width: 100%;
 		text-align: left;
 	}
 
