@@ -64,13 +64,19 @@
 
 /* -- price list -- */
 
+.price-list {
+	padding: 2em 0;
+}
+
 .price-list p {
 	color: #666;
+	padding-bottom: 0;
 }
 
 .prices {
 	margin: 0 auto;
 	border-collapse: collapse;
+	width: 90%;
 }
 
 table th{
@@ -90,9 +96,118 @@ table th {
 	background-color: rgba(231,78,62,0.2);
 }
 
-.price-list {
-	padding: 4em;
+th:not(:first-child) {
+	visibility: hidden;
+	display: none;
 }
+
+th:first-child {
+	text-transform: capitalize;
+	padding: .8em 3em;
+}
+
+td {
+		display: block;
+		width: 100%;
+		text-align: left;
+		padding: .8em 3em;
+	}
+
+td[data-th="country"] {
+	background-color: rgba(231,78,62,0.2);
+	font-weight: 600;
+}
+
+td:not([data-th="country"]):before {
+	content: attr(data-th);
+	flex: 1;
+}
+
+tbody td[data-th$="kg"] {
+	display: flex;
+}
+
+td:nth-child(even) {
+	background: #f2f2f2;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ------------- 
+   MEDIA QUERIES 
+-------------- */
+
+/* --- tablet --- */
+
+@media (min-width: 768px) {
+	.price-list {
+		padding: 1em;
+	}
+
+	.prices {
+		width: 100%;
+	}
+
+	th:not(:first-child) {
+		visibility: visible;
+		display: table-cell;
+	}
+
+	td[data-th="country"] {
+		background-color: #fff;
+		font-weight: initial;
+	}
+
+	tbody td[data-th$="kg"] {
+		display: table-cell;
+	}
+
+	tbody td[data-th$="kg"]:before {
+		content: none;
+	}
+
+	
+
+	.prices-container {
+
+	}
+
+/*td:not([data-th="country"]):before {
+	content: attr(data-th);
+	flex: 1;
+}
+
+tbody td[data-th$="kg"] {
+	display: flex;
+}*/
+
+
+
+
+
+
+/*
+		td:nth-child(even),
+	tr:nth-child(odd) 
+	{
+		background: #f2f2f2;
+	}
+
+	td:nth-child(2n+2) {
+		background: #fff;
+	}
+
+
 
 .price-list p {
 	padding-top: 1em;
@@ -118,84 +233,21 @@ td:first-child {
 		background: #fff;
 	}
 
+*/
+}
 
+/* --- desktop --- */
 
-/* ------------- 
-   MEDIA QUERIES 
--------------- */
+@media (min-width: 1025px) {
 
-/* --- tablet --- */
-
-@media (min-width: 768px) {
-	.price-list {
-		padding: 1em;
-		}
 
 	
-}
-
-/* --- mobile --- */
-
-@media (max-width: 736px) {
-
-.price-list {
-	padding: 2em 0;
-}
-
-.price-list p {
-	padding-bottom: 0;
-}
-
-.prices {
-	width: 90%;
-	margin-left: 5%;
-	margin-right: 5%; 
-}
-
-	th:not(:first-child) {
-		visibility: hidden;
-		display: none;
-	}
-
-	th:first-child {
-		text-transform: capitalize;
-	}
-
-	td {
-		display: block;
-		width: 100%;
-		text-align: left;
-	}
-
-	td[data-th="country"] {
-		background-color: rgba(231,78,62,0.2);
-		font-weight: 600;
-		padding: .8em 3em;
-	}
-
-	tbody td[data-th$="kg"] {
-		display: flex;
-
-	}
-
-	td:not([data-th="country"]):before {
-		content: attr(data-th);
-		flex: 1;
-	}
 	
-	table td:not(:first-child) {
+	/*table td:not(:first-child) {
 		padding: .8em 3
-	}
+	}*/
 
-	td:nth-child(even),
-	tr:nth-child(odd) 
-	{
-		background: #f2f2f2;
-	}
-
-	td:nth-child(2n+2) {
-		background: #fff;
-	}
+	
 
 
 }
