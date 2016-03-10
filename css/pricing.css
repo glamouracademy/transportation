@@ -64,13 +64,7 @@
 
 /* -- price list -- */
 
-.price-list {
-	padding: 4em;
-}
-
 .price-list p {
-	padding-top: 1em;
-	padding-bottom: 3em;
 	color: #666;
 }
 
@@ -79,19 +73,35 @@
 	border-collapse: collapse;
 }
 
-table th,
-table td {
+table th{
 	border: 1px solid #d3d3d3;
 }
 
-table th,
-table td:not(:first-child) {
-	padding: .8em 2em;
+table td {
+	border: .01em solid #d3d3d3;
 }
 
 th:first-child, 
 table td[scope="row"] {
 	text-align: left;	
+}
+
+table th {
+	background-color: rgba(231,78,62,0.2);
+}
+
+.price-list {
+	padding: 4em;
+}
+
+.price-list p {
+	padding-top: 1em;
+	padding-bottom: 3em;
+}
+
+table th,
+table td:not(:first-child) {
+	padding: .8em 2em;
 }
 
 th:first-child,
@@ -100,9 +110,69 @@ td:first-child {
 	padding-right: 4em;
 }
 
-table th {
-	background-color: rgba(231,78,62,0.2);
+td:nth-child(even) {
+	background: #f2f2f2;
 }
 
+td:nth-child(odd) {
+	background: #fff;
+}
+
+
+
+
+/* ------------- 
+   MEDIA QUERIES 
+-------------- */
+
+/* --- tablet --- */
+
+@media (max-width: 769px) {
+
+
+}
+
+/* --- mobile --- */
+
+@media (max-width: 667px) {
+
+	.price-list {
+		padding: .5em;
+	}
+
+
+	th:not(:first-child) {
+		visibility: hidden;
+	}
+
+	th:first-child {
+		text-transform: capitalize;
+	}
+
+	td {
+		display: block;
+		width: 28em;
+		text-align: left;
+	}
+
+	td[data-th="country"] {
+		background-color: rgba(231,78,62,0.2);
+		font-weight: 600;
+		padding: .8em 3em;
+	}
+
+	tbody td[data-th$="kg"] {
+		display: flex;
+
+	}
+
+	td:not([data-th="country"]):before {
+		content: attr(data-th);
+		flex: 1;
+	}
+
+
+
+}
 
 
