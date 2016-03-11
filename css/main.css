@@ -114,6 +114,7 @@ header nav {
 	visibility: hidden;
 }
 
+
 .mobile-menu {
 	color: #000;
 	display: inline;
@@ -609,7 +610,16 @@ footer p {
 	.main-nav li:hover {
 	color: #e74e3e;
 	border-bottom: 3px solid #e74e3e;
-}
+	}
+
+	.main-nav a {
+		text-decoration: none;
+		color: #fff;
+	}
+
+	.main-nav a:hover {
+		color: #e74e3e;
+	}
 
 	.banner {
 		-webkit-clip-path: polygon(100% 90%, 51% 100%, 49% 100%, 0% 90%, 0% 0%, 100% 0%);
