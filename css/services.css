@@ -100,6 +100,23 @@
 
 @media (min-width: 768px) {
 
+	.banner-content {
+		padding: 0;
+		width: 100%;
+	}
+	
+	.banner-content h1:last-child {
+		display: none;
+		visibility: hidden;
+	}
+
+	.banner-content h1::after {
+		content: " +1 800 889 9898";
+
+		&::hover {
+			color: #fff;
+		}
+	}
 	.service-container {
 		display: flex;
 		flex-wrap: wrap;
@@ -115,6 +132,29 @@
 
 @media (min-width: 1025px) {
 	
+	header {
+		padding: 4em 0;
+	}
+
+	.main-nav {
+		margin-right: 10%;
+		margin-top: initial;
+	}
+
+	.logo {
+		margin-left: 2.5em;
+	}
+
+	.banner {
+		padding: 8em 0;
+	}
+
+	.top-banner {
+		height: 8.5em;
+	}
+
+	
+
 	.service h4 {
 		margin-bottom: .5em;
 	}

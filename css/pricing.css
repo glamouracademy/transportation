@@ -141,13 +141,13 @@ td:nth-child(even) {
 /* --- tablet --- */
 
 @media (min-width: 768px) {
-	.banner {
-	height: 0;
+.banner {
+	height: 10em;
 	padding: 4em 0;
 }
 
 header {
-	padding: 4em 0;
+	padding: 1.5em 0;
 }
 
 .logo {
@@ -243,12 +243,17 @@ header {
 
 @media (min-width: 1025px) {
 
+header {
+	padding: 4em 0;
+}
+
 .logo {
 	margin-left: 3em;
 }
 
 .main-nav {
 	margin-right: 10%;
+	margin-top: initial;
 }
 
 .lg-container {
