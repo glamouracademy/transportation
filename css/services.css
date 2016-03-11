@@ -100,9 +100,17 @@
 
 @media (min-width: 768px) {
 
+	.banner {
+		height: 24em;
+	}
+
 	.banner-content {
 		padding: 0;
 		width: 100%;
+	}
+
+	.banner-content h1 {
+		letter-spacing: .08em;
 	}
 
 	.banner-content h1:last-child {
