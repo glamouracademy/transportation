@@ -118,7 +118,7 @@ td[data-th="country"] {
 	font-weight: 600;
 }
 
-td:not([data-th="country"]):before {
+td:not([data-th="country"])::before {
 	content: attr(data-th);
 	flex: 1;
 }
