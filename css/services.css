@@ -125,6 +125,14 @@
 		padding-bottom: 1em;
 	}
 
+	.blogs-header .line {
+		margin-top: 1.5em;
+	}
+
+	.services .line {
+		margin-top: 1.5em;
+	}
+
 	.title,
 	.tel {
 		display: inline;
