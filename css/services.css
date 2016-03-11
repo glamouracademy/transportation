@@ -43,7 +43,11 @@ section h2 {
 /* -- services -- */
 
 .services {
-	margin-top: 5em;
+	border-bottom: 2px solid #d3d3d3;
+}
+
+.lg-container {
+	margin: 5em 1em 3.5em;
 }
 
 .services .line {
