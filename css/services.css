@@ -1,7 +1,4 @@
 /* -- general -- */
-section h2 {
-	text-transform: uppercase;
-}
 
 .line {
 	border-bottom: 2px solid #d3d3d3;
@@ -66,15 +63,29 @@ section h2 {
 
 /* -- branches -- */
 
-.branches {
-	margin: 5em 1em 3.5em;
+.blogs-header {
+	margin-top: 2.5em;
+	margin-bottom: 3.5em;
 }
 
-.branches p {
+.blogs-header .line {
+	margin-bottom: 1.5em;
+}
+
+.blogs-header p {
 	font-weight: 300;
 	font-size: .95em;
 	letter-spacing: 0.01em;
+	margin-top: 0;
 }
+
+/* -- offerings -- */
+.offerings h2 {
+	width: 90%;
+}
+
+
+
 
 /* ------------
  MEDIA QUERIES
