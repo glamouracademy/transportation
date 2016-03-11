@@ -11,14 +11,27 @@
 .banner {
 	background: url('../img/ship-motion.jpg') no-repeat center center fixed;
 	background-size: cover;
+	height: 29em;
 	-webkit-clip-path: none;
 }
 
 .banner h1 {
 	color: #e74e3e;
+	letter-spacing: .125em;
 }
 
 .banner i {
 	color: #fff;
+}
+
+.banner-content {
+	padding-top: 3em;
+}
+
+.banner p {
+	color: #fff;
+	font-weight: 300;
+	font-size: .95em;
+	letter-spacing: 0.01em;
 }
 
