@@ -146,18 +146,6 @@ td:nth-child(even) {
 	padding: 4em 0;
 }
 
-header {
-	padding: 1.5em 0;
-}
-
-.logo {
-	margin-left: 1em;
-}
-
-.main-nav {
-	margin-top: initial;
-}
-
 .lg-container {
 	width: 80%;
 }

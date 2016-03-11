@@ -576,7 +576,7 @@ footer p {
 	header {
 		width: 100%;
 		display: inline;
-		padding: 1.5em 0;
+		padding: 4em 0;
 		z-index: 1000;
 		position: absolute;
 	}
@@ -606,6 +606,7 @@ footer p {
 		background: rgba(0,0,0,0);
 		margin-right: 2%;
 		display: inline;
+		margin-top: initial;
 	}
 
 	.main-nav li {
@@ -755,7 +756,7 @@ footer p {
 		display: inline;
 		height: auto;
 		width: 15em;
-		margin-left: 4em;
+		margin-left: 2em;
 	}
 	
 	.small-container {

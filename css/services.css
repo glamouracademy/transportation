@@ -104,7 +104,7 @@
 		padding: 0;
 		width: 100%;
 	}
-	
+
 	.banner-content h1:last-child {
 		display: none;
 		visibility: hidden;
@@ -132,9 +132,6 @@
 
 @media (min-width: 1025px) {
 	
-	header {
-		padding: 4em 0;
-	}
 
 	.main-nav {
 		margin-right: 10%;
