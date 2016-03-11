@@ -67,6 +67,10 @@ p {
 
 * { box-sizing: border-box; }
 
+a {
+	text-decoration: none;
+}
+
 .upcase { text-transform: uppercase; }
 
 .center { text-align: center; }
@@ -543,6 +547,10 @@ p.partners-more:hover {
 	margin-right: .25em;
 }
 
+.logo a {
+	color: #fff;
+}
+
 /* -- footer -- */
 
 footer {
@@ -613,7 +621,6 @@ footer p {
 	}
 
 	.main-nav a {
-		text-decoration: none;
 		color: #fff;
 	}
 
