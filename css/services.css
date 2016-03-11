@@ -113,19 +113,26 @@
 		letter-spacing: .08em;
 	}
 
-	.banner-content h1:last-child {
-		display: none;
-		visibility: hidden;
+	.banner-content h1.tel:hover {
+		color: #fff;
 	}
 
-	.banner-content h1::after {
-		content: " +1 800 889 9898";
-
-		&::hover {
-			color: #fff;
-		}
+	.banner-content i {
+		display: block;
 	}
 
+	.banner-content i {
+		padding-bottom: 1em;
+	}
+
+	.title,
+	.tel {
+		display: inline;
+	}
+
+	.tel {
+		font-size: 3em;
+	}
 
 }
 
