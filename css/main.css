@@ -852,11 +852,14 @@ footer p {
 
 	.med-container {
 		width: 75%;
-		display: flex;
 	}
 
 	.differentiators {
 		flex-direction: row;
+	}
+
+	.differentiators .med-container {
+		display: flex;
 	}
 
 	.value-title {

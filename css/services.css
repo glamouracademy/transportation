@@ -129,4 +129,18 @@
 	.service .line {
 		margin-bottom: 1em;
 	}
+
+	.blogs {
+		margin-bottom: 0;
+	}
+
+	.blog-desc p {
+		line-height: 1.5em;
+	}
+
+	.blog button {
+		padding: 1.5em 0;
+	}
+
+
 }
