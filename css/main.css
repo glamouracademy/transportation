@@ -135,6 +135,7 @@ ul.main-nav {
 	line-height: 4em;
 }
 
+.main-nav li.selected,
 .main-nav li:hover {
 	background-color: #e74e3e;
 	color: #fff;
