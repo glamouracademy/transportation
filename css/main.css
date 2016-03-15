@@ -111,11 +111,33 @@ header nav {
 	position: fixed;
 	width: 100%;
 	z-index: 1000;
+	height: 10.5%;
 }
 
-.main-nav {
-	display: none;
-	visibility: hidden;
+ul.main-nav {	
+	/*box-shadow: 10px 5px 5px #333;*/
+	width: 60%;
+	background-color: #fff;
+	margin: 0;
+	padding:0;
+	text-transform: capitalize;
+	height: 100vh;
+}
+
+.main-nav a {
+	color: black;
+	text-decoration: none;
+}
+
+.main-nav li {
+	padding-left: 10%;
+	font-size: 1em;
+	line-height: 4em;
+}
+
+.main-nav li:hover {
+	background-color: #e74e3e;
+	color: #fff;
 }
 
 
