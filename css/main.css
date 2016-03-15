@@ -581,10 +581,6 @@ footer p {
 		position: absolute;
 	}
 
-	.med-container {
-		width: 95%;
-	}
-
 	header nav {
 		display: inline;
 		background: transparent;
@@ -762,6 +758,10 @@ footer p {
 	
 	.small-container {
 		max-width: 78%;
+	}
+
+		.med-container {
+		width: 95%;
 	}
 
 	.blogs {
