@@ -620,22 +620,26 @@ footer p {
 		visibility: hidden;
 	}
 
-	.main-nav {
+	ul.main-nav {
 		float: right;
 		background: rgba(0,0,0,0);
 		margin-right: 2%;
 		display: inline;
 		margin-top: initial;
+		text-transform: uppercase;
 	}
 
 	.main-nav li {
 		display: inline-block;
 		visibility: visible;
-		margin-left: 15px;
+		padding: 0 3%; 
+		font-size: .75em;
+		color: #fff;
 	}
 
 	.main-nav li.selected,
 	.main-nav li:hover {
+	background-color: transparent;
 	color: #e74e3e;
 	border-bottom: 3px solid #e74e3e;
 	}
@@ -838,9 +842,17 @@ footer p {
 }
 
 
-/*-- desktop --*/
+/* ----- 
+   desktop 
+   -----*/
 
 @media (min-width: 1025px) {
+	
+	ul.main-nav {
+		width: auto;
+		margin-right: 10%;
+		display: inherit;
+	}
 
 	h1 {
 		letter-spacing: 10px;
