@@ -627,6 +627,7 @@ footer p {
 		display: inline;
 		margin-top: initial;
 		text-transform: uppercase;
+		height: initial;
 	}
 
 	.main-nav li {
@@ -852,7 +853,7 @@ footer p {
 		width: auto;
 		margin-right: 13%;
 		display: inherit;
-		height: initial;
+		
 	}
 
 	h1 {
