@@ -850,8 +850,9 @@ footer p {
 	
 	ul.main-nav {
 		width: auto;
-		margin-right: 10%;
+		margin-right: 13%;
 		display: inherit;
+		height: initial;
 	}
 
 	h1 {
