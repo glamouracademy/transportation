@@ -124,10 +124,14 @@ ul.main-nav {
 	height: 100vh;
 }
 
-/*.main-nav a {
+.main-nav {
+	display:none;
+}
+
+.main-nav a {
 	color: black;
 	text-decoration: none;
-}*/
+}
 
 .main-nav li {
 	padding-left: 10%;
