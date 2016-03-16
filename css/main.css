@@ -78,7 +78,7 @@ a {
 button {
 	text-transform: uppercase;
 	color: #fff;
-	padding: 1em 1.6em;
+	padding: 1em 1em;
 }
 
 button:hover {
@@ -686,7 +686,8 @@ footer p {
 
 	.banner button {
 		font-size: smaller;
-		font-weight: 500;	
+		font-weight: 500;
+		padding: 1em 1.6em;	
 	}
 
 	.banner button {
