@@ -150,6 +150,7 @@ ul.main-nav {
 	color: #000;
 	display: inline;
 	margin-left: 1em;
+	cursor: pointer;
 }
 
 .mobile-menu-text {
