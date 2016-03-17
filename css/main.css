@@ -143,10 +143,6 @@ ul.main-nav {
 .main-nav li.selected,
 .main-nav li:hover {
 	background-color: #e74e3e;
-}
-
-.main-nav li.selected a,
-.main-nav li:hover a {
 	color: #fff;
 }
 
