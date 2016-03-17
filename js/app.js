@@ -29,6 +29,14 @@ $('.mobile-menu').click(function() {
 });
 
 
+$('ul.main-nav li').hover(function(){
+	$(this).addClass("hover");
+	$(this).filter("ul:first").css("visibility", "visible");
+}, function(){
+	$(this).removeClass("hover");
+	$(this).filter("ul:first").css("visibility", "hidden");
+});
+
 
 
 

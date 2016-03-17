@@ -654,6 +654,22 @@ footer p {
 		padding-bottom: .5em;
 	}
 
+	/*-- nav dropdown --*/
+	ul.main-nav ul {
+		position: absolute;
+	}
+
+	.submenu {
+		visibility: hidden;
+	}
+
+	ul.main-nav a:hover > ul {
+		visibility: visible;
+	}
+
+
+	/*-- banner --*/
+	
 	.banner {
 		-webkit-clip-path: polygon(100% 90%, 51% 100%, 49% 100%, 0% 90%, 0% 0%, 100% 0%);
 		padding: 5em 0;
