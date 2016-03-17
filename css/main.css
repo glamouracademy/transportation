@@ -159,10 +159,18 @@ ul.main-nav {
 }
 
 .main-nav .submenu {
-	display: none;
+	visibility: hidden;
+	display:none;
 }
 
-/* HERE */
+.fa-chevron-down {
+	border: 1.5px solid #333;
+	padding: .5em;
+	color: #666;
+	background-color: #EDEDED;
+	border-radius: 50%;
+	margin-left: 56%;
+}
 
 
 /* -- logo -- */
@@ -676,12 +684,14 @@ footer p {
 		font-weight: 500;
 	}
 
-	ul.main-nav a:hover > ul {
+	ul.main-nav a:hover > ul.submenu {
 		visibility: visible;
+		display: initial;
 	}
 
-	.submenu-icon i {
+	i.fa-chevron-down {
 		display: none;
+		visibility: hidden;
 	}
 
 
