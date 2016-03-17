@@ -891,8 +891,14 @@ footer p {
 		margin-right: 13%;
 	}*/
 
+	header nav {
+		margin-right: 2em;
+		width: 80%;
+	}
+
 	.logo {
 		width: 70%;
+		margin-left: 4em;
 	}
 
 	h1 {
