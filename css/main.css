@@ -106,12 +106,13 @@ ul { list-style: none; }
 
 /* -- nav -- */
 
+
 header nav {
 	background: #fff;
 	position: fixed;
 	width: 100%;
-	z-index: 1000;
 	height: 3.8em;
+	z-index: 1000;
 }
 
 ul.main-nav {	
@@ -124,7 +125,7 @@ ul.main-nav {
 	height: 100vh;
 }
 
-.main-nav {
+ul.main-nav {
 	display:none;
 }
 
@@ -142,9 +143,12 @@ ul.main-nav {
 .main-nav li.selected,
 .main-nav li:hover {
 	background-color: #e74e3e;
-	color: #fff;
 }
 
+.main-nav li.selected a,
+.main-nav li:hover a {
+	color: #fff;
+}
 
 .mobile-menu {
 	color: #000;
@@ -158,6 +162,28 @@ ul.main-nav {
 	display: inline-block;
 	letter-spacing: .1em;
 	margin-left: 3%;
+}
+
+/* -- logo -- */
+
+.logo {
+	position: absolute;
+	margin: auto;
+	top: 130px; 
+	left: 33%;
+	z-index: 2;
+	letter-spacing: .1em;
+	}
+
+.logo span {
+	border: 3.5px solid #fff;
+	padding: .125em .35em;
+	display: inline;
+	margin-right: .25em;
+}
+
+.logo a {
+	color: #fff;
 }
 
 
@@ -557,26 +583,6 @@ p.partners-more:hover {
 	margin: 0 auto;
 }
 
-/* -- logo -- */
-
-.logo {
-	position: absolute;
-	margin: auto;
-	top: 94px; left: 33%;
-	z-index: 1000;
-	letter-spacing: .1em;
-	}
-
-.logo span {
-	border: 3.5px solid #fff;
-	padding: .125em .35em;
-	display: inline;
-	margin-right: .25em;
-}
-
-.logo a {
-	color: #fff;
-}
 
 /* -- footer -- */
 
@@ -604,13 +610,13 @@ footer p {
 	header {
 		width: 100%;
 		display: inline;
-		padding: 4em 0;
-		z-index: 1000;
+		padding: 2em 0;
+		/*z-index: 1000;*/
 		position: absolute;
 	}
 
 	header nav {
-		display: inline;
+		display: flex;
 		background: transparent;
 		position: static;
 	}
@@ -620,16 +626,17 @@ footer p {
 		visibility: hidden;
 	}
 
-	.mobile-menu-text {
+/*	.mobile-menu-text {
 		display: none;
 		visibility: hidden;
-	}
+	}*/
 
-	ul.main-nav {
+
+
+	/*ul.main-nav {
 		float: right;
 		width: auto;
 		background: rgba(0,0,0,0);
-		margin-right: 6%;
 		display: inherit;
 		margin-top: initial;
 		text-transform: uppercase;
@@ -642,7 +649,29 @@ footer p {
 		padding: 0 3%; 
 		font-size: .75em;
 		color: #fff;
+	}*/
+
+	header {
+		display: flex;
 	}
+
+	ul.main-nav {
+		display: flex;
+		background-color: rgba(0,0,0,0);
+		outline: 2px solid green;
+		height: initial;
+		justify-content: space-around;
+		width: 100%;
+		text-transform: uppercase;
+		padding: 1.1em;
+	}
+
+	ul.main-nav li {
+		padding: 0;
+		font-size: .75em;
+		line-height: initial;
+	}
+
 
 	.main-nav li.selected,
 	.main-nav li:hover {
@@ -856,9 +885,9 @@ footer p {
 
 @media (min-width: 1025px) {
 	
-	ul.main-nav {		
+	/*ul.main-nav {		
 		margin-right: 13%;
-	}
+	}*/
 
 	h1 {
 		letter-spacing: 10px;
