@@ -613,6 +613,15 @@ footer p {
 	header nav {
 		background: transparent;
 		position: static;
+		height: initial;
+	}
+
+	.logo {
+		position: static;
+		display: inline;
+		height: auto;
+		width: 55%;
+		margin-left: 2em;
 	}
 
 	.mobile-menu {
@@ -625,7 +634,7 @@ footer p {
 		background-color: rgba(0,0,0,0);
 		height: initial;
 		justify-content: space-around;
-		width: 100%;
+		width: auto;
 		text-transform: uppercase;
 		padding: 1.1em;
 	}
@@ -768,14 +777,6 @@ footer p {
 		flex-wrap: wrap;
 		justify-content: space-between;
 	}
-
-	.logo {
-		position: static;
-		display: inline;
-		height: auto;
-		width: 15em;
-		margin-left: 2em;
-	}
 	
 	.small-container {
 		max-width: 78%;
@@ -836,15 +837,19 @@ footer p {
 }
 
 
-/* ----- 
+/* --------- 
    desktop 
-   -----*/
+   --------*/
 
 @media (min-width: 1025px) {
 	
 	/*ul.main-nav {		
 		margin-right: 13%;
 	}*/
+
+	.logo {
+		width: 70%;
+	}
 
 	h1 {
 		letter-spacing: 10px;
