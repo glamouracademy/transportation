@@ -159,7 +159,6 @@ ul.main-nav {
 }
 
 .main-nav .submenu {
-	visibility: hidden;
 	display:none;
 }
 
@@ -666,6 +665,7 @@ footer p {
 		border-bottom: 3px solid #e74e3e;
 		padding-bottom: .5em;
 	}
+
 
 	/*-- nav dropdown --*/
 	ul.main-nav ul.submenu {

@@ -28,7 +28,7 @@ $('.mobile-menu').click(function() {
 
 });
 
-
+//Main Nav Dropdown
 $('ul.main-nav li').hover(function(){
 	$(this).addClass("hover");
 	$(this).filter("ul:first").css("visibility", "visible");
@@ -37,6 +37,16 @@ $('ul.main-nav li').hover(function(){
 	$(this).filter("ul:first").css("visibility", "hidden");
 });
 
+
+//Mobile Menu SlideUp and SlideDowbn
+$(".fa-chevron-down").click(function() {
+	if($(".submenu").is(":hidden")) {
+		$(".submenu").slideDown("slow");
+	} else {
+		$(".submenu").slideUp("slow");
+	}
+
+});
 
 
 
