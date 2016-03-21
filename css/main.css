@@ -134,8 +134,12 @@ ul.main-nav {
 
 .main-nav li {
 	padding-left: 10%;
-	font-size: 1em;
+	padding-right: 10%;
+	font-size: .9em;
 	line-height: 4em;
+	letter-spacing: 0;
+	font-weight: 400;
+	color: #666;
 }
 
 .main-nav li.selected,
@@ -162,13 +166,27 @@ ul.main-nav {
 	display:none;
 }
 
+.submenu li {
+	padding-left: 1%;
+}
+
+.submenu li.trucking-type {
+	padding-left: 10%;
+}
+
+.nav-dropdown {
+	display: flex;
+	justify-content: space-between;
+}
+
 .fa-chevron-down {
 	border: 1.5px solid #333;
 	padding: .5em;
 	color: #666;
 	background-color: #EDEDED;
 	border-radius: 50%;
-	margin-left: 56%;
+
+	align-self: center;
 }
 
 
@@ -209,6 +227,7 @@ ul.main-nav {
 	margin: 0 auto;
 	padding-top: 7em;
 }
+
 
 .line {
 	width: 40%;
