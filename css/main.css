@@ -136,7 +136,7 @@ ul.main-nav {
 	padding-left: 10%;
 	padding-right: 10%;
 	font-size: .9em;
-	line-height: 4em;
+	line-height: 3.5em;
 	letter-spacing: 0;
 	font-weight: 400;
 	color: #666;
@@ -168,6 +168,11 @@ ul.main-nav {
 
 .submenu li {
 	padding-left: 1%;
+}
+
+.submenu li:hover {
+	background-color: initial;
+	color: #666;
 }
 
 .submenu li.trucking-type {
