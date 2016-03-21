@@ -31,14 +31,14 @@ $('.mobile-menu').click(function() {
 //Main Nav Dropdown
 $('ul.main-nav li').hover(function(){
 	$(this).addClass("hover");
-	$(this).filter("ul:first").css("visibility", "visible");
+	$(this).css("visibility", "visible");
 }, function(){
 	$(this).removeClass("hover");
-	$(this).filter("ul:first").css("visibility", "hidden");
+	$(this).css("visibility", "hidden");
 });
 
 
-//Mobile Menu SlideUp and SlideDowbn
+//Mobile Menu SlideUp and SlideDown
 $(".fa-chevron-down").click(function() {
 	if($(".submenu").is(":hidden")) {
 		$(".submenu").slideDown("slow");
@@ -48,6 +48,25 @@ $(".fa-chevron-down").click(function() {
 
 });
 
+
+//Submenu anchors 
+// var nav = $('ul.submenu'); 
+
+// $('scroll').click(function(event){
+// 	event.preventDefault();
+
+// 	var full_url = this.href,
+// 	parts = full_url.split('#'),
+// 	target = parts[1],
+// 	target_offset = $('#' + target).offset(),
+// 	target_top = target_offset.top;
+
+// 	$('html, body').animate({scrollTop:target_top}, 500);
+
+// 	nav.children().removeClass();
+
+// 	$(this).parent().addClass('selected');
+// });
 
 
 
