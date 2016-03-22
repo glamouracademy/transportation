@@ -42,8 +42,10 @@ $('.mobile-menu').click(function() {
 $(".nav-dropdown").click(function() {
 	if($(".submenu").is(":hidden")) {
 		$(".submenu").slideDown("slow");
+		$(".nav-dropdown").addClass("selected");
 	} else {
 		$(".submenu").slideUp("slow");
+		$(".nav-dropdown").removeClass("selected");
 	}
 });
 

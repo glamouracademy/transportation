@@ -163,8 +163,11 @@ ul.main-nav li a {
 	color: #fff;	
 }
 
-.main-nav li.nav-dropdown ul{
-	/*display: none;*/
+.main-nav li.nav-dropdown ul.submenu {
+	display: none;
+}
+
+.main-nav li.nav-dropdown ul {
 	font-size: 1.3em;
 	padding-left: 10%;
 	background-color: #fff;
@@ -172,6 +175,11 @@ ul.main-nav li a {
 	letter-spacing: 0;
 	margin:0;
 	
+}
+
+.main-nav li.nav-dropdown ul li a,
+.submenu ul li a {
+	color: #666; 
 }
 
 .submenu ul li {
