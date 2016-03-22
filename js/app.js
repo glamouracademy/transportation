@@ -29,13 +29,13 @@ $('.mobile-menu').click(function() {
 });
 
 //Main Nav Dropdown
-$('ul.main-nav li').hover(function(){
-	$(this).addClass("hover");
-	$(this).css("visibility", "visible");
-}, function(){
-	$(this).removeClass("hover");
-	$(this).css("visibility", "hidden");
-});
+// $('ul.main-nav li').hover(function(){
+// 	$(this).addClass("hover");
+// 	$(this).css("visibility", "visible");
+// }, function(){
+// 	$(this).removeClass("hover");
+// 	$(this).css("visibility", "hidden");
+// });
 
 
 //Mobile Menu SlideUp and SlideDown
