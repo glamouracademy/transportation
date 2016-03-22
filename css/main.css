@@ -150,24 +150,18 @@ ul.main-nav li a {
 	color: #666;
 }
 
-
-
-
-
 /*.main-nav a {
 	color: black;
 	text-decoration: none;
 }*/
 
-/*.main-nav li.selected,
-.main-nav li:hover {
+.main-nav li.selected {
 	background-color: #e74e3e;
-}*/
+}
 
-/*.main-nav li.selected a,
-.main-nav li:hover a {
+.main-nav li.selected a {
 	color: #fff;	
-}*/
+}
 
 .main-nav li.nav-dropdown ul{
 	/*display: none;*/
@@ -186,7 +180,6 @@ ul.main-nav li a {
 	padding-left: 5%;
 	font-weight: 400;
 	letter-spacing: 0;
-
 }
 
 /*.main-nav > ul {
