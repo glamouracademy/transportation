@@ -39,13 +39,12 @@ $('.mobile-menu').click(function() {
 
 
 //Mobile Menu SlideUp and SlideDown
-$(".fa-chevron-down").click(function() {
+$(".nav-dropdown").click(function() {
 	if($(".submenu").is(":hidden")) {
 		$(".submenu").slideDown("slow");
 	} else {
 		$(".submenu").slideUp("slow");
 	}
-
 });
 
 

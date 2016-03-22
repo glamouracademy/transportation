@@ -113,46 +113,6 @@ header nav {
 	z-index: 1000;
 }
 
-ul.main-nav {	
-	/*box-shadow: 10px 5px 5px #333;*/
-	width: 60%;
-	background-color: #fff;
-	margin: 0;
-	padding:0;
-	text-transform: capitalize;
-	height: 100vh;
-}
-
-ul.main-nav {
-	display:none;
-}
-
-ul.main-nav li a {
-	padding-left: 10%;
-	line-height: 3.5em;
-	letter-spacing: 0;
-	font-size:1.3em;
-	font-weight: 400;
-	color: #666;
-}
-
-
-/*.main-nav a {
-	color: black;
-	text-decoration: none;
-}*/
-
-
-.main-nav li.selected,
-.main-nav li:hover {
-	background-color: #e74e3e;
-}
-
-.main-nav li.selected a,
-.main-nav li:hover a {
-	color: #fff;
-}
-
 .mobile-menu {
 	color: #000;
 	display: inline;
@@ -167,23 +127,82 @@ ul.main-nav li a {
 	margin-left: 3%;
 }
 
-.main-nav .submenu {
+ul.main-nav {
 	display:none;
 }
 
-.submenu li {
-	padding-left: 1%;
+ul.main-nav {	
+	/*box-shadow: 10px 5px 5px #333;*/
+	width: 60%;
+	background-color: #fff;
+	margin: 0;
+	padding:0;
+	text-transform: capitalize;
+	height: 100vh;
 }
 
-/*
-.submenu li:hover {
+ul.main-nav li a {
+	padding-left: 8%;
+	line-height: 3.5em;
+	letter-spacing: 0;
+	font-size:1.3em;
+	font-weight: 400;
+	color: #666;
+}
+
+
+
+
+
+/*.main-nav a {
+	color: black;
+	text-decoration: none;
+}*/
+
+/*.main-nav li.selected,
+.main-nav li:hover {
+	background-color: #e74e3e;
+}*/
+
+/*.main-nav li.selected a,
+.main-nav li:hover a {
+	color: #fff;	
+}*/
+
+.main-nav li.nav-dropdown ul{
+	/*display: none;*/
+	font-size: 1.3em;
+	padding-left: 10%;
+	background-color: #fff;
+	color: #666;
+	letter-spacing: 0;
+	margin:0;
+	
+}
+
+.submenu ul li {
+	line-height: 3em;
+	font-size: 1em;
+	padding-left: 5%;
+	font-weight: 400;
+	letter-spacing: 0;
+
+}
+
+/*.main-nav > ul {
+	background-color: #fff;
+}
+
+.main-nav .submenu li {
+	color: #666;
+}*/
+
+
+/*.main-nav li ul li a {
 	background-color: initial;
 	color: #666;
 }*/
 
-.submenu li.trucking-type {
-	padding-left: 10%;
-}
 
 i.fa-chevron-down {
 	border: 1.5px solid #333;
@@ -193,6 +212,29 @@ i.fa-chevron-down {
 	border-radius: 50%;
 	margin-left: 9em;git
 }
+
+/*.main-nav .submenu,
+.main-nav .submenu ul
+ {
+	display:none;
+	font-size: 1.4em;
+	padding-left: 5%;
+}*/
+
+/*.submenu li {
+	padding-left: 1%;
+}*/
+
+/*
+.submenu li:hover {
+	background-color: initial;
+	color: #666;
+}*/
+/*
+.submenu li.trucking-type {
+	padding-left: 10%;
+}*/
+
 
 
 /* -- logo -- */
