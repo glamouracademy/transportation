@@ -127,24 +127,29 @@ ul.main-nav {
 	display:none;
 }
 
-.main-nav a {
-	color: black;
-	text-decoration: none;
-}
-
-.main-nav li {
+ul.main-nav li a {
 	padding-left: 10%;
-	padding-right: 10%;
-	font-size: .9em;
 	line-height: 3.5em;
 	letter-spacing: 0;
+	font-size:1.3em;
 	font-weight: 400;
 	color: #666;
 }
 
+
+/*.main-nav a {
+	color: black;
+	text-decoration: none;
+}*/
+
+
 .main-nav li.selected,
 .main-nav li:hover {
 	background-color: #e74e3e;
+}
+
+.main-nav li.selected a,
+.main-nav li:hover a {
 	color: #fff;
 }
 
@@ -169,11 +174,11 @@ ul.main-nav {
 .submenu li {
 	padding-left: 1%;
 }
-
+/*
 .submenu li:hover {
 	background-color: initial;
 	color: #666;
-}
+}*/
 
 .submenu li.trucking-type {
 	padding-left: 10%;
@@ -182,6 +187,7 @@ ul.main-nav {
 .nav-dropdown {
 	display: flex;
 	justify-content: space-between;
+	padding-right: 10%;
 }
 
 .fa-chevron-down {
@@ -190,7 +196,6 @@ ul.main-nav {
 	color: #666;
 	background-color: #EDEDED;
 	border-radius: 50%;
-
 	align-self: center;
 }
 
