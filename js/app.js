@@ -38,7 +38,7 @@ $('.mobile-menu').click(function() {
 // });
 
 
-//Mobile Menu SlideUp and SlideDown
+//Mobile and Tablet Menu SlideUp and SlideDown
 $(".nav-dropdown").click(function() {
 	if($(".submenu").is(":hidden")) {
 		$(".submenu").slideDown("slow");
@@ -48,6 +48,10 @@ $(".nav-dropdown").click(function() {
 		$(".nav-dropdown").removeClass("selected");
 	}
 });
+
+
+
+
 
 
 //Submenu anchors 

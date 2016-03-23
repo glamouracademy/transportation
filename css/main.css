@@ -185,7 +185,7 @@ ul.main-nav li a {
 
 .submenu ul li {
 	line-height: 3em;
-	font-size: 1em;
+	/*font-size: 1em;*/
 	padding-left: 5%;
 	font-weight: 400;
 	letter-spacing: 0;
@@ -714,7 +714,8 @@ footer p {
 		margin-left: 2em;
 	}
 
-	.mobile-menu {
+	.mobile-menu,
+	i.fa-chevron-down {
 		display: none;
 		visibility: hidden;
 	}
@@ -752,31 +753,56 @@ footer p {
 
 
 	/*-- nav dropdown --*/
-	ul.main-nav ul.submenu {
+
+	.main-nav li.nav-dropdown ul.submenu {
 		position: absolute;
-		visibility: hidden;
-		margin: 0;
-		padding: 1.5em;
-		background-color: #fff;
+		margin-top: .6em;
+		padding: 3% 4%;
+		font-size: 1.5em;
+		line-height: 
 	}
 
-	ul.main-nav ul.submenu li {
+	.nav-dropdown ul.submenu li {
 		color: #000;
 		text-transform: capitalize;
 		line-height: 2em;
 		letter-spacing: .01em;
 		font-weight: 500;
+		padding-top: .5em;
+		padding-bottom: .5em;
 	}
 
-	ul.main-nav a:hover > ul.submenu {
+	.nav-dropdown ul.submenu li:hover {
+		border-bottom: hidden;
+	}
+
+
+	.nav-dropdown ul.submenu {
+
+		/*visibility: hidden;*/
+		margin: 0;
+		padding: 1.5em;
+		background-color: #fff;
+	}
+
+	.nav-dropdown .submenu ul {
+		visibility: hidden;
+		display: none;
+	}
+
+
+
+	/*--Trucking subsubmenu--*/
+/*	.submenu ul li ul {
+		line-height: inherit;
+	}*/
+
+/*	ul.main-nav a:hover > ul.submenu {
 		visibility: visible;
 		display: initial;
-	}
+	}*/
 
-	i.fa-chevron-down {
-		display: none;
-		visibility: hidden;
-	}
+	
 
 
 
