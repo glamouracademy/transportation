@@ -754,22 +754,28 @@ footer p {
 
 	/*-- nav dropdown --*/
 
+
 	.main-nav li.nav-dropdown ul.submenu {
 		position: absolute;
 		margin-top: .6em;
 		padding: 3% 4%;
 		font-size: 1.5em;
-		line-height: 
+		color: #000;
 	}
 
 	.nav-dropdown ul.submenu li {
 		color: #000;
 		text-transform: capitalize;
-		line-height: 2em;
+		line-height: .9em;
 		letter-spacing: .01em;
 		font-weight: 500;
 		padding-top: .5em;
 		padding-bottom: .5em;
+	}
+
+	.nav-dropdown ul.submenu ul li {
+		font-size: .6em;
+		letter-spacing: .1em;
 	}
 
 	.nav-dropdown ul.submenu li:hover {
@@ -777,18 +783,18 @@ footer p {
 	}
 
 
-	.nav-dropdown ul.submenu {
+/*	.nav-dropdown ul.submenu ul {
+		font-size: 1.1em;
+		padding-top:0;
+		padding-bottom:0;
+	}*/
 
-		/*visibility: hidden;*/
-		margin: 0;
-		padding: 1.5em;
-		background-color: #fff;
-	}
 
-	.nav-dropdown .submenu ul {
+
+	/*.nav-dropdown .submenu ul {
 		visibility: hidden;
 		display: none;
-	}
+	}*/
 
 
 
