@@ -760,7 +760,6 @@ footer p {
 		margin-top: .6em;
 		padding: 3% 4%;
 		font-size: 1.5em;
-		color: #000;
 	}
 
 	.nav-dropdown ul.submenu li {
@@ -773,6 +772,10 @@ footer p {
 		padding-bottom: .5em;
 	}
 
+	.main-nav li.nav-dropdown ul li a {
+		color: #000;
+	}
+
 	.nav-dropdown ul.submenu ul li {
 		font-size: .6em;
 		letter-spacing: .1em;
@@ -780,6 +783,11 @@ footer p {
 
 	.nav-dropdown ul.submenu li:hover {
 		border-bottom: hidden;
+		color: #e74e3e;
+	}
+
+	.main-nav li.nav-dropdown ul li a:hover {
+		color: #e74e3e;
 	}
 
 
