@@ -1011,10 +1011,6 @@ footer p {
 
 @media (min-width: 1025px) {
 	
-	/*ul.main-nav {		
-		margin-right: 13%;
-	}*/
-
 	header nav {
 		margin-right: 2em;
 		width: 80%;
@@ -1023,6 +1019,11 @@ footer p {
 	.logo {
 		width: 70%;
 		margin-left: 4em;
+	}
+
+	.main-nav li.nav-dropdown:hover ul.submenu {
+		visibility: visible;
+		display:block;
 	}
 
 	h1 {
