@@ -44,8 +44,10 @@ $(".nav-dropdown").click(function(){
 	if(collapsed) {
 		$(this).find('i').toggleClass('fa fa-chevron-down fa fa-chevron-up');
 		$(".submenu").slideDown("slow");
+		$(".nav-dropdown").addClass("selected");
 	} else {
 		$(".submenu").slideUp("slow");
+		$(".nav-dropdown").removeClass("selected");
 	}
 });
 
