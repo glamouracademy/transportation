@@ -1,10 +1,14 @@
 //Problem: mobile menu doesn't work
 //Solution: when the user taps the hamburger menu, the menu should show
 
-// //when hamburger menu is tapped,
-// //hide hamburger menu icon
-// //display close icon
-// //display mobile menu
+// when hamburger menu is tapped,
+// hide hamburger menu icon
+// display close icon
+// display mobile menu
+// if the close icon is tapped, 
+// close the mobile menu
+// hide close icon
+// show hamburger menu icon
 
 $('.mobile-menu').click(function() {
 	var collapsed = $(this).find('i').hasClass('fa fa-bars fa-lg');
@@ -33,8 +37,6 @@ $(".nav-dropdown").click(function(){
 		$(".nav-dropdown").removeClass("selected");
 	}
 });
-
-
 
 //Mobile and Tablet Menu SlideUp and SlideDown
 // $(".nav-dropdown").click(function() {
@@ -83,39 +85,22 @@ $(".nav-dropdown").click(function(){
 // 			$(".nav-dropdown").toggle("fold", 1000);
 // 		} else {
 // 			// $(".nav-dropdown").hide();
-			
 // 		}
 // 	}
-
 // }
-
 // $(".nav-dropdown").on("hover", toggleNav);
 
 
-//Submenu anchors 
-// var nav = $('ul.submenu'); 
+//Smooth scrolling anchors 
 
-// $('scroll').click(function(event){
-// 	event.preventDefault();
-
-// 	var full_url = this.href,
-// 	parts = full_url.split('#'),
-// 	target = parts[1],
-// 	target_offset = $('#' + target).offset(),
-// 	target_top = target_offset.top;
-
-// 	$('html, body').animate({scrollTop:target_top}, 500);
-
-// 	nav.children().removeClass();
-
-// 	$(this).parent().addClass('selected');
-// });
-
-
-
-
-
-//if the close icon is tapped, 
-//close the mobile menu
-//hide close icon
-//show hamburger menu icon
+$('a[href^="#"]').on('click', function(e) {
+  e.preventDefault();
+  var target = this.hash;
+  var $target = $(target);
+  
+  $('html, body').stop(). animate({
+    'scrollTop': $target.offset().top
+  }, 900, 'swing', function() {
+    window.location.hash = target;
+  });
+});
