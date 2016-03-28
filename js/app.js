@@ -2,17 +2,12 @@
 //Solution: when the user taps the hamburger menu, the menu should show
 //implementation: http://jsfiddle.net/t7jtnupu/2/		
 var $closeIcon = $('<i class="fa fa-times fa-lg">');
+var $upChevron = $('<i class="fa fa-chevron-up">');
 
 // //when hamburger menu is tapped,
-// $('.fa-bars').click(function(){
 // //hide hamburger menu icon
 // //display close icon
-// 	$(this).replaceWith($closeIcon);
 // //display mobile menu
-// $(".main-nav").show();
-
-// });
-
 
 $('.mobile-menu').click(function() {
 	var collapsed = $(this).find('i').hasClass('fa fa-bars fa-lg');
@@ -28,26 +23,80 @@ $('.mobile-menu').click(function() {
 
 });
 
-//Main Nav Dropdown
-// $('ul.main-nav li').hover(function(){
-// 	$(this).addClass("hover");
-// 	$(this).css("visibility", "visible");
-// }, function(){
-// 	$(this).removeClass("hover");
-// 	$(this).css("visibility", "hidden");
+//Mobile and Tablet Menu SlideUp and SlideDown
+// $(".nav-dropdown").click(function() {
+// 	if($(".submenu").is(":hidden")) {
+// 		$(".submenu").slideDown("slow");
+// 		$(".nav-dropdown").addClass("selected");
+// 	} else {
+// 		$(".submenu").slideUp("slow");
+// 		$(".nav-dropdown").removeClass("selected");
+// 	}
 // });
 
 
-//Mobile and Tablet Menu SlideUp and SlideDown
-$(".nav-dropdown").click(function() {
-	if($(".submenu").is(":hidden")) {
+$(".nav-dropdown").click(function(){
+	var collapsed = $(this).find('i').hasClass('fa fa-chevron-down');
+
+	$(this).find('i').removeClass('fa fa-chevron-up');
+	$(this).find('i').addClass('fa fa-chevron-down');
+
+	if(collapsed) {
+		$(this).find('i').toggleClass('fa fa-chevron-down fa fa-chevron-up');
 		$(".submenu").slideDown("slow");
-		$(".nav-dropdown").addClass("selected");
 	} else {
 		$(".submenu").slideUp("slow");
-		$(".nav-dropdown").removeClass("selected");
 	}
 });
+
+
+
+
+
+//Main Nav Dropdown
+// $(".main-nav li.nav-dropdown ul.submenu").hover(function(){
+// 	$(this).addClass("hover");
+// 	$(this).css("visibility", "visible");
+// 	$(this).css("display", "block");
+// }, function(){
+// 	$(this).removeClass("hover");
+// 	$(this).css("visibility", "hidden");
+// 	$(this).css("display", "none");
+// });
+
+
+//Main Nav Submenu 
+// function toggleNav() {
+// 	function showNav() {
+// 		$(".main-nav li.nav-dropdown ul.submenu").addClass("visibility", "visible");
+// 	}
+// 	function hideNav() {
+// 		$(".main-nav li.nav-dropdown ul.submenu").removeClass("visibility", "none");
+// 	}
+// }
+
+// $(".main-nav li.nav-dropdown ul.submenu").on("hover", toggleNav);
+
+
+// $("#fold").hover(function() {
+// 	$(this).toggle("fold", 1000);
+// });
+
+
+// function toggleNav() {
+// 	function showNav() {
+// 		if($(".submenu").is(":hidden")) {
+// 			$(".nav-dropdown").show();
+// 			$(".nav-dropdown").toggle("fold", 1000);
+// 		} else {
+// 			// $(".nav-dropdown").hide();
+			
+// 		}
+// 	}
+
+// }
+
+// $(".nav-dropdown").on("hover", toggleNav);
 
 
 

@@ -206,7 +206,8 @@ ul.main-nav li a {
 }*/
 
 
-i.fa-chevron-down {
+i.fa-chevron-down,
+i.fa-chevron-up {
 	border: 1.5px solid #333;
 	padding: .5em;
 	color: #666;
@@ -1025,6 +1026,17 @@ footer p {
 		visibility: visible;
 		display:block;
 	}
+
+	.main-nav li.nav-dropdown:hover ul.submenu ul {
+		visibility: hidden;
+		display: none;
+	}
+
+	.main-nav li.nav-dropdown ul.submenu:hover ul {
+		visibility: visible;
+		display: block;
+	}
+
 
 	h1 {
 		letter-spacing: 10px;
