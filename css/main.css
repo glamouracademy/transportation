@@ -883,7 +883,18 @@ footer p {
 	.navigation {
 		display: block;
 		background-color: #000;
-		padding: .8em;
+		padding: 1em;
+	}
+
+	.navigation li {
+		display: inline;
+		padding: 0 2em;
+	}
+
+	li.active a {
+		color: #fff;
+		border-bottom: 3px solid #e74e3e;
+		padding-bottom: 1.3em;
 	}
 
 	.navigation a {
@@ -944,7 +955,6 @@ footer p {
 
 	.stat-1 {
 		padding: 1em 4.5em;
-
 	}
 
 	.stat h2, .stat-1 h2 {
