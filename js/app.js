@@ -38,6 +38,27 @@ $(".nav-dropdown").click(function(){
 	}
 });
 
+//Smooth scrolling anchors 
+
+$('a[href^="#"]').on('click', function(e) {
+  e.preventDefault();
+  var target = this.hash;
+  var $target = $(target);
+  
+  $('html, body').stop(). animate({
+    'scrollTop': $target.offset().top
+  }, 900, 'swing', function() {
+    window.location.hash = target;
+  });
+});
+
+
+//Offerings Nav
+
+$
+
+
+
 //Mobile and Tablet Menu SlideUp and SlideDown
 // $(".nav-dropdown").click(function() {
 // 	if($(".submenu").is(":hidden")) {
@@ -91,16 +112,3 @@ $(".nav-dropdown").click(function(){
 // $(".nav-dropdown").on("hover", toggleNav);
 
 
-//Smooth scrolling anchors 
-
-$('a[href^="#"]').on('click', function(e) {
-  e.preventDefault();
-  var target = this.hash;
-  var $target = $(target);
-  
-  $('html, body').stop(). animate({
-    'scrollTop': $target.offset().top
-  }, 900, 'swing', function() {
-    window.location.hash = target;
-  });
-});

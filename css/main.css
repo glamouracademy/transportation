@@ -339,6 +339,10 @@ i.fa-chevron-up {
 
 /* -- offerings -- */
 
+.navigation {
+	display: none;
+}
+
 .offerings {
 	display: flex;
 	flex-direction: column;
@@ -717,7 +721,7 @@ footer p {
 
 	.mobile-menu,
 	i.fa-chevron-down,
-	i.fa-chevron-up {
+	i.fa {
 		display: none;
 		visibility: hidden;
 	}
@@ -874,13 +878,35 @@ footer p {
 		line-height: 1.2em;
 	}
 
+	/* offerings */
+
+	.navigation {
+		display: block;
+		background-color: #000;
+		padding: .8em;
+	}
+
+	.navigation a {
+		color: #999;
+		text-decoration: none;
+		text-align: center;
+		font-size: 1.2em;
+	}
+
+	.content.active {
+		display: block;
+	}
+
+	.content.hide {
+		display: none;
+	}
+
 	.offerings {
 		width: 100%;
 	}
 
 	.offerings nav {
-		border-radius: 0;
-		padding: 1.5em;
+		display: none;	
 	}
 
 	.offerings .content {
