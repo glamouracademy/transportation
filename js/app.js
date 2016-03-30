@@ -55,26 +55,27 @@ $('a[href^="#"]').on('click', function(e) {
 
 //Offerings Nav
 
-// $('navigation a').click(function(){
-// 	$('.content').hide();
-// 	$(this.getAttribute('href')).show();
-// });
-
-$('.navigation > li > a').click(function(e){
-	e.preventDefault();
-
-	var active_content = $('.navigation > li.active > a').attr('href');
-	var active_nav = $('.navigation > li.active');
-
-	active_nav.removeClass('active');
-
-	$(this).parents('li').addClass('active');
-	$(active_content).addClass('hide');
-
-	var target_content = $(this).attr('href');
-	$(target_content).removeClass('hide');
-	$(target_content).addClass('active');
+$('.navigation a').click(function(){
+	$('.content').hide();
+	$(this.getAttribute('href')).show();
 });
+
+// $('.navigation > li > a').click(function(e){
+// 	e.preventDefault();
+
+// 	var active_content = $('.navigation > li.active > a').attr('href');
+// 	var active_nav = $('.navigation > li.active');
+
+// 	active_nav.removeClass('active');
+
+// 	$(this).parents('li').addClass('active');
+// 	$(active_content).addClass('hide');
+
+// 	var target_content = $(this).attr('href');
+
+// 	$(target_content).removeClass('hide');
+// 	$(target_content).addClass('active');
+// });
 
 
 
