@@ -82,6 +82,7 @@ $(function() {
 });
 
 
+
 //Mobile and Tablet Menu SlideUp and SlideDown
 // $(".nav-dropdown").click(function() {
 // 	if($(".submenu").is(":hidden")) {
