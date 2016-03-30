@@ -1161,7 +1161,8 @@ footer p {
 
 	.offering-desc {
 		align-self: center;
-		padding-left: 3em;			
+		padding-left: 3em;
+		padding-right: 3em;			
 	}
 
 	.offerings h2 {
