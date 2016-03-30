@@ -1132,12 +1132,19 @@ footer p {
 		line-height: 1.2em;
 	}
 
-	.offerings nav {
-		padding: .8em;
+	.navigation {
+		text-align: left;
+		padding: 1em 5em;
+		margin-bottom: 0;
+	}
+
+	.navigation a {
+		letter-spacing: initial;
+		font-size: 1.3em;
 	}
 
 	.offerings .content {
-		width: 80%;
+		width: auto;
 		display: flex;
 		align-items: center;		
 	}
