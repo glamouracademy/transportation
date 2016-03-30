@@ -355,11 +355,21 @@ i.fa-chevron-up {
 	color: #999;
 	padding: .6em;
 	border-radius: 5px;
+	margin: .8em;
 }
 
-.offering-nav:hover {
+.offering-nav.tapped {
 	background-color: #e74e3e;
 	color: #fff;
+}
+
+
+.content.active {
+	display: block;
+}
+
+.content {
+	display: none;
 }
 
 .offerings img {
@@ -902,14 +912,6 @@ footer p {
 		text-decoration: none;
 		text-align: center;
 		font-size: 1.2em;
-	}
-
-	.content.active {
-		display: block;
-	}
-
-	.content {
-		display: none;
 	}
 
 	.offerings {

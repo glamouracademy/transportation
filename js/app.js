@@ -63,9 +63,6 @@ $('a[href^="#"]').on('click', function(e) {
 //display active tab content
 //hide fmr tab content
 
-
-
-
 $('.navigation a').click(function(){
 
 	var past_active_nav = $('.navigation li.active');
@@ -77,6 +74,25 @@ $('.navigation a').click(function(){
 	$(this.getAttribute('href')).show();
 
 });
+
+
+//Offerings Nav: Mobile 
+//accordion
+$(function() {
+	$("#accordion").accordion();
+});
+
+//when tab title clicked
+//add active state for tab nav (red background and white text)
+//remove active state from fmr tab nav
+
+$('nav.offering-nav').click(function(){
+	var past_tab_nav = $('nav.offering-nav.tapped');
+	past_tab_nav.removeClass('tapped');
+	var new_tab_nav = $(this).addClass('tapped');
+});
+
+
 
 
 //Mobile and Tablet Menu SlideUp and SlideDown
