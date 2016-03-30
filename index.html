@@ -16,30 +16,33 @@
 	
 	 	<h1 class="logo"><a href="#"><span>T</span>RANS</a></h1>
 
-		<nav>
+		<nav id="main">
 			<div class="mobile-menu">
 				<i class="fa fa-bars fa-lg"></i>
 				<h2 class="mobile-menu-text">HOME</h2>
 			</div>
 
 			<ul class="main-nav upcase">
-				<a href="#">
-					<li class="selected">Home</li>
-				</a>
-				<a href="#">
-					<li>About<i class='fa fa-chevron-down'></i></li>
-
-						<ul class="submenu">
-		      		<li>Trucking</li>
-		      		<li>Air Transportation</li>
-		      		<li>Marine Transportation</li>
-		    		</ul>
-		    </a>
-
+					<li class="selected"><a href="#">Home</a></li>
+					
+					<li class="nav-dropdown clearfix"><a href="#">About</a><i class='fa fa-chevron-down'></i>
 						
-				<a href="services.html"><li>Services</li></a>
-				<a href="pricing.html"><li>Price List</li></a>
-				<a href="#"><li>Contact</li></a>
+						<ul class="submenu">
+		      		<li><a href="#trucking">Trucking</a></li>
+		      			<ul>
+		      				<li class="trucking-type">Local</li>
+		      				<li class="trucking-type">International</li>
+		      			</ul>
+		      		
+		      		<li><a href="#air">Air Transportation</a></li>
+		      		<li><a href="#marine">Marine Transportation</a></li>
+		    		</ul>
+		    
+		    	</li>
+
+				<li><a href="services.html">Services</a></li>
+				<li><a href="pricing.html">Price List</a></li>
+				<li><a href="#">Contact</a></li>
 			</ul>
 			
 		</nav>
@@ -87,10 +90,25 @@
 	</section> 
 
 	<section class="offerings center">
-			<nav class="offering-nav">Trucking</nav>
-				<div class="content">
-					<img src="img/trucking.jpg" alt="trucking">
-					<div class="offering-desc">
+		<ul class="navigation">
+			
+			<li class="active">
+				<a href="#trucking">Trucking</a>
+			</li>
+			
+			<li>
+				<a href="#air">Air transportation</a>
+			</li>
+			
+			<li>
+				<a href="#marine">Marine transportation</a>
+			</li>
+		</ul>
+			
+		<nav class="offering-nav">Trucking</nav>
+			<div class="content active" id="trucking">
+				<img src="img/trucking.jpg" alt="trucking">
+				<div class="offering-desc">
 						<h2>Trucking and Freight Transport</h2>
 						<p>The world is changing all around us. To continue to thrive as a business over the next ten years and beyond, we must look ahead, understand the trends and forces that will shape our business in the future and move swiftly to prepare for what's to come. We must get ready for tomorrow today. That's what our future vision is all about. It creates a long-term destination for our business and provides us with a "Roadmap" for winning together with out partners.</p>
 					
@@ -98,11 +116,11 @@
 					
 						<p>Trans has set benchmarks in safety, security, performance, efficiency, punctuality, respectability, professionalism and reliability in the sector. The fully trained personnel with many years of background in the sector, bring a wealth of experience to the company and is one of its major assets.</p>
 						<button>Learn more</button>
-					</div>
 				</div>
+			</div>
 
-			<nav class="offering-nav">Air transportation</nav>
-				<div class="content">
+		<nav class="offering-nav">Air transportation</nav>
+				<div class="content hide" id="air">
 					<img src="img/air.jpg" alt="airplane">
 					<div class="offering-desc">
 						<h2>The Rise of Air Transportation</h2>
@@ -114,7 +132,7 @@
 			</div>
 
 			<nav class="offering-nav">Marine transportation</nav>
-				<div class="content">
+				<div class="content hide" id="marine">
 					<img src="img/marine.jpg" alt="shipping container">
 					<div class="offering-desc">
 						<h2>Trucking and Freight Transport</h2>
@@ -264,6 +282,8 @@
 
 <script src="http://code.jquery.com/jquery-1.11.0.min.js" type="text/javascript" charset="utf-8"></script>
 <script src="js/app.js" type="text/javascript" charset="utf-8"></script>
+<script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js" type="text/javascript" charset="utf-8"></script>
+
 
 </body>
 

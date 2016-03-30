@@ -111,37 +111,7 @@ header nav {
 	width: 100%;
 	height: 3.8em;
 	z-index: 1000;
-}
-
-ul.main-nav {	
-	/*box-shadow: 10px 5px 5px #333;*/
-	width: 60%;
-	background-color: #fff;
-	margin: 0;
-	padding:0;
-	text-transform: capitalize;
-	height: 100vh;
-}
-
-ul.main-nav {
-	display:none;
-}
-
-.main-nav a {
-	color: black;
-	text-decoration: none;
-}
-
-.main-nav li {
-	padding-left: 10%;
-	font-size: 1em;
-	line-height: 4em;
-}
-
-.main-nav li.selected,
-.main-nav li:hover {
-	background-color: #e74e3e;
-	color: #fff;
+	box-shadow: 0 8px 6px -6px #999;
 }
 
 .mobile-menu {
@@ -158,18 +128,116 @@ ul.main-nav {
 	margin-left: 3%;
 }
 
-.main-nav .submenu {
+ul.main-nav {
 	display:none;
 }
 
-.fa-chevron-down {
+ul.main-nav {	
+	/*box-shadow: 10px 5px 5px #333;*/
+	width: 60%;
+	background-color: #fff;
+	margin: 0;
+	padding:0;
+	text-transform: capitalize;
+	height: 100vh;
+}
+
+ul.main-nav li a {
+	padding-left: 8%;
+	line-height: 3.5em;
+	letter-spacing: 0;
+	font-size:1.3em;
+	font-weight: 400;
+	color: #666;
+}
+
+/*.main-nav a {
+	color: black;
+	text-decoration: none;
+}*/
+
+.main-nav li.selected {
+	background-color: #e74e3e;
+}
+
+.main-nav li.selected a {
+	color: #fff;	
+}
+
+.main-nav li.nav-dropdown ul.submenu {
+	display: none;
+}
+
+.main-nav li.nav-dropdown ul {
+	font-size: 1.3em;
+	padding-left: 10%;
+	background-color: #fff;
+	color: #666;
+	letter-spacing: 0;
+	margin:0;
+	
+}
+
+.main-nav li.nav-dropdown ul li a,
+.submenu ul li a {
+	color: #666; 
+}
+
+.submenu ul li {
+	line-height: 3em;
+	/*font-size: 1em;*/
+	padding-left: 5%;
+	font-weight: 400;
+	letter-spacing: 0;
+}
+
+/*.main-nav > ul {
+	background-color: #fff;
+}
+
+.main-nav .submenu li {
+	color: #666;
+}*/
+
+
+/*.main-nav li ul li a {
+	background-color: initial;
+	color: #666;
+}*/
+
+
+i.fa-chevron-down,
+i.fa-chevron-up {
 	border: 1.5px solid #333;
 	padding: .5em;
 	color: #666;
 	background-color: #EDEDED;
 	border-radius: 50%;
-	margin-left: 56%;
+	margin-left: 9em;git
 }
+
+/*.main-nav .submenu,
+.main-nav .submenu ul
+ {
+	display:none;
+	font-size: 1.4em;
+	padding-left: 5%;
+}*/
+
+/*.submenu li {
+	padding-left: 1%;
+}*/
+
+/*
+.submenu li:hover {
+	background-color: initial;
+	color: #666;
+}*/
+/*
+.submenu li.trucking-type {
+	padding-left: 10%;
+}*/
+
 
 
 /* -- logo -- */
@@ -178,7 +246,7 @@ ul.main-nav {
 	position: absolute;
 	margin: auto;
 	top: 130px; 
-	left: 33%;
+	left: 28%;
 	z-index: 2;
 	letter-spacing: .1em;
 	}
@@ -192,6 +260,10 @@ ul.main-nav {
 
 .logo a {
 	color: #fff;
+}
+
+.pricing .logo {
+	top: 100px;
 }
 
 
@@ -209,6 +281,7 @@ ul.main-nav {
 	margin: 0 auto;
 	padding-top: 7em;
 }
+
 
 .line {
 	width: 40%;
@@ -265,6 +338,10 @@ ul.main-nav {
 }
 
 /* -- offerings -- */
+
+.navigation {
+	display: none;
+}
 
 .offerings {
 	display: flex;
@@ -631,6 +708,7 @@ footer p {
 		background: transparent;
 		position: static;
 		height: initial;
+		box-shadow: initial;
 	}
 
 	.logo {
@@ -641,7 +719,9 @@ footer p {
 		margin-left: 2em;
 	}
 
-	.mobile-menu {
+	.mobile-menu,
+	i.fa-chevron-down,
+	i.fa {
 		display: none;
 		visibility: hidden;
 	}
@@ -656,48 +736,93 @@ footer p {
 		padding: 1.1em;
 	}
 
-	ul.main-nav li {
+	ul.main-nav li a {
 		padding: 0;
-		font-size: .75em;
+		font-size: 1.1em;
 		line-height: initial;
 		color: #fff;
+		letter-spacing: .1em;
+		display: block;
 	}
 
-	.main-nav li.selected,
+	.main-nav li.selected, 
 	.main-nav li:hover {
 		background-color: transparent;
-		color: #e74e3e;
 		border-bottom: 3px solid #e74e3e;
 		padding-bottom: .5em;
 	}
 
+	.main-nav li.selected a,
+	.main-nav li:hover a {
+		color: #e74e3e;
+	}
+
 
 	/*-- nav dropdown --*/
-	ul.main-nav ul.submenu {
+
+
+	.main-nav li.nav-dropdown ul.submenu {
 		position: absolute;
-		visibility: hidden;
-		margin: 0;
-		padding: 1.5em;
-		background-color: #fff;
+		margin-top: .6em;
+		padding: 3% 4%;
+		font-size: 1.5em;
 	}
 
-	ul.main-nav ul.submenu li {
+	.nav-dropdown ul.submenu li {
 		color: #000;
 		text-transform: capitalize;
-		line-height: 2em;
+		line-height: .9em;
 		letter-spacing: .01em;
 		font-weight: 500;
+		padding-top: .5em;
+		padding-bottom: .5em;
 	}
 
-	ul.main-nav a:hover > ul.submenu {
+	.main-nav li.nav-dropdown ul li a {
+		color: #000;
+	}
+
+	.nav-dropdown ul.submenu ul li {
+		font-size: .6em;
+		letter-spacing: .1em;
+	}
+
+	.nav-dropdown ul.submenu li:hover {
+		border-bottom: hidden;
+		color: #e74e3e;
+	}
+
+	.main-nav li.nav-dropdown ul li a:hover {
+		color: #e74e3e;
+	}
+
+
+/*	.nav-dropdown ul.submenu ul {
+		font-size: 1.1em;
+		padding-top:0;
+		padding-bottom:0;
+	}*/
+
+
+
+	/*.nav-dropdown .submenu ul {
+		visibility: hidden;
+		display: none;
+	}*/
+
+
+
+	/*--Trucking subsubmenu--*/
+/*	.submenu ul li ul {
+		line-height: inherit;
+	}*/
+
+/*	ul.main-nav a:hover > ul.submenu {
 		visibility: visible;
 		display: initial;
-	}
+	}*/
 
-	i.fa-chevron-down {
-		display: none;
-		visibility: hidden;
-	}
+	
 
 
 
@@ -753,13 +878,46 @@ footer p {
 		line-height: 1.2em;
 	}
 
+	/* offerings */
+
+	.navigation {
+		display: block;
+		background-color: #000;
+		padding: 1em;
+	}
+
+	.navigation li {
+		display: inline;
+		padding: 0 2em;
+	}
+
+	li.active a {
+		color: #fff;
+		border-bottom: 3px solid #e74e3e;
+		padding-bottom: 1.3em;
+	}
+
+	.navigation a {
+		color: #999;
+		text-decoration: none;
+		text-align: center;
+		font-size: 1.2em;
+	}
+
+	.content.active {
+		display: block;
+	}
+
+	.content {
+		display: none;
+	}
+
 	.offerings {
 		width: 100%;
 	}
 
 	.offerings nav {
-		border-radius: 0;
-		padding: 1.5em;
+		display: none;	
 	}
 
 	.offerings .content {
@@ -797,7 +955,6 @@ footer p {
 
 	.stat-1 {
 		padding: 1em 4.5em;
-
 	}
 
 	.stat h2, .stat-1 h2 {
@@ -892,10 +1049,6 @@ footer p {
 
 @media (min-width: 1025px) {
 	
-	/*ul.main-nav {		
-		margin-right: 13%;
-	}*/
-
 	header nav {
 		margin-right: 2em;
 		width: 80%;
@@ -905,6 +1058,22 @@ footer p {
 		width: 70%;
 		margin-left: 4em;
 	}
+
+	.main-nav li.nav-dropdown:hover ul.submenu {
+		visibility: visible;
+		display:block;
+	}
+
+	.main-nav li.nav-dropdown:hover ul.submenu ul {
+		visibility: hidden;
+		display: none;
+	}
+
+	.main-nav li.nav-dropdown ul.submenu:hover ul {
+		visibility: visible;
+		display: block;
+	}
+
 
 	h1 {
 		letter-spacing: 10px;
