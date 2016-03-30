@@ -83,6 +83,25 @@ $(function() {
 
 
 
+//Offerings Nav: Mobile 
+//accordion
+$(function() {
+	$("#accordion").accordion();
+});
+
+//when tab title clicked
+//add active state for tab nav (red background and white text)
+//remove active state from fmr tab nav
+
+$('nav.offering-nav').click(function(){
+	var past_tab_nav = $('nav.offering-nav.tapped');
+	past_tab_nav.removeClass('tapped');
+	var new_tab_nav = $(this).addClass('tapped');
+});
+
+
+
+
 //Mobile and Tablet Menu SlideUp and SlideDown
 // $(".nav-dropdown").click(function() {
 // 	if($(".submenu").is(":hidden")) {
