@@ -53,7 +53,7 @@ $('a[href^="#"]').on('click', function(e) {
 });
 
 
-//Offerings Nav
+//Offerings Nav: Tablet/Desktop
 
 //when clicking a nav tab
 	//underline the active tab
@@ -62,9 +62,6 @@ $('a[href^="#"]').on('click', function(e) {
 	//make fmr tab gray font
 //display active tab content
 //hide fmr tab content
-
-
-
 
 $('.navigation a').click(function(){
 
@@ -76,6 +73,12 @@ $('.navigation a').click(function(){
 	$('.content').hide();
 	$(this.getAttribute('href')).show();
 
+});
+
+//Offerings Nav: Mobile 
+
+$(function() {
+	$("#accordion").accordion();
 });
 
 
