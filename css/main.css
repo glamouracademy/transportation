@@ -213,7 +213,7 @@ i.fa-chevron-up {
 	color: #666;
 	background-color: #EDEDED;
 	border-radius: 50%;
-	margin-left: 9em;git
+	margin-left: 9em;
 }
 
 /*.main-nav .submenu,
@@ -1114,12 +1114,59 @@ footer p {
 		width: 75%;
 	}
 
+	i.fa-lg {
+		display: initial;
+		visibility: visible;
+		color: white;
+  	position: fixed;
+  	right: 2em;
+  	bottom: 1em;
+  	z-index: 1000;
+  	box-shadow: 5px 5px 10px 1px rgba(64, 62, 63, 0.53), 10px 10px 50px 10px rgba(64, 62, 63, 0.2) inset;
+  	border: none;
+		padding: .7em;
+		background-color: #e74e3e;
+		border-radius: 50%;
+	}
+
 	.differentiators {
 		flex-direction: row;
 	}
 
 	.differentiators .med-container {
 		display: flex;
+	}
+
+/*	.value.slide-left {
+		opacity: 1;
+		-moz-transition: all 600ms linear;
+		-webkit-transition: all 600ms linear;
+		-o-transition: all 600ms linear;
+		transition: all 600ms linear;
+		-moz-transform: translate3d(-300px, 0px, 0px);
+		-webkit-transform: translate3d(-300px, 0px, 0px);
+		-o-transform: translate(-300px, 0px);
+		-ms-transform: translate(-300px, 0px);
+		transform: translate3d(-300px, 0px, 0px);
+	}
+
+	.value.slide-left.in-view {
+		opacity: 1;
+		-moz-transform: translate3d(300px, 0px, 0px);
+		-webkit-transform: translate3d(300px, 0px, 0px);
+		-o-transform: translate(300px, 0px);
+		-ms-transform: translate(300px, 0px);
+		transform: translate3d(300px, 0px, 0px);
+	}*/
+
+
+	.material-icons {
+		transition: 2s;
+	}
+
+	.material-icons:hover {
+		transform: rotate(360deg);
+		outline: 3px solid #e74e3e;
 	}
 
 	.value-title {
@@ -1132,12 +1179,19 @@ footer p {
 		line-height: 1.2em;
 	}
 
-	.offerings nav {
-		padding: .8em;
+	.navigation {
+		text-align: left;
+		padding: 1em 5em;
+		margin-bottom: 0;
+	}
+
+	.navigation a {
+		letter-spacing: initial;
+		font-size: 1.3em;
 	}
 
 	.offerings .content {
-		width: 80%;
+		width: auto;
 		display: flex;
 		align-items: center;		
 	}
@@ -1154,7 +1208,8 @@ footer p {
 
 	.offering-desc {
 		align-self: center;
-		padding-left: 3em;			
+		padding-left: 3em;
+		padding-right: 3em;			
 	}
 
 	.offerings h2 {
@@ -1207,6 +1262,18 @@ footer p {
 
 	.partner-logos img {
 		width: 22%;
+	}
+
+	.partner-logo {
+		transition: all 600ms;
+		-webkit-transition: all 600ms;
+	}
+
+	.partner-logo:hover {
+		transform:scale(1.1,1.1);
+		transition: all 600ms;
+		-webkit-transition: all 600ms;
+		box-shadow: 0 3px 7px #C0C0C0;
 	}
 
 	.blogs-header {
