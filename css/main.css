@@ -216,6 +216,11 @@ i.fa-chevron-up {
 	margin-left: 9em;
 }
 
+i.fa-chevron-up.fa-lg {
+	display: none;
+	visibility: hidden;
+}
+
 /*.main-nav .submenu,
 .main-nav .submenu ul
  {
@@ -362,7 +367,6 @@ i.fa-chevron-up {
 	background-color: #e74e3e;
 	color: #fff;
 }
-
 
 .content.active {
 	display: block;
@@ -1076,7 +1080,6 @@ footer p {
 		display: block;
 	}
 
-
 	h1 {
 		letter-spacing: 10px;
 	}
@@ -1114,7 +1117,7 @@ footer p {
 		width: 75%;
 	}
 
-	i.fa-lg {
+	i.fa-chevron-up.fa-lg {
 		display: initial;
 		visibility: visible;
 		color: white;
