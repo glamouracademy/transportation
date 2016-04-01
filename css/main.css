@@ -213,7 +213,7 @@ i.fa-chevron-up {
 	color: #666;
 	background-color: #EDEDED;
 	border-radius: 50%;
-	margin-left: 9em;git
+	margin-left: 9em;
 }
 
 /*.main-nav .submenu,
@@ -1112,6 +1112,21 @@ footer p {
 
 	.med-container {
 		width: 75%;
+	}
+
+	i.fa-lg {
+		display: initial;
+		visibility: visible;
+		color: white;
+  	position: fixed;
+  	right: 2em;
+  	bottom: 1em;
+  	z-index: 1000;
+  	box-shadow: 5px 5px 10px 1px rgba(64, 62, 63, 0.53), 10px 10px 50px 10px rgba(64, 62, 63, 0.2) inset;
+  	border: none;
+		padding: .7em;
+		background-color: #e74e3e;
+		border-radius: 50%;
 	}
 
 	.differentiators {
