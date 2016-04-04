@@ -2,7 +2,7 @@
 //Solution: when the user taps the hamburger menu, the menu should show
 
 // when hamburger menu is tapped,
-// hide hamburger menu icon
+// hide hamburgder menu icon
 // display close icon
 // display mobile menu
 // if the close icon is tapped, 
@@ -102,19 +102,18 @@ function check_if_in_view() {
 	var window_top_position = $window.scrollTop();
 	var window_bottom_position = (window_top_position - window_height);
 
-	$.each($animation_element, function() {
-		var $element = $(this);
-		var element_height = $element.outerHeight();
-		var element_top_position = $element.offset().top;
+	// $.each($animation_element, function() {
+	// 	var $element = $(this);
+		var element_height = $animation_element.outerHeight();
+		var element_top_position = $animation_element.offset().top;
 		var element_bottom_position = (element_top_position - element_height);
 
 	//check to see if the current container is within viewport
 		if((element_bottom_position >= window_top_position) && (element_top_position <= window_bottom_position)) {
-			$element.addClass('in-view');
+			$animation_element.addClass('in-view');
 		} else {
-			$element.removeClass('in-view');
+			$animation_element.removeClass('in-view');
 		}
-	});
 }
 
 $window.on('scroll resize', check_if_in_view);
