@@ -145,6 +145,13 @@ $window.trigger('scroll');
 
 
 //Main Nav Submenu 
+$(".submenu").hide();
+$(".nav-dropdown").hover(function(e){
+	$('.submenu').toggle("fold", 500);
+	e.preventDefault;
+});
+
+
 // function toggleNav() {
 // 	function showNav() {
 // 		$(".main-nav li.nav-dropdown ul.submenu").addClass("visibility", "visible");
