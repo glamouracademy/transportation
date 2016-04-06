@@ -27,6 +27,7 @@ li {
 	font-size: 72%;
 	letter-spacing: .15em;
 	font-weight: 300;
+	
 }
 
 p {
@@ -114,6 +115,16 @@ header nav {
 	box-shadow: 0 8px 6px -6px #999;
 }
 
+nav#main::before {
+	content:"";
+	position: absolute;
+	z-index: -1;
+	top: 3.8em;
+	height: 100vh;
+	width: 100%;
+	background-color: rgba(0,0,0,0.3);
+}
+
 .mobile-menu {
 	color: #000;
 	display: inline;
@@ -130,15 +141,6 @@ header nav {
 
 ul.main-nav {
 	display:none;
-}
-
-ul.main-nav::before {
-	content:"";
-	position: absolute;
-	z-index: -1;
-	height: 100vh;
-	width: 100%;
-	background-color: rgba(0,0,0,0.3);
 }
 
 ul.main-nav {	
@@ -167,6 +169,14 @@ ul.main-nav li a {
 
 .main-nav li.selected {
 	background-color: #e74e3e;
+}
+
+i.fa-chevron-down {
+	transition: all 1s ease;
+}
+
+.selected i.fa-chevron-down {
+	transform:rotate(180deg);	
 }
 
 .main-nav li.selected a {
@@ -223,13 +233,11 @@ i.fa-chevron-up {
 	background-color: #EDEDED;
 	border-radius: 50%;
 	margin-left: 9em;
-	transition:2s;
+	transition:1s;
 }
 
 /*can't be on hover, needs to be on click*/
-i.fa-chevron-down:hover {
-	transform:rotate(180deg);
-}
+
 
 i.fa-chevron-up.fa-lg {
 	display: none;
@@ -764,6 +772,7 @@ footer p {
 		text-transform: uppercase;
 		padding: 1.1em;
 	}
+
 	ul.main-nav::before {
 		display: none;
 	}
