@@ -14,7 +14,13 @@
 // switch icons
 // close main nav when user clicks off menu
 
-$('nav').click(function(event){
+// $('.mobile-menu').click(function(event){
+// 	$('.main-nav').toggle("slide")
+// 	$('.mobile-menu').find('i').toggleClass('fa fa-bars fa-lg fa fa-times fa-lg')
+// });
+
+
+$('#main').click(function(event){
 	event.stopPropagation();
 	$('.main-nav').toggle("slide")
 	$('.mobile-menu').find('i').toggleClass('fa fa-bars fa-lg fa fa-times fa-lg')
