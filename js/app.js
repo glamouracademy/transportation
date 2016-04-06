@@ -10,16 +10,15 @@
 // hide close icon
 // show hamburger menu icon
 
-$('.mobile-menu').click(function() {
-	var collapsed = $(this).find('i').hasClass('fa fa-bars fa-lg');
-	$(this).find('i').removeClass('fa fa-times fa-lg');
-	$(this).find('i').addClass('fa fa-bars fa-lg');
-	$(".main-nav").toggle("slide");
+// hide and show mobile main nav
+// switch icons
+// close main nav when user clicks off menu
 
-	if(collapsed) {
-		$(this).find('i').toggleClass('fa fa-bars fa-lg fa fa-times fa-lg');
-	}
-});
+$('nav').click(function(event){
+	event.stopPropagation();
+	$('.main-nav').toggle("slide")
+	$('.mobile-menu').find('i').toggleClass('fa fa-bars fa-lg fa fa-times fa-lg')
+})
 
 //mobile chevron toggle and display submenu
 $(".nav-dropdown").click(function(){
@@ -101,31 +100,30 @@ $('nav.offering-nav').click(function(){
 
 
 //Offerings sliding in (desktop)
-// var $animation_element = $('.value.slide-left');
-// var $window = $(window);
+var $animation_element = $('.value.slide-left');
+var $window = $(window);
 
-// function check_if_in_view() {
-// 	var window_height = $window.height();
-// 	var window_top_position = $window.scrollTop();
-// 	var window_bottom_position = (window_top_position - window_height);
+function check_if_in_view() {
+	var window_height = $window.height();
+	var window_top_position = $window.scrollTop();
+	var window_bottom_position = (window_top_position - window_height);
 
-// 	$.each($animation_element, function() {
-// 		var $element = $(this);
-// 		var element_height = $element.outerHeight();
-// 		var element_top_position = $element.offset().top;
-// 		var element_bottom_position = (element_top_position - element_height);
+	// $.each($animation_element, function() {
+	// 	var $element = $(this);
+		var element_height = $animation_element.outerHeight();
+		var element_top_position = $animation_element.offset().top;
+		var element_bottom_position = (element_top_position - element_height);
 
-// 	//check to see if the current container is within viewport
-// 		if((element_bottom_position >= window_top_position) && (element_top_position <= window_bottom_position)) {
-// 			$element.addClass('in-view');
-// 		} else {
-// 			$element.removeClass('in-view');
-// 		}
-// 	});
-// }
+	//check to see if the current container is within viewport
+		if((element_bottom_position >= window_top_position) && (element_top_position <= window_bottom_position)) {
+			$animation_element.addClass('in-view');
+		} else {
+			$animation_element.removeClass('in-view');
+		}
+}
 
-// $window.on('scroll resize', check_if_in_view);
-// $window.trigger('scroll');
+$window.on('scroll resize', check_if_in_view);
+$window.trigger('scroll');
 
 
 
@@ -153,32 +151,11 @@ $('nav.offering-nav').click(function(){
 
 
 //Main Nav Submenu 
-// function toggleNav() {
-// 	function showNav() {
-// 		$(".main-nav li.nav-dropdown ul.submenu").addClass("visibility", "visible");
-// 	}
-// 	function hideNav() {
-// 		$(".main-nav li.nav-dropdown ul.submenu").removeClass("visibility", "none");
-// 	}
-// }
+// $(".submenu").hide();
+$(".nav-dropdown").hover(function(e){
+	$('.submenu').slideToggle(500);
+	e.preventDefault;
+});
 
-// $(".main-nav li.nav-dropdown ul.submenu").on("hover", toggleNav);
-
-
-// $("#fold").hover(function() {
-// 	$(this).toggle("fold", 1000);
-// });
-
-// function toggleNav() {
-// 	function showNav() {
-// 		if($(".submenu").is(":hidden")) {
-// 			$(".nav-dropdown").show();
-// 			$(".nav-dropdown").toggle("fold", 1000);
-// 		} else {
-// 			// $(".nav-dropdown").hide();
-// 		}
-// 	}
-// }
-// $(".nav-dropdown").on("hover", toggleNav);
 
 
