@@ -132,6 +132,15 @@ ul.main-nav {
 	display:none;
 }
 
+ul.main-nav::before {
+	content:"";
+	position: absolute;
+	z-index: -1;
+	height: 100vh;
+	width: 100%;
+	background-color: rgba(0,0,0,0.3);
+}
+
 ul.main-nav {	
 	/*box-shadow: 10px 5px 5px #333;*/
 	width: 60%;
@@ -214,6 +223,12 @@ i.fa-chevron-up {
 	background-color: #EDEDED;
 	border-radius: 50%;
 	margin-left: 9em;
+	transition:2s;
+}
+
+/*can't be on hover, needs to be on click*/
+i.fa-chevron-down:hover {
+	transform:rotate(180deg);
 }
 
 i.fa-chevron-up.fa-lg {
@@ -799,7 +814,7 @@ footer p {
 		white-space: nowrap;
 		font-size: 1.5em;
 		border-top: 1px solid #e74e3e;
-		
+
 	}
 
 	.nav-dropdown ul.submenu li {
