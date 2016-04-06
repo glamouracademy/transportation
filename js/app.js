@@ -13,28 +13,12 @@
 // hide and show mobile main nav
 // switch icons
 // close main nav when user clicks off menu
+
 $('nav').click(function(event){
 	event.stopPropagation();
+	$('.main-nav').toggle("slide")
+	$('.mobile-menu').find('i').toggleClass('fa fa-bars fa-lg fa fa-times fa-lg')
 })
-
-$('.mobile-menu').click(function(event){
-	$('.main-nav').toggle("slide");
-	$('.mobile-menu').find('i').toggleClass('fa fa-bars fa-lg fa fa-times fa-lg');
-});
-
-$(document).click(function(event){
-	var numberofNavAncestors = $(event.target).closest('.main-nav').length;
-	var noNavAncestors = !numberofNavAncestors;
-
-	if(noNavAncestors && !$(event.target).is('.main-nav')) {
-		if($('.main-nav').is(":visible")) {
-			$('.main-nav').toggle("slide")
-			$('.mobile-menu').find('i').toggleClass('fa fa-bars fa-lg fa fa-times fa-lg')
-		}
-	}
-});
-
-
 
 //mobile chevron toggle and display submenu
 $(".nav-dropdown").click(function(){
@@ -52,12 +36,6 @@ $(".nav-dropdown").click(function(){
 		$(".nav-dropdown").removeClass("selected");
 	}
 });
-
-
-
-
-
-
 
 //Smooth scrolling anchors 
 
