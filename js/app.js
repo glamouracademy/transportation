@@ -18,7 +18,9 @@
 // 	$('.main-nav').toggle("slide")
 // 	$('.mobile-menu').find('i').toggleClass('fa fa-bars fa-lg fa fa-times fa-lg')
 // });
-
+$("ul.main-nav").on("click", function(event) {
+	event.stopPropagation();
+});
 
 $('#main').click(function(event){
 	event.stopPropagation();
@@ -26,25 +28,29 @@ $('#main').click(function(event){
 	$('.mobile-menu').find('i').toggleClass('fa fa-bars fa-lg fa fa-times fa-lg')
 })
 
+
+
 //mobile chevron toggle and display submenu
 $(".nav-dropdown").click(function(){
-	var collapsed = $(this).find('i').hasClass('fa fa-chevron-down');
+	var collapsed = !$(".nav-dropdown").hasClass("selected");
 
-	$(this).find('i').removeClass('fa fa-chevron-up');
-	$(this).find('i').addClass('fa fa-chevron-down');
+	// $(this).find('i').removeClass('fa fa-chevron-up');
+	// $(this).find('i').addClass('fa fa-chevron-down');
 
 	if(collapsed) {
-		$(this).find('i').toggleClass('fa fa-chevron-down fa fa-chevron-up');
 		$(".submenu").slideDown("slow");
 		$(".nav-dropdown").addClass("selected");
+		// $(this).find('i').toggleClass('fa fa-chevron-down fa fa-chevron-up');
 	} else {
+		
+
 		$(".submenu").slideUp("slow");
 		$(".nav-dropdown").removeClass("selected");
 	}
 });
 
-//Smooth scrolling anchors 
 
+//Smooth scrolling anchors 
 $('a[href^="#"]').on('click', function(e) {
   e.preventDefault();
   var target = this.hash;
@@ -59,7 +65,6 @@ $('a[href^="#"]').on('click', function(e) {
 
 
 //Offerings Nav
-
 //when clicking a nav tab
 	//underline the active tab
 	//make active tab text white
