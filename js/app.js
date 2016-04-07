@@ -94,14 +94,6 @@ $(function() {
 	$("#accordion").accordion();
 });
 
-
-
-//Offerings Nav: Mobile 
-//accordion
-$(function() {
-	$("#accordion").accordion();
-});
-
 //when tab title clicked
 //add active state for tab nav (red background and white text)
 //remove active state from fmr tab nav
@@ -170,6 +162,19 @@ $(".nav-dropdown").hover(function(e){
 	$('.submenu').slideToggle(500);
 	e.preventDefault;
 });
+
+
+//desktop: differentiators slide in
+$(window).scroll(function(){
+	if($(window).scrollTop() > 0) 
+	{
+		$('.slide-left').stop().animate({ left: '10vw' });
+		$('.slide-right').stop().animate({ right: '10vw' });	
+	} else {
+		$('.slide-left').stop().animate({ left: '-150vw' });
+		$('.slide-right').stop().animate({ right: '-150vw' });	
+	}
+})
 
 
 

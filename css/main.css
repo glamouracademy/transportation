@@ -1156,10 +1156,6 @@ footer p {
 		width: 12%;
 	}	
 
-	.med-container {
-		width: 75%;
-	}
-
 	i.fa-chevron-up.fa-lg {
 		display: initial;
 		visibility: visible;
@@ -1175,36 +1171,35 @@ footer p {
 		border-radius: 50%;
 	}
 
+	.med-container {
+		width: 75%;
+	}
+
 	.differentiators {
 		flex-direction: row;
 	}
 
 	.differentiators .med-container {
 		display: flex;
+		height: 10em;
 	}
 
-/*	.value.slide-left {
-		opacity: 1;
-		-moz-transition: all 600ms linear;
-		-webkit-transition: all 600ms linear;
-		-o-transition: all 600ms linear;
-		transition: all 600ms linear;
-		-moz-transform: translate3d(-300px, 0px, 0px);
-		-webkit-transform: translate3d(-300px, 0px, 0px);
-		-o-transform: translate(-300px, 0px);
-		-ms-transform: translate(-300px, 0px);
-		transform: translate3d(-300px, 0px, 0px);
+	.slide-left {
+		left: -150vw;
 	}
 
-	.value.slide-left.in-view {
-		opacity: 1;
-		-moz-transform: translate3d(300px, 0px, 0px);
-		-webkit-transform: translate3d(300px, 0px, 0px);
-		-o-transform: translate(300px, 0px);
-		-ms-transform: translate(300px, 0px);
-		transform: translate3d(300px, 0px, 0px);
-	}*/
+	.slide-middle {
+		width: 75%;
+	}
 
+	.slide-right {
+		right: -150vw;
+	}
+
+	.value {
+		position: absolute;
+		flex: 1;
+	}
 
 	.material-icons {
 		transition: 2s;
