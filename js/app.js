@@ -25,6 +25,7 @@ $("ul.main-nav").on("click", function(event) {
 $('#main').click(function(event){
 	event.stopPropagation();
 	$('.main-nav').toggle("slide")
+	$('#main').toggleClass('selected', '');
 	$('.mobile-menu').find('i').toggleClass('fa fa-bars fa-lg fa fa-times fa-lg')
 })
 
@@ -56,7 +57,7 @@ $('a[href^="#"]').on('click', function(e) {
   var target = this.hash;
   var $target = $(target);
   
-  $('html, body').stop(). animate({
+  $('html, body').stop().animate({
     'scrollTop': $target.offset().top
   }, 900, 'swing', function() {
     window.location.hash = target;

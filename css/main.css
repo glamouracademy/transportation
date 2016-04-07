@@ -115,7 +115,7 @@ header nav {
 	box-shadow: 0 8px 6px -6px #999;
 }
 
-nav#main::before {
+#main.selected::before {
 	content:"";
 	position: absolute;
 	z-index: -1;
@@ -144,7 +144,6 @@ ul.main-nav {
 }
 
 ul.main-nav {	
-	/*box-shadow: 10px 5px 5px #333;*/
 	width: 60%;
 	background-color: #fff;
 	margin: 0;
@@ -175,7 +174,7 @@ i.fa-chevron-down {
 	transition: all 1s ease;
 }
 
-.selected i.fa-chevron-down {
+li.selected i.fa-chevron-down {
 	transform:rotate(180deg);	
 }
 
@@ -235,9 +234,6 @@ i.fa-chevron-up {
 	margin-left: 9em;
 	transition:1s;
 }
-
-/*can't be on hover, needs to be on click*/
-
 
 i.fa-chevron-up.fa-lg {
 	display: none;
@@ -790,7 +786,7 @@ footer p {
 		display: block;
 	}
 
-	.main-nav > li:after {
+	.main-nav > li a:after {
 		content: '';
 		position: absolute;
 		bottom: 0;
@@ -806,7 +802,7 @@ footer p {
 		padding-bottom: .5em;
 	}
 
-	.main-nav > li:hover:after {
+	.main-nav > li a:hover:after {
 		width: 100%;
 	}
 
