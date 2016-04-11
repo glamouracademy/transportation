@@ -1202,11 +1202,22 @@ footer p {
 	}
 
 	.material-icons {
-		transition: 2s;
+		position: relative;
+		outline: none;
 	}
 
-	.material-icons:hover {
-		transform: rotate(360deg);
+	.material-icons::after {
+		position: absolute;
+		bottom: .05em;
+		right: .05em;
+		outline: 3px solid rgba(191, 191, 191, 0.2);
+		padding: .8em;
+		content: "";
+		transition: 1s;
+	}
+
+	.material-icons:hover::after {
+		transform:rotate(-360deg);
 		outline: 3px solid #e74e3e;
 	}
 
