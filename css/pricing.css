@@ -41,7 +41,6 @@
 	transition: transform 5s;
   transform-style: preserve-3d;
   position: absolute;
-  /*height: 25em;*/
   top: 0;
   left: 0;
   right: 0;

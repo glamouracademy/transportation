@@ -30,27 +30,18 @@ $('#main').click(function(event){
 	$('.mobile-menu').find('i').toggleClass('fa fa-bars fa-lg fa fa-times fa-lg')
 })
 
-
-
 //mobile chevron toggle and display submenu
 $(".nav-dropdown").click(function(){
 	var collapsed = !$(".nav-dropdown").hasClass("selected");
 
-	// $(this).find('i').removeClass('fa fa-chevron-up');
-	// $(this).find('i').addClass('fa fa-chevron-down');
-
 	if(collapsed) {
 		$(".submenu").slideDown("slow");
 		$(".nav-dropdown").addClass("selected");
-		// $(this).find('i').toggleClass('fa fa-chevron-down fa fa-chevron-up');
 	} else {
-		
-
 		$(".submenu").slideUp("slow");
 		$(".nav-dropdown").removeClass("selected");
 	}
 });
-
 
 //Smooth scrolling anchors 
 $('a[href^="#"]').on('click', function(e) {
@@ -64,8 +55,6 @@ $('a[href^="#"]').on('click', function(e) {
     window.location.hash = target;
   });
 });
-
-
 
 //Offerings Nav: Tablet/Desktop
 
@@ -131,7 +120,6 @@ function check_if_in_view() {
 
 $window.on('scroll resize', check_if_in_view);
 $window.trigger('scroll');
-
 
 
 //Mobile and Tablet Menu SlideUp and SlideDown
