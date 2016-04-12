@@ -18,6 +18,7 @@
 // 	$('.main-nav').toggle("slide")
 // 	$('.mobile-menu').find('i').toggleClass('fa fa-bars fa-lg fa fa-times fa-lg')
 // });
+
 $("ul.main-nav").on("click", function(event) {
 	event.stopPropagation();
 });
@@ -158,10 +159,10 @@ $window.trigger('scroll');
 
 //Main Nav Submenu 
 // $(".submenu").hide();
-$(".nav-dropdown").hover(function(e){
-	$('.submenu').slideToggle(500);
-	e.preventDefault;
-});
+// $(".nav-dropdown").hover(function(e){
+// 	$('.submenu').slideToggle(500);
+// 	e.preventDefault;
+// });
 
 
 //desktop: differentiators slide in
