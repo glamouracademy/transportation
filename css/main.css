@@ -193,17 +193,26 @@ li.selected i.fa-chevron-down {
 	display: none;
 }
 
-.submenu-list a,
-.submenu ul li a {
-	color: #666; 
-}
-
 .submenu-list {
 	line-height: 3em;
 	padding-left: 5%;
 	font-weight: 400;
-	letter-spacing: 0;
+	letter-spacing: 0;	
 }
+
+.submenu-list a,
+.submenu ul li a {
+	color: #666;
+}
+
+.trucking-types {
+	
+	font-size: 1em;
+	margin: 0;
+	font-size: 1.4em;
+	font-weight: 500;
+}
+
 
 i.fa-chevron-down,
 i.fa-chevron-up {
@@ -1056,9 +1065,21 @@ footer p {
 		margin-left: 4em;
 	}
 
+/* Trucking Menu */
 
+/*hover goes after type*/
+	.submenu > li:first-of-type:hover ul {
+		/*outline: 1px solid dodgerblue;*/
+		display: block;
+		margin-bottom: 0;
+		line-height: .1em;
+		font-size: 1.3em;
+		font-weight: 500;
+		padding-left: 4em;
+		/*padding-top: .3em;
+		padding-bottom: .3em;*/
+	}
 	
-
 
 
 
