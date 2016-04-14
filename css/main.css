@@ -166,6 +166,10 @@ ul.main-nav li a {
 	background-color: #e74e3e;
 }
 
+li.main-nav-list.selected > a {
+	color: #fff;
+}
+
 i.fa-chevron-down {
 	transition: all 1s ease;
 }
@@ -174,9 +178,7 @@ li.selected i.fa-chevron-down {
 	transform:rotate(180deg);	
 }
 
-.main-nav li.selected a {
-	color: #fff;	
-}
+
 
 .main-nav li.nav-dropdown ul.submenu {
 	font-size: 1.3em;
@@ -757,6 +759,7 @@ footer p {
 
 	.main-nav li.nav-dropdown ul.submenu li.submenu-list a {
 		color: #000;
+		/*line-height: 2em;*/
 		letter-spacing: initial;
 		padding-left: 2.5em;
 		padding-right: 3.8em;
