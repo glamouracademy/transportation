@@ -760,11 +760,10 @@ footer p {
 		display: block;
 	}
 
-	.main-nav li.nav-dropdown ul.submenu li:first-of-type,
-	.main-nav li.nav-dropdown ul.submenu li:last-of-type {
-		padding-top: 2em;
-		padding-bottom: 2em;
+	.submenu-list {
+		padding: 1em;
 	}
+
 
 	.main-nav li.nav-dropdown ul.submenu li.submenu-list a {
 		color: #000;
@@ -1070,24 +1069,20 @@ footer p {
 /*hover goes after type*/
 	.submenu > li:first-of-type:hover ul {
 		/*outline: 1px solid dodgerblue;*/
-		display: block;
+		/*display: block;
 		margin-bottom: 0;
 		line-height: .1em;
 		font-size: 1.3em;
 		font-weight: 500;
-		padding-left: 4em;
+		padding-left: 4em;*/
 		/*padding-top: .3em;
 		padding-bottom: .3em;*/
 	}
 	
 
-
-
-
-
-
-
-
+	.submenu {
+		padding: 1em;
+	}
 
 	h1 {
 		letter-spacing: 10px;
