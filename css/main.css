@@ -804,13 +804,11 @@ footer p {
 
 /* animated about menu */
 	.main-nav li.nav-dropdown ul.submenu {
-		
 		margin-top: .5em;
 		visibility: hidden;
 		text-transform: capitalize;
 		font-size: 1.4em;
 		white-space: nowrap;
-		
 		color: #000;
 		position: absolute;
 		overflow: hidden;
@@ -826,15 +824,34 @@ footer p {
 /*-- end animated about menu --*/
 
 
-
 /* Trucking Menu */
 	.submenu-list ul {
 		display: none;
+		margin-bottom: 0;
+		font-size: 1.3em;
+		font-weight: 500;
+		padding-left: 4em;
+		padding-top: .3em;
+		padding-bottom: .3em;
+		max-height: 0;
+		transition: max-height 1000s ease-in-out;
 	}
 
 
+/*hover goes after type*/
+	.submenu > li:first-of-type:hover ul {
+		display: block;
+		max-height: 500px;
+	}
 
+	.submenu > li:first-of-type:hover {
+		padding-bottom: 0;
+	}
+	
 
+	.submenu {
+		padding: 1em;
+	}
 
 
 
@@ -1066,25 +1083,30 @@ footer p {
 
 /* Trucking Menu */
 
-/*hover goes after type*/
-	.submenu > li:first-of-type:hover ul {
-		display: block;
-		margin-bottom: 0;
-		font-size: 1.3em;
-		font-weight: 500;
-		padding-left: 4em;
-		padding-top: .3em;
-		padding-bottom: .3em;
+/* animated about menu */
+	/*.main-nav li.nav-dropdown ul.submenu {
+		margin-top: .5em;
+		visibility: hidden;
+		text-transform: capitalize;
+		font-size: 1.4em;
+		white-space: nowrap;
+		color: #000;
+		position: absolute;
+		overflow: hidden;
+		max-height: 0;
+		transition: max-height 500ms ease-in-out;
 	}
 
-	.submenu > li:first-of-type:hover {
-		padding-bottom: 0;
-	}
-	
+	.main-nav li.nav-dropdown:hover ul.submenu {
+		visibility: visible;
+		border-top: 1px solid #e74e3e;
+		max-height: 500px;
+	}*/
+/*-- end animated about menu --*/
 
-	.submenu {
-		padding: 1em;
-	}
+
+
+
 
 	h1 {
 		letter-spacing: 10px;
