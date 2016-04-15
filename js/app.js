@@ -31,7 +31,7 @@ $('#main').click(function(event){
 })
 
 //mobile chevron toggle and display submenu
-$(".nav-dropdown").click(function(){
+$("i[class*='chevron']").click(function(){
 	var collapsed = !$(".nav-dropdown").hasClass("selected");
 
 	if(collapsed) {
