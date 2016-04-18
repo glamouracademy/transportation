@@ -179,7 +179,6 @@ li.selected i.fa-chevron-down {
 }
 
 
-
 .main-nav li.nav-dropdown ul.submenu {
 	font-size: 1.3em;
 	padding-left: 10%;
@@ -848,13 +847,9 @@ footer p {
 		padding-bottom: 0;
 	}
 	
-
 	.submenu {
 		padding: 1em;
 	}
-
-
-
 
 	/*-- banner --*/
 	
@@ -1080,32 +1075,6 @@ footer p {
 		width: 70%;
 		margin-left: 4em;
 	}
-
-/* Trucking Menu */
-
-/* animated about menu */
-	/*.main-nav li.nav-dropdown ul.submenu {
-		margin-top: .5em;
-		visibility: hidden;
-		text-transform: capitalize;
-		font-size: 1.4em;
-		white-space: nowrap;
-		color: #000;
-		position: absolute;
-		overflow: hidden;
-		max-height: 0;
-		transition: max-height 500ms ease-in-out;
-	}
-
-	.main-nav li.nav-dropdown:hover ul.submenu {
-		visibility: visible;
-		border-top: 1px solid #e74e3e;
-		max-height: 500px;
-	}*/
-/*-- end animated about menu --*/
-
-
-
 
 
 	h1 {
