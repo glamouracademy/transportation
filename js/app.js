@@ -126,8 +126,8 @@ $window.trigger('scroll');
 $(window).scroll(function(){
 	if($(window).scrollTop() > 0) 
 	{
-		$('.slide-left').stop().animate({ left: '10vw' });
-		$('.slide-right').stop().animate({ right: '10vw' });	
+		$('.slide-left').stop().animate({ left: '5vw' });
+		$('.slide-right').stop().animate({ right: '5vw' });	
 	} else {
 		$('.slide-left').stop().animate({ left: '-150vw' });
 		$('.slide-right').stop().animate({ right: '-150vw' });	
