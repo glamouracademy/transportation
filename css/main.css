@@ -1066,14 +1066,24 @@ footer p {
 
 @media (min-width: 1025px) {
 	
+	header {
+		top: -50vw;
+		z-index: 3;
+		transition: all 0.8s ease;
+		position: static;
+	}
+
+	.anchored-header {
+		background-color: black;
+		position: fixed;
+		z-index: 2;
+		top: 0;
+	}
+
 	header nav {
 		margin-right: 2em;
 		width: 80%;
 	}
-
-/*	.anchored-nav {
-		
-	}*/
 
 	.logo {
 		width: 70%;
@@ -1093,6 +1103,8 @@ footer p {
 		 -webkit-clip-path: polygon(100% 85%, 51% 100%, 49% 100%, 0% 85%, 0% 0%, 100% 0%);
 		height: auto;
 		padding: 12em 0;
+		position: absolute;
+		top: 0;
 	}
 
 	.banner-content {
@@ -1139,7 +1151,8 @@ footer p {
 
 	.differentiators .med-container {
 		display: flex;
-		height: 10em;
+		height: 60em;
+		top: 42vh;
 	}
 
 	.slide-left {
@@ -1157,6 +1170,7 @@ footer p {
 	.value {
 		position: absolute;
 		flex: 1;
+		top:50em;
 	}
 
 	.material-icons {

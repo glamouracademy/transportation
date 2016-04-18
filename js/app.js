@@ -135,4 +135,21 @@ $(window).scroll(function(){
 })
 
 
+//desktop: slidedown, anchored navigation
+$(window).on('scroll', function() {
+	var locationOfHeader = $('header').scrollTop();
+	var headerHeight = $('header').outerHeight();
+	var positionOfHeader = (locationOfHeader + headerHeight);
+	var distanceToTop = $(window).scrollTop();
+
+	if (positionOfHeader <= distanceToTop) {
+		$('header').addClass('anchored-header');
+	} else {
+		$('header').removeClass('anchored-header');
+	}
+});
+
+$(window).trigger('scroll');
+
+
 
