@@ -95,7 +95,7 @@ $('nav.offering-nav').click(function(){
 });
 
 
-//Offerings sliding in (desktop)
+//Offerings sliding in (desktop): in-view
 var $animation_element = $('.value.slide-left');
 var $window = $(window);
 
@@ -122,38 +122,7 @@ $window.on('scroll resize', check_if_in_view);
 $window.trigger('scroll');
 
 
-//Mobile and Tablet Menu SlideUp and SlideDown
-// $(".nav-dropdown").click(function() {
-// 	if($(".submenu").is(":hidden")) {
-// 		$(".submenu").slideDown("slow");
-// 		$(".nav-dropdown").addClass("selected");
-// 	} else {
-// 		$(".submenu").slideUp("slow");
-// 		$(".nav-dropdown").removeClass("selected");
-// 	}
-// });
-
-//Main Nav Dropdown
-// $(".main-nav li.nav-dropdown ul.submenu").hover(function(){
-// 	$(this).addClass("hover");
-// 	$(this).css("visibility", "visible");
-// 	$(this).css("display", "block");
-// }, function(){
-// 	$(this).removeClass("hover");
-// 	$(this).css("visibility", "hidden");
-// 	$(this).css("display", "none");
-// });
-
-
-//Main Nav Submenu 
-// $(".submenu").hide();
-// $(".nav-dropdown").hover(function(e){
-// 	$('.submenu').slideToggle(500);
-// 	e.preventDefault;
-// });
-
-
-//desktop: differentiators slide in
+//desktop: offerings slide in
 $(window).scroll(function(){
 	if($(window).scrollTop() > 0) 
 	{
