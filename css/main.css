@@ -1311,6 +1311,7 @@ footer p {
 
 	.blogs-header {
 		width: 100%;
+		background-color: white;
 	}
 
 	.blog-container {
@@ -1351,6 +1352,12 @@ footer p {
 	.blogs-second > .blog-container:nth-child(1) img, .blogs-second > .blog-container:nth-child(2) img  {
 		order: 1;
 		-webkit-clip-path: polygon(100% 0%, 0% 0%, 0% 45%, 5% 50%, 0% 55%, 0% 100%, 100% 100%);
+	}
+
+	/* desktop blog slide in */
+	.blog-background {
+		background-color: #e74e3e;
+		height: 35vh;
 	}
 
 	.contact-us {

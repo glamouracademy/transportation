@@ -151,5 +151,5 @@ $(window).on('scroll', function() {
 
 $(window).trigger('scroll');
 
-
+/* desktop blog slide in */
 
