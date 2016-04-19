@@ -547,7 +547,7 @@ p.partners-more:hover {
 	background-color: #e74e3e;
 }
 
-.blog-container:nth-last-of-type(1) {
+.blogs-second > .blog-container:nth-last-of-type(1) {
 	padding-bottom: 4em;
 }
 
@@ -1050,21 +1050,7 @@ footer p {
 		-webkit-clip-path: polygon(100% 0%, 0% 0%, 0% 45%, 5% 50%, 0% 55%, 0% 100%, 100% 100%);
 	}
 
-/*	.blogs-first > .blog-container:nth-child(2) img, 
-	.blogs-second > .blog-container:nth-child(1) img {
-		order: 0;
-		outline: 5px solid goldenrod;
-		-webkit-clip-path: polygon(100% 0%, 100% 45%, 95% 50%, 100% 55%, 100% 100%, 0% 100%, 0% 0%);
-	}
-
-	.blogs-first > .blog-container:nth-child(3) img, 
-	.blogs-second > .blog-container:nth-child(2) img {
-		order: 1;
-		outline: 5px solid purple;
-		-webkit-clip-path: polygon(100% 0%, 0% 0%, 0% 45%, 5% 50%, 0% 55%, 0% 100%, 100% 100%);
-	}*/
-
-	.blog-container:nth-last-of-type(1) {
+	.blogs-second > .blog-container:nth-last-of-type(1) {
 	padding-bottom: 0;
 	}
 
