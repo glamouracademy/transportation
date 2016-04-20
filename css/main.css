@@ -1363,7 +1363,9 @@ footer p {
 		-webkit-clip-path: polygon(100% 0%, 0% 0%, 0% 45%, 5% 50%, 0% 55%, 0% 100%, 100% 100%);
 	}
 
-	/* desktop blog slide in */
+	.blogs-first {
+		margin: 0;
+	}
 	
 	.blog-background {
 		background-color: #e74e3e;
