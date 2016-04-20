@@ -1312,7 +1312,6 @@ footer p {
 	.blogs-header {
 		width: 100%;
 		background-color: white;
-		outline: 1px solid dodgerblue;
 	}
 
 	.blog-container {
@@ -1382,7 +1381,7 @@ footer p {
 	.contact-us {
 		width: 60%;
 		padding-top: 2em;
-		padding-bottom: 2em;
+		padding-bottom: 5em;
 	}
 
 	.contact-container {
