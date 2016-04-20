@@ -149,7 +149,16 @@ $(window).on('scroll', function() {
 	}
 });
 
-$(window).trigger('scroll');
-
 /* desktop blog slide in */
+$(window).scroll(function(){
+	if($(window).scrollTop() > 1760) {
+		$('.left').stop().animate({ left: '.1vw' });
+		$('.right').stop().animate({ right: '.1vw' });
+	} else {
+		$('.left').stop().animate({ left: '-30vw' });
+		$('.right').stop().animate({ right: '-30vw' });
+	}
+});
+
+$(window).trigger('scroll');
 

@@ -1312,14 +1312,23 @@ footer p {
 	.blogs-header {
 		width: 100%;
 		background-color: white;
+		outline: 1px solid dodgerblue;
 	}
 
 	.blog-container {
 		width: 50%;
+		min-height:27vh;
+		max-height: 43.5vh;
+		position: relative;
+	}
+
+	.blogs {
+		align-items: flex-start;
 	}
 
 	.blog {
 		width: 100%;
+		position: absolute;
 	}
 
 	.blog img, .blog-desc, .blog .line {
@@ -1355,10 +1364,19 @@ footer p {
 	}
 
 	/* desktop blog slide in */
+	
 	.blog-background {
 		background-color: #e74e3e;
-		height: 35vh;
+		width: 100%;
 	}
+
+	.left {
+	  left: -30vw;
+	}
+
+	.right {
+	  right: -30vw;
+	}  
 
 	.contact-us {
 		width: 60%;
