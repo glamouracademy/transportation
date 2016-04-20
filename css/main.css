@@ -1317,8 +1317,7 @@ footer p {
 
 	.blog-container {
 		width: 50%;
-		min-height:27vh;
-		max-height: 43.5vh;
+		height: 44.7vh;
 		position: relative;
 	}
 
@@ -1382,6 +1381,8 @@ footer p {
 
 	.contact-us {
 		width: 60%;
+		padding-top: 2em;
+		padding-bottom: 2em;
 	}
 
 	.contact-container {
