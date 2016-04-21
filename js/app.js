@@ -149,6 +149,7 @@ $(window).on('scroll', function() {
 
 	if (positionOfHeader <= distanceToTop) {
 		$('header').addClass('anchored-header');
+		$('.main-nav li.nav-dropdown ul.submenu').css('margin-top', '3.5em');
 	} else {
 		$('header').removeClass('anchored-header');
 	}
