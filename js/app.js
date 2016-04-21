@@ -96,7 +96,7 @@ $('nav.offering-nav').click(function(){
 
 
 //Offerings sliding in (desktop): in-view?
-// var $animation_element = $('.value.slide-left');
+// var $animation_element = $('.blog-container .left');
 // var $window = $(window);
 
 // function check_if_in_view() {
@@ -112,9 +112,14 @@ $('nav.offering-nav').click(function(){
 
 // 	//check to see if the current container is within viewport
 // 		if((element_bottom_position >= window_top_position) && (element_top_position <= window_bottom_position)) {
-// 			$animation_element.addClass('in-view');
+// 			// $animation_element.addClass('in-view');
+// 			$('.blogs-first .left').css("background-color", "dodgerblue");
+// 			// $('.blogs-first .left').stop().animate({ left: '.1vw' });
+// 			// $('.blogs-first .right').stop().animate({ right: '.1vw' });
 // 		} else {
-// 			$animation_element.removeClass('in-view');
+// 			// $animation_element.removeClass('in-view');
+// 			$('.blogs-first .left').stop().animate({ left: '-30vw' });
+//  			// $('.blogs-first .right').stop().animate({ right: '-30vw' });
 // 		}
 // }
 
@@ -151,12 +156,22 @@ $(window).on('scroll', function() {
 
 /* desktop blog slide in */
 $(window).scroll(function(){
-	if($(window).scrollTop() > 1760) {
-		$('.left').stop().animate({ left: '.1vw' });
-		$('.right').stop().animate({ right: '.1vw' });
+	if($(window).scrollTop() > 1780) {
+		$('.blogs-first .left').stop().animate({ left: '.1vw' });
+		$('.blogs-first .right').stop().animate({ right: '.1vw' });
 	} else {
-		$('.left').stop().animate({ left: '-30vw' });
-		$('.right').stop().animate({ right: '-30vw' });
+		$('.blogs-first .left').stop().animate({ left: '-30vw' });
+		$('.blogs-first .right').stop().animate({ right: '-30vw' });
+	}
+});
+
+$(window).scroll(function(){
+	if($(window).scrollTop() > 2180) {
+		$('.blogs-second .left').stop().animate({ left: '.1vw' });
+		$('.blogs-second .right').stop().animate({ right: '.1vw' });
+	} else {
+		$('.blogs-second .left').stop().animate({ left: '-30vw' });
+		$('.blogs-second .right').stop().animate({ right: '-30vw' });
 	}
 });
 
