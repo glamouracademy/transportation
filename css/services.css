@@ -26,6 +26,7 @@
 .banner h1 {
 	color: #e74e3e;
 	letter-spacing: .125em;
+	line-height: 1em;
 }
 
 .banner i {

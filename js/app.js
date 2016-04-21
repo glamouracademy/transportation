@@ -140,6 +140,7 @@ $(window).scroll(function(){
 })
 
 
+/*---in view isn't working ---*/
 //desktop: slidedown, anchored navigation
 $(window).on('scroll', function() {
 	var locationOfHeader = $('header').scrollTop();
@@ -154,8 +155,7 @@ $(window).on('scroll', function() {
 		$('.main-nav > li.main-nav-list').hover (
 			function() {
 				$(this).removeClass('underline');
-			}
-			);
+			})
 	} else {
 		$('header').removeClass('anchored-header');
 	}
