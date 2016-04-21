@@ -780,7 +780,7 @@ footer p {
 	}
 
 /* animated underline */
-	.main-nav > li.main-nav-list::after {
+	.main-nav > li.main-nav-list.underline::after {
 		content: '';
 		position: absolute;
 		bottom: 0;
@@ -793,6 +793,8 @@ footer p {
 	.main-nav > li.main-nav-list:not(.selected):hover::after {
 		width: 100%;
 	}
+
+
 /*-- end animated underline --*/
 
 	.main-nav > .main-nav-list.selected { 
