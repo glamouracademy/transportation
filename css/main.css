@@ -774,7 +774,7 @@ footer p {
 	}
 
 /* animated underline */
-	.main-nav > li.main-nav-list.underline::after {
+	.main-nav > li.main-nav-list::after {
 		content: '';
 		position: absolute;
 		bottom: 0;
