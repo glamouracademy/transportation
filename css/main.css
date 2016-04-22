@@ -801,6 +801,10 @@ footer p {
 		padding-bottom: .5em;
 	}
 
+	.anchored-header .main-nav > .main-nav-list.selected {
+		border-bottom: initial;
+	}
+
 	ul.main-nav > li.main-nav-list.selected > a,
 	ul.main-nav > li.main-nav-list:hover > a,
 	.main-nav li.nav-dropdown ul.submenu li.submenu-list:hover a {
@@ -1087,7 +1091,7 @@ footer p {
 	.anchored-header {
 		background-color: black;
 		position: fixed;
-		z-index: 2;
+		z-index: 1000;
 		top: 0;
 	}
 
