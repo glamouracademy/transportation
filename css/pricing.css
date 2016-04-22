@@ -243,6 +243,10 @@ header {
 	margin-top: initial;
 }
 
+.banner {
+	width: 100%;
+}
+
 .lg-container {
 	width: 63%;
 }
