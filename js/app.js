@@ -150,12 +150,11 @@ $(window).on('scroll', function() {
 
 	if (positionOfHeader <= distanceToTop) {
 		$('header').addClass('anchored-header');
-		$('.main-nav li.nav-dropdown ul.submenu').css('margin-top', '3.5em');
 		$('.selected').css('border-bottom', 'initial');
-		$('.main-nav > li.main-nav-list').hover (
-			function() {
-				$(this).removeClass('underline');
-			})
+		// $('.main-nav > li.main-nav-list').hover	 (
+		// 	function() {
+		// 		$(this).removeClass('underline');
+		// 	})
 	} else {
 		$('header').removeClass('anchored-header');
 	}

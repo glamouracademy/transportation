@@ -209,7 +209,6 @@ li.selected i.fa-chevron-down {
 	font-weight: 500;
 }
 
-
 i.fa-chevron-down,
 i.fa-chevron-up {
 	border: 1.5px solid #333;
@@ -1084,6 +1083,10 @@ footer p {
 		position: fixed;
 		z-index: 2;
 		top: 0;
+	}
+
+	.anchored-header .main-nav li.nav-dropdown ul.submenu {
+		margin-top: 3.5em;
 	}
 
 	header nav {
