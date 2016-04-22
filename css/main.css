@@ -788,6 +788,10 @@ footer p {
 		width: 100%;
 	}
 
+	.anchored-header .main-nav > li.main-nav-list:not(.selected):hover::after {
+		width: 0%;
+	}
+
 
 /*-- end animated underline --*/
 
@@ -802,6 +806,8 @@ footer p {
 	.main-nav li.nav-dropdown ul.submenu li.submenu-list:hover a {
 		color: #e74e3e;
 	}
+
+
 
 
 /* animated about menu */
