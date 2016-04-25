@@ -146,6 +146,10 @@
 /* --- desktop --- */
 
 @media (min-width: 1025px) {
+	header {
+		top: 0;
+		position: fixed;
+	}
 	
 
 	.main-nav {
@@ -160,6 +164,7 @@
 	.banner {
 		padding: 8em 0;
 		width: 100%;
+		top: 17vh;
 	}
 
 	.top-banner {
@@ -168,6 +173,10 @@
 
 	.service h4 {
 		margin-bottom: .5em;
+	}
+
+	.services {
+		padding-top: 61vh;
 	}
 	.services h4:hover {
 		color: #e74e3e;
