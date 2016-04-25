@@ -158,21 +158,21 @@ $(window).on('scroll', function() {
 /* desktop blog slide in */
 $(window).scroll(function(){
 	if($(window).scrollTop() > 1780) {
-		$('.blogs-first .left').stop().animate({ left: '.1vw' });
-		$('.blogs-first .right').stop().animate({ right: '.1vw' });
+		$('.blogs-first .left').stop().animate({ left: '.1vw' }, 150, "linear");
+		$('.blogs-first .right').stop().animate({ right: '.1vw' }, 150, "linear");
 	} else {
-		$('.blogs-first .left').stop().animate({ left: '-30vw' });
-		$('.blogs-first .right').stop().animate({ right: '-30vw' });
+		$('.blogs-first .left').stop().animate({ left: '-30vw' }, 150, "linear");
+		$('.blogs-first .right').stop().animate({ right: '-30vw' }, 150, "linear");
 	}
 });
 
 $(window).scroll(function(){
 	if($(window).scrollTop() > 2180) {
-		$('.blogs-second .left').stop().animate({ left: '.1vw' });
-		$('.blogs-second .right').stop().animate({ right: '.1vw' });
+		$('.blogs-second .left').stop().animate({ left: '.1vw' }, 150, "linear");
+		$('.blogs-second .right').stop().animate({ right: '.1vw' }, 150, "linear");
 	} else {
-		$('.blogs-second .left').stop().animate({ left: '-30vw' });
-		$('.blogs-second .right').stop().animate({ right: '-30vw' });
+		$('.blogs-second .left').stop().animate({ left: '-30vw' }, 150, "linear");
+		$('.blogs-second .right').stop().animate({ right: '-30vw' }, 150, "linear");
 	}
 });
 
