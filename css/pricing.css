@@ -234,6 +234,15 @@ header {
 	padding: 4em 0;
 }
 
+.anchored-header {
+	padding-top: 2em;
+	height: 6em;
+}
+
+ul.main-nav {
+	padding: 0.5em;
+}
+
 .logo {
 	margin-left: 3em;
 }
