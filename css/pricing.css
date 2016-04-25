@@ -243,12 +243,17 @@ header {
 	margin-top: initial;
 }
 
-.banner {
+.banner,
+.value {
 	width: 100%;
 }
 
 .lg-container {
 	width: 63%;
+}
+
+.value {
+	top: 40em;
 }
 
 .stats {
@@ -265,6 +270,10 @@ header {
 
 .prices {
 	width: 80%;
+}
+
+.price-list {
+	padding-top: 42em;
 }
 
 }
