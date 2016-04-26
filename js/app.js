@@ -81,7 +81,9 @@ $('.navigation a').click(function(){
 //Offerings Nav: Mobile 
 
 $(function() {
-	$("#accordion").accordion();
+	$("#accordion").accordion({
+		heightStyle: "content"
+	});
 });
 
 //when tab title clicked

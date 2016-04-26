@@ -86,8 +86,16 @@
 }
 
 /* -- offerings -- */
+.offerings {
+	margin: 2em auto;
+}
+
 .offerings h2 {
 	width: 90%;
+}
+
+.content {
+	height: auto;
 }
 
 
@@ -146,10 +154,6 @@
 /* --- desktop --- */
 
 @media (min-width: 1025px) {
-	header {
-		top: 0;
-		position: fixed;
-	}
 	
 
 	.main-nav {
