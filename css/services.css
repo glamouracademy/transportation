@@ -150,6 +150,14 @@
 		font-size: 3em;
 	}
 
+	.offerings {
+	margin: 0 auto;
+	}
+
+	.navigation {
+		margin: 0;
+	}
+
 }
 
 /* --- desktop --- */
