@@ -1339,6 +1339,8 @@ footer p {
 	.blog {
 		width: 100%;
 		position: absolute;
+		overflow: hidden;
+		height: 44.7vh;
 	}
 
 	.blog img, .blog-desc, .blog .line {
