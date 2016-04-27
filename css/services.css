@@ -133,6 +133,22 @@
 		padding-bottom: 1em;
 	}
 
+/*		i.fa-chevron-up.fa-lg {
+		display: initial;
+		visibility: visible;
+		color: white;
+  	position: fixed;
+  	right: 2em;
+  	bottom: 1em;
+  	z-index: 1000;
+  	box-shadow: 5px 5px 10px 1px rgba(64, 62, 63, 0.53), 10px 10px 50px 10px rgba(64, 62, 63, 0.2) inset;
+  	border: none;
+		padding: .7em;
+		background-color: #e74e3e;
+		border-radius: 50%;
+	}*/
+
+
 	.blogs-header .line {
 		margin-top: 1.5em;
 	}
@@ -182,6 +198,9 @@
 
 	.top-banner {
 		height: 8.5em;
+		width: 100%;
+		position: absolute;
+		top: 0;
 	}
 
 	.service h4 {
