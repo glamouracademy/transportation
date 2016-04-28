@@ -1088,6 +1088,7 @@ footer p {
 		z-index: 3;
 		transition: all 0.8s ease;
 		position: static;
+		padding: 0;
 	}
 
 	.anchored-header {
@@ -1099,12 +1100,13 @@ footer p {
 	}
 
 	.anchored-header .main-nav li.nav-dropdown ul.submenu {
-		margin-top: 3.5em;
+		margin-top: 2.9em;
 	}
 
 	header nav {
 		width: 50%;
 		right: 0;
+		top: 2em;
 		position: absolute;
 	}
 
@@ -1126,15 +1128,19 @@ footer p {
 
 	.banner {
 		 -webkit-clip-path: polygon(100% 85%, 51% 100%, 49% 100%, 0% 85%, 0% 0%, 100% 0%);
-		height: auto;
-		padding: 12em 0;
-		position: absolute;
+		height: 44em;
+	/*	padding: 12em 0;
+		position: absolute;*/
 		top: 0;
+	}
+
+	.anchored-header ul.main-nav,
+	.anchored-header .logo {
+		position: static;
 	}
 
 	.banner-content {
 		width: 80%;
-		padding-top: 0;
 	}
 
 	.banner-content p {
