@@ -19,7 +19,7 @@
 .banner {
 	background: url('../img/ship-motion.jpg') no-repeat center center fixed;
 	background-size: cover;
-	height: 29em;
+	height: 33em;
 	-webkit-clip-path: none;
 }
 
@@ -35,13 +35,13 @@
 }
 
 .banner-content {
-	padding-top: 3em;
+	padding-top: 10em;
 }
 
 .banner p {
 	color: #fff;
 	font-weight: 300;
-	font-size: .95em;
+	font-size: .9em;
 	letter-spacing: 0.01em;
 }
 
@@ -52,6 +52,7 @@
 }
 
 .services .lg-container {
+	width: 85%;
 	margin-top: 5em;
 	margin-bottom: 3.5em;
 }
