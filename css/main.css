@@ -655,7 +655,6 @@ p.partners-more:hover {
 }
 
 
-
 /* -- containers -- */
 
 .lg-container {
@@ -687,7 +686,6 @@ footer p {
 	font-size: .8em;
 	line-height: 1.1em;
 }
-
 
 
 /* -------------- 
@@ -767,7 +765,6 @@ footer p {
 
 	.main-nav li.nav-dropdown ul.submenu li.submenu-list a {
 		color: #000;
-		/*line-height: 2em;*/
 		letter-spacing: initial;
 		padding-left: 2.5em;
 		padding-right: 3.8em;
@@ -810,8 +807,6 @@ footer p {
 	.main-nav li.nav-dropdown ul.submenu li.submenu-list:hover a {
 		color: #e74e3e;
 	}
-
-
 
 
 /* animated about menu */
@@ -1129,8 +1124,6 @@ footer p {
 	.banner {
 		 -webkit-clip-path: polygon(100% 85%, 51% 100%, 49% 100%, 0% 85%, 0% 0%, 100% 0%);
 		height: 44em;
-	/*	padding: 12em 0;
-		position: absolute;*/
 		top: 0;
 	}
 

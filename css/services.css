@@ -15,7 +15,6 @@
 	height: 10em;
 }
 
-
 .banner {
 	background: url('../img/ship-motion.jpg') no-repeat center center fixed;
 	background-size: cover;
@@ -100,7 +99,6 @@
 	height: auto;
 }
 
-
 /* ------------
  MEDIA QUERIES
 ------------- */
@@ -150,7 +148,6 @@
 		border-radius: 50%;
 	}*/
 
-
 	.blogs-header .line {
 		margin-top: 1.5em;
 	}
@@ -181,16 +178,6 @@
 /* --- desktop --- */
 
 @media (min-width: 1025px) {
-	
-
-/*	.main-nav {
-		margin-right: 10%;
-		margin-top: initial;
-	}
-
-	.logo {
-		margin-left: 2.5em;
-	}*/
 
 	.banner {
 		width: 100%;
@@ -216,13 +203,6 @@
 	.service h4 {
 		margin-bottom: .5em;
 	}
-
-	.services {
-		/*padding-top: 61vh;*/
-		/*position: absolute;*/
-		/*top: 8em;*/
-	}
-
 
 	.services h4:hover {
 		color: #e74e3e;
@@ -260,6 +240,4 @@
 	.blog button {
 		padding: 1.5em 0;
 	}
-
-
 }

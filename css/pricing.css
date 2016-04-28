@@ -131,8 +131,6 @@ td:nth-child(even) {
 }
 
 
-
-
 /* ------------- 
    MEDIA QUERIES 
 -------------- */
@@ -241,7 +239,6 @@ header nav {
 	td:nth-child(even) {
 		background: transparent;
 	}
-
 }
 
 /* --- desktop --- */
@@ -288,5 +285,3 @@ header nav {
 }
 
 }
-
-

@@ -14,11 +14,6 @@
 // switch icons
 // close main nav when user clicks off menu
 
-// $('.mobile-menu').click(function(event){
-// 	$('.main-nav').toggle("slide")
-// 	$('.mobile-menu').find('i').toggleClass('fa fa-bars fa-lg fa fa-times fa-lg')
-// });
-
 $("ul.main-nav").on("click", function(event) {
 	event.stopPropagation();
 });
@@ -96,39 +91,6 @@ $('nav.offering-nav').click(function(){
 	var new_tab_nav = $(this).addClass('tapped');
 });
 
-
-//Offerings sliding in (desktop): in-view?
-// var $animation_element = $('.blog-container .left');
-// var $window = $(window);
-
-// function check_if_in_view() {
-// 	var window_height = $window.height();
-// 	var window_top_position = $window.scrollTop();
-// 	var window_bottom_position = (window_top_position - window_height);
-
-// 	// $.each($animation_element, function() {
-// 	// 	var $element = $(this);
-// 		var element_height = $animation_element.outerHeight();
-// 		var element_top_position = $animation_element.offset().top;
-// 		var element_bottom_position = (element_top_position - element_height);
-
-// 	//check to see if the current container is within viewport
-// 		if((element_bottom_position >= window_top_position) && (element_top_position <= window_bottom_position)) {
-// 			// $animation_element.addClass('in-view');
-// 			$('.blogs-first .left').css("background-color", "dodgerblue");
-// 			// $('.blogs-first .left').stop().animate({ left: '.1vw' });
-// 			// $('.blogs-first .right').stop().animate({ right: '.1vw' });
-// 		} else {
-// 			// $animation_element.removeClass('in-view');
-// 			$('.blogs-first .left').stop().animate({ left: '-30vw' });
-//  			// $('.blogs-first .right').stop().animate({ right: '-30vw' });
-// 		}
-// }
-
-// $window.on('scroll resize', check_if_in_view);
-// $window.trigger('scroll');
-
-
 //desktop: offerings slide in
 $(window).scroll(function(){
 	if($(window).scrollTop() > 0) 
@@ -141,8 +103,6 @@ $(window).scroll(function(){
 	}
 })
 
-
-/*---in view isn't working ---*/
 //desktop: slidedown, anchored navigation
 $(window).on('scroll', function() {
 	var locationOfBanner = $('.banner-content p').scrollTop();
