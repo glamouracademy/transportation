@@ -147,7 +147,7 @@ $(window).scroll(function(){
 $(window).on('scroll', function() {
 	var locationOfBanner = $('.banner-content p').scrollTop();
 	var bannerHeight = $('.banner-content p').outerHeight();
-	var positionOfBanner = (locationOfHeader + headerHeight);
+	var positionOfBanner = (locationOfBanner + bannerHeight);
 	var distanceToTop = $(window).scrollTop();
 
 	if (positionOfBanner <= distanceToTop) {
@@ -159,7 +159,7 @@ $(window).on('scroll', function() {
 
 /* desktop blog slide in */
 $(window).scroll(function(){
-	if($(window).scrollTop() > 1780) {
+	if($(window).scrollTop() > 1680) {
 		$('.blogs-first .left').stop().animate({ left: '.1vw' }, 150, "linear");
 		$('.blogs-first .right').stop().animate({ right: '.1vw' }, 150, "linear");
 	} else {
@@ -169,7 +169,7 @@ $(window).scroll(function(){
 });
 
 $(window).scroll(function(){
-	if($(window).scrollTop() > 2180) {
+	if($(window).scrollTop() > 2080) {
 		$('.blogs-second .left').stop().animate({ left: '.1vw' }, 150, "linear");
 		$('.blogs-second .right').stop().animate({ right: '.1vw' }, 150, "linear");
 	} else {
