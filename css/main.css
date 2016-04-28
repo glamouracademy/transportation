@@ -1093,6 +1093,7 @@ footer p {
 	.anchored-header {
 		background-color: black;
 		position: fixed;
+		height: 7em;
 		z-index: 1000;
 		top: 0;
 	}
