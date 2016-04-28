@@ -114,12 +114,13 @@
 	}
 
 	.banner-content {
-		padding: 0;
+		padding: 3em;
 		width: 100%;
 	}
 
 	.banner-content h1 {
 		letter-spacing: .08em;
+		font-size: 2.5em;
 	}
 
 	.banner-content h1.tel:hover {
