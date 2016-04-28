@@ -11,7 +11,7 @@
 
 /* -- top description --*/
 
-.pricing-content {
+.banner-content {
 	padding-top: 2em;
 	padding-bottom: 2em;
 }
@@ -140,14 +140,32 @@ td:nth-child(even) {
 /* --- tablet --- */
 
 @media (min-width: 768px) {
+
+header nav {
+	padding-top: 2em;
+}
+
+.logo {
+	padding-top: .7em;
+}
+
 .banner {
 	height: 10em;
 	padding: 4em 0;
 }
 
-/*.lg-container {
-	width: 80%;
-}*/
+.banner-content p {
+	max-width: 90%;
+}
+
+.banner-content {
+	padding-bottom: 3em;
+}
+
+.pricing-description p:first-child {
+	padding-top: 2em;
+	padding-bottom: 1em;
+}
 
 .title {
 	font-size: 280%;
