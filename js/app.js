@@ -145,12 +145,12 @@ $(window).scroll(function(){
 /*---in view isn't working ---*/
 //desktop: slidedown, anchored navigation
 $(window).on('scroll', function() {
-	var locationOfHeader = $('header').scrollTop();
-	var headerHeight = $('header').outerHeight();
-	var positionOfHeader = (locationOfHeader + headerHeight);
+	var locationOfBanner = $('.banner-content p').scrollTop();
+	var bannerHeight = $('.banner-content p').outerHeight();
+	var positionOfBanner = (locationOfHeader + headerHeight);
 	var distanceToTop = $(window).scrollTop();
 
-	if (positionOfHeader <= distanceToTop) {
+	if (positionOfBanner <= distanceToTop) {
 		$('header').addClass('anchored-header');
 	} else {
 		$('header').removeClass('anchored-header');
