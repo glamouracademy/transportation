@@ -1102,13 +1102,16 @@ footer p {
 	}
 
 	header nav {
-		margin-right: 2em;
-		width: 80%;
+		width: 50%;
+		right: 0;
+		position: absolute;
 	}
 
 	.logo {
 		width: 70%;
-		margin-left: 4em;
+		left: 3em;
+		top: 1.6em;
+		position: absolute;
 	}
 
 
