@@ -248,42 +248,21 @@ header nav {
 
 @media (min-width: 1025px) {
 
-/*header {
-	padding: 4em 0;
-	top: 0;
-}*/
-
-/*.anchored-header {
-	padding-top: 2em;
-	height: 6em;
-}*/
-
-/*ul.main-nav {
-	padding: 0.5em;
+.logo,
+header nav {
+	padding-top: 0;
 }
-
-.logo {
-	margin-left: 3em;
-}
-
-.main-nav {
-	margin-right: 10%;
-	margin-top: initial;
-}*/
 
 .banner,
 .value {
 	width: 100%;
 }
 
-/*.banner {
-	position: absolute;
+.banner-content {
+	width: 58%;
+	padding-top: 4em;
 }
 
-.lg-container {
-	width: 63%;
-}
-*/
 .value {
 	top: 40em;
 }
@@ -305,7 +284,7 @@ header nav {
 }
 
 .price-list {
-	padding-top: 42em;
+	padding-top: 35em;
 }
 
 }
