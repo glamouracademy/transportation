@@ -859,6 +859,21 @@ footer p {
 		padding: 1em;
 	}
 
+		i.fa-chevron-up.fa-lg {
+		display: initial;
+		visibility: visible;
+		color: white;
+  	position: fixed;
+  	right: 2em;
+  	bottom: 1em;
+  	z-index: 1000;
+  	box-shadow: 5px 5px 10px 1px rgba(64, 62, 63, 0.53), 10px 10px 50px 10px rgba(64, 62, 63, 0.2) inset;
+  	border: none;
+		padding: .7em;
+		background-color: #e74e3e;
+		border-radius: 50%;
+	}
+
 	/*-- banner --*/
 	
 	.banner {
@@ -1112,7 +1127,6 @@ footer p {
 		position: absolute;
 	}
 
-
 	h1 {
 		letter-spacing: 10px;
 	}
@@ -1150,20 +1164,7 @@ footer p {
 		width: 12%;
 	}	
 
-	i.fa-chevron-up.fa-lg {
-		display: initial;
-		visibility: visible;
-		color: white;
-  	position: fixed;
-  	right: 2em;
-  	bottom: 1em;
-  	z-index: 1000;
-  	box-shadow: 5px 5px 10px 1px rgba(64, 62, 63, 0.53), 10px 10px 50px 10px rgba(64, 62, 63, 0.2) inset;
-  	border: none;
-		padding: .7em;
-		background-color: #e74e3e;
-		border-radius: 50%;
-	}
+
 
 	.med-container {
 		width: 75%;
