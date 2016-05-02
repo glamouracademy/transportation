@@ -21,3 +21,37 @@ $(window).scroll(function(){
 		$('.blogs-second .right').stop().animate({ right: '-30vw' }, 150, "linear");
 	}
 });
+
+/* service slide up */
+
+$(document).ready(function() {
+	var services = $.find('.service');
+	var web_window = $(window);
+
+	function check_if_in_view() {
+		var window_height = web_window.height();
+		var window_top_position = web_window.scrollTop();
+		var window_bottom_position = (window_top_position + window_height);		
+	
+
+	$.each(services, function() {
+		var service = $(this);
+		var service_height = $(service).outerHeight();
+		var service_top_position = $(service).offset().top;
+		var service_bottom_position = (service_top_position + service_height);
+
+		if((service_bottom_position >= window_top_position) && (service_top_position <= window_bottom_position)) {
+			service.addClass('in-view');
+		} else {
+			service.removeClass('in-view');
+		}
+	});
+	}
+
+	$(window).on('scroll resize', function() {
+		check_if_in_view()
+	})
+
+	$(window).trigger('scroll');
+
+});
