@@ -1,6 +1,8 @@
 /* services blog slide in */
 $(window).scroll(function(){
-	if($(window).scrollTop() > 750) {
+	var blogsTop = $(".blogs").offset().top;
+
+	if($(window).scrollTop() > 900) {
 		$('.blogs-first .left').stop().animate({ left: '.1vw' }, 150, "linear");
 		$('.blogs-first .right').stop().animate({ right: '.1vw' }, 150, "linear");
 	} else {
@@ -10,6 +12,7 @@ $(window).scroll(function(){
 });
 
 $(window).scroll(function(){
+	var offeringsHeight = $(".offerings").height();
 	if($(window).scrollTop() > 1150) {
 		$('.blogs-second .left').stop().animate({ left: '.1vw' }, 150, "linear");
 		$('.blogs-second .right').stop().animate({ right: '.1vw' }, 150, "linear");
