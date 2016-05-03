@@ -410,16 +410,30 @@ i.fa-chevron-up.fa-lg {
 	letter-spacing: .1em;
 	font-size: 2em;
 	padding-top: .3em;
+	margin-bottom: .7em;
 }
 
 .stats span {
-	color: #fff;
 	padding-bottom: 1em;
+}
+
+.stats span:not(.stat-title) {
+	color: #fff;
+	padding-top: 0;
+}
+
+.stat-1 .smaller-top {
+	padding-top: 0;
+	margin-top: .8em;
+}
+
+.stat-1 > h2 span {
+	line-height: 1.5em;
 }
 
 .parallax {
 	background-color: #000;
-  height: 34em;
+  height: 36em;
   width: 100%;
   overflow: hidden; 
   position: relative;
@@ -1002,6 +1016,15 @@ footer p {
 		padding: 1em 4.5em;
 	}
 
+	.stat-1 .smaller-top {
+		margin-top: 0.6em;
+		margin-bottom: 0.3em;
+	}
+
+	.stat-1 > h2 span {
+	line-height: initial;
+}
+
 	.stat h2, .stat-1 h2 {
 		font-size: 3em;
 		padding-top: .1em;
@@ -1282,11 +1305,15 @@ footer p {
 		align-items: center;
 	}
 
+	.stat-1 .smaller-top {
+		margin-bottom: 0.6em;
+	}
+
 	.stat h2, .stat-1 h2 {
 		font-size: 2em;
 	}
 
-	.stat span, .stat-1 span {
+	.stat span, .stat-1 span:not(.stat-title) {
 		font-size: 0.7em;
 	}
 
