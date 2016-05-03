@@ -762,7 +762,6 @@ footer p {
 		padding: 1em;
 	}
 
-
 	.main-nav li.nav-dropdown ul.submenu li.submenu-list a {
 		color: #000;
 		letter-spacing: initial;
@@ -787,6 +786,10 @@ footer p {
 
 	.anchored-header .main-nav > li.main-nav-list:not(.selected):hover::after {
 		width: 0%;
+	}
+
+	.anchored-header ul.main-nav > li.main-nav-list {
+		padding-bottom: 4em;
 	}
 
 
